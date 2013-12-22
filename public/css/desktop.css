@@ -140,7 +140,7 @@ body {
 				color:#373737;
 				text-decoration: none;
 			}
-			.mainMenu li a:hover {
+			.mainMenu li a:hover, .mainMenu li.cur a {
 				color:#d22845;
 			}
 
@@ -1046,3 +1046,342 @@ body {
 		background:none;
 		margin: 0 0 0 8px;
 	}
+
+/*=========specification
+==========================*/
+
+.prodSpecification {
+
+}
+.modelReview {
+	margin: 90px 0 0;
+}
+
+/*==cabinet==*/
+
+	.modelReview .cabinet {
+		width:100%;
+		overflow: hidden;
+		zoom: 1;
+	}
+		.modelReview .cabinet__i {
+			display:block;
+			float:left;
+		}
+			.modelReview .cabinet__i.cab_l {
+				width:535px;
+				margin: 0 85px 0 0;
+			}
+			.modelReview .cabinet__i.cab_r {
+				width:660px;
+			}
+
+/*descr__model*/
+
+.descr__model {
+	margin: 62px 0 0 0;
+}
+
+.name__model {
+	font:48px/57px 'pf_beausans_prosemibold';
+	color:#000;
+}
+
+.txt__model {
+	font: 18px/27px Arial, sans-serif;
+	margin: 53px 0 0;
+}
+
+ .descr__model .cloudBtn {
+ 	margin: 59px 0 0;
+ }
+ 	.cloudBtn.btn_blue {
+ 		background:#26a9e6;
+ 		color:#fff;
+ 		text-transform: uppercase;
+ 		font:30px/30px 'pf_beausans_probold';
+ 		padding: 8px 24px 4px 24px;
+ 	}
+
+/*fotoBox__model*/
+
+.fotoBox__model {
+	margin: 9px 0 0;
+}
+.bigFotot__model {
+	text-align: center;
+	height:416px;
+	line-height: 416px;
+}
+	.bigFotot__model img {		
+		vertical-align:bottom;
+		max-height:416px;
+	}
+.previewBox {
+	height:135px;
+	position:relative;
+	overflow:hidden;
+	margin: 60px 0 0;
+	padding: 0 55px 0;
+}
+	.previewBox .prev_ar {
+		position:absolute;
+		top: 36px;
+		width:25px;
+		height:17px;
+		background-image:url(../i/ar_pic.png);
+		z-index:10;
+		cursor:pointer;
+	}
+		.previewBox .prev_ar.ar_l {
+			left: 17px;
+			background-position: 0 0;
+		}
+			.previewBox .prev_ar.ar_l:hover {
+				background-position: 0 -54px;
+			}
+		.previewBox .prev_ar.ar_r {
+			right:12px;
+			background-position: 0 -27px;
+		}
+			.previewBox .prev_ar.ar_r:hover {
+				background-position: 0 -80px;
+			}
+.previewBox__i {
+	overflow:hidden;
+	zoom:1;
+	padding:0 0 30px;
+	position:relative;
+	z-index:5;
+}
+.preview__item {
+	float:left;
+	position:relative;
+	padding: 0 26px 0;
+}
+	.preview__item img {
+
+	}
+	.preview__item i {
+		display:none;
+		position:absolute;
+		bottom:-27px;
+		left:50%;
+		width:10px;
+		height:10px;
+		border-radius:50%;
+		margin:0 0 0 -5px;
+		background:#d02947;
+	}
+		.preview__item.cur i {
+			display:block;
+		}
+
+/*======characteristicsBox
+===========================*/
+
+.characteristicsBox {
+	height:377px;
+	margin: 45px -100px 0;
+	padding: 110px 100px 0;
+	background:url(../i/catalog_f.jpg) no-repeat 50% 0;
+}
+
+/*cabinet*/
+
+.characteristicsBox .cabinet {
+	overflow:hidden;
+	zoom:1;
+}
+	.characteristicsBox .cabinet__i {
+		
+	}
+		.characteristicsBox .cabinet__i.cab_l {
+			float:left;
+			width:560px;
+			padding: 0 94px 0 0;
+		}
+		.characteristicsBox .cabinet__i.cab_r {
+			overflow:hidden;
+			zoom:1;
+		}
+
+/*==visual_characteristic
+==========================*/
+
+.visual_characteristic {
+	position:relative;
+	margin: 11px 0 0;
+}
+.visual__i {
+	overflow:hidden;
+	zoom:1;
+	padding: 0 0px 25px 0;
+}
+.visual__item {
+	height:170px;
+}
+	.visual__item .visual__pic {
+		float:left;
+		width:250px;
+		margin: 0 69px 0 0;
+	}
+		.visual__item .visual__pic img {
+			max-width: 250px;
+		}
+	.visual__item .visual__descr {
+		font:30px/36px 'pf_beausans_probold';
+		color:#fff;
+		overflow:hidden;
+		zoom:1;
+		padding: 28px 0 0;
+	}
+.visual__loader {
+	width: 245px;
+	text-align: center;
+}
+	.visual__loader a {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		width:10px;
+		height:10px;
+		margin: 0 8px;
+		border-radius:50%;
+		background:#fff;
+	}
+		.visual__loader a.cur {
+			background: #d02947;
+		}
+/*==characteristic__descr
+==========================*/
+
+.characteristic__descr {
+	padding: 6px 0 0;
+}
+	.characteristic__descr ul {
+		padding: 0 78px 0 0;
+	}
+		.characteristic__descr li {
+			font:18px/27px Arial, sans-serif;
+			color:#fff;
+			margin: 0 0 54px;
+			padding: 0 0 0 81px;
+			position:relative;
+		}
+			.characteristic__descr li i {
+				display:block;
+				position:absolute;
+				top: -2px;
+				left:0;
+				width:58px;
+				height:58px;
+				background-image: url(../i/icon_char.png);
+			}
+				.characteristic__descr li i.ram {
+					background-position: 0 0;
+				}
+				.characteristic__descr li i.module {
+					background-position: 0 -68px;
+				}
+				.characteristic__descr li i.muse {
+					background-position: 0 -136px;
+				}
+
+/*======featuresBox
+=====================*/
+
+.featuresBox {
+	min-height:640px;
+	position:relative;
+	margin: 119px -100px 142px;
+	padding:0 100px;
+}
+
+/*boxFiles*/
+
+.boxFiles {
+	position:absolute;
+	background:#26a9e6;
+	top:0;
+	right:0;
+	padding: 64px 131px 48px 38px;
+	width: 200px;
+}
+.titleFiles {
+	font:30px/32px 'pf_beausans_prosemibold';
+	color:#fff;
+	position:relative;
+	padding: 0 0 0 46px;
+	margin: 0px 0 64px;
+}
+	.titleFiles i {
+		display:block;
+		position:absolute;
+		top: 3px;
+		left:0;
+		width:20px;
+		height:23px;
+		background:url(../i/file.png) no-repeat 0 0;
+	}
+.files__option {
+	margin: 0 25px 0 0;
+}
+	.files__option li {
+		margin: 0 0 40px;
+	}
+		.files__option li a {
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;	        
+			zoom: 1;
+			*display: inline;
+			position:relative;
+			font:18px/28px Arial, sans-serif;
+			color:#fff;
+			text-decoration:none;
+			padding: 0 0 0 46px;
+		}
+			.files__option a i {
+				display:block;
+				position:absolute;
+				top: 3px;
+				left: -2px;
+				font:normal 17px/18px 'pf_beausans_probold';
+				color:#fff;
+				text-transform: uppercase;
+			}
+				.files__option a i.arrow_f {
+					background: url(../i/arrow_f.png) no-repeat 0 0;
+					width:16px;
+					height:14px;
+				}
+
+/*featuresBox__i*/
+
+.featuresBox__i {
+	padding:0 320px 0 0;
+}
+.features__title {
+	font:30px/30px 'pf_beausans_prosemibold';
+	color:#000;
+	margin: 94px 0 0;
+}
+.features__data {
+	width:100%;
+	margin: 39px 0 0;
+}
+	.features__data tr {
+
+	}
+		.features__data td {
+			padding:0 8px 0 0;
+			font:18px/18px Arial, sans-serif;
+			color:#000;
+			height: 45px;
+		}
+		.features__data td:first-child {
+			width:510px;
+		}
