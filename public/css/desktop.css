@@ -777,6 +777,9 @@ body {
 		height:16px;
 		margin-top:-1px;
 	}
+	.title__nav.sup i {
+		background:url(../i/sup.png) no-repeat 100% 0;
+	}
 
 /*===nav__i
 ============*/
@@ -1385,3 +1388,161 @@ body {
 		.features__data td:first-child {
 			width:510px;
 		}
+
+/*=======supportBox
+====================*/
+
+.supportBox {
+	margin:0 -100px;
+}
+.support__i {
+
+}
+.support__section {
+
+}
+	.support__section.cur .section__title {
+		background-position: 0 -219px;
+	}
+		.support__section.cur .section__title i {
+			background-position: 0 -35px;
+		}
+	.support__section.cur .section__content {
+		display:block;
+	}
+.section__title {
+	background: url(../i/title_s.jpg) no-repeat 50% 0;
+	font:36px/36px 'pf_beausans_prosemibold';
+	color:#fff;
+	position:relative;
+	padding: 79px 100px 84px;
+}
+	.section__title i {
+		display:block;
+		position:absolute;
+		top: 77px;
+		right: 105px;
+		width:17px;
+		height:25px;
+		background:url(../i/ar_title.png) no-repeat 0 0;
+	}
+.section__content {
+	display:none;
+	padding:0 100px;
+}
+.section__i {
+	border-top:1px solid #d7d7d7; 
+	padding: 51px 0 50px;
+}
+	.section__i:first-child {
+		border-top:0;
+		padding: 67px 0 51px;
+	}
+	.section__i img {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		margin: 0 61px 0 39px;
+	}
+	.section__i .name__item {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		font:30px/30px 'pf_beausans_prosemibold';
+		color:#000;
+		width: 381px;
+		margin:0 10px 0 0;
+	}
+	.section__i .section__option {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+	}
+		.section__i .section__option li {
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;	        
+			zoom: 1;
+			*display: inline;
+			margin: 0 44px 0 0;
+		}
+			.section__i .section__option li a {
+				display:block;
+				position:relative;
+				font:18px/18px Arial, sans-serif;
+				color:#000;
+				text-decoration: none;
+				padding: 0 0 0 30px;
+			}
+				.section__i .section__option a i {
+					position:absolute;
+					top:2px;
+					left:0;
+					font:normal 18px/18px 'pf_beausans_probold';
+					color:#329ed0;
+					text-transform: uppercase;
+				}
+					.section__i .section__option a i.arrow_s {
+						width:16px;
+						height:14px;
+						background:url(../i/arrow_s.png) no-repeat 0 0;
+					}
+
+/*======miniBox__faq
+=====================*/
+
+.miniBox__faq {
+	margin: 84px 0 0;
+}
+.title__faq {
+	font:30px/30px 'pf_beausans_probold';
+	color:#000;
+	text-transform: uppercase;
+	margin: 0 0 0 17px;
+}
+.nav__faq {
+	margin: 81px 0 0;
+}
+	.nav__faq li {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		margin: 0 0 0 189px;
+	}
+		.nav__faq li:first-child {
+			margin:0;
+		}
+		.nav__faq li a {
+			display:block;
+			position:relative;
+			font:18px/18px Arial, sans-serif;
+			color:#000;
+			text-decoration: none;
+			padding: 0 0 0 85px;
+		}
+			.nav__faq a i {
+				position:absolute;
+				display:block;
+				top: -23px;
+				left: 4px;
+				width:58px;
+				height:58px;
+				background-image: url(../i/icon_faq.png);
+			}
+				.nav__faq a i.navigation_i {
+					background-position: 0 0;
+				}
+				.nav__faq a i.reg_i {
+					background-position: 0 -68px;
+				}
+				.nav__faq a i.plan_i {
+					background-position: 0 -136px;
+				}
