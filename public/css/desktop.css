@@ -39,6 +39,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'pf_beausans_probbook';
+    src: url('../fonts/pfbeausanspro-bbook-webfont.eot');
+    src: url('../fonts/pfbeausanspro-bbook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfbeausanspro-bbook-webfont.woff') format('woff'),
+         url('../fonts/pfbeausanspro-bbook-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*=====================================================*/
 
 body {
@@ -1506,16 +1516,25 @@ body {
 	text-transform: uppercase;
 	margin: 0 0 0 17px;
 }
+	.main_faq .title__faq {
+		font:48px/48px 'pf_beausans_prosemibold';
+	}
 .nav__faq {
 	margin: 81px 0 0;
 }
+.main_faq .nav__faq {
+	margin: 98px 0 0 15px;
+}
+	.main_faq .nav__faq li a {
+		padding: 0 0 0 87px;
+	}
 	.nav__faq li {
 		display: -moz-inline-stack;
 		display: inline-block;
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
-		margin: 0 0 0 189px;
+		margin: 0 0 0 170px;
 	}
 		.nav__faq li:first-child {
 			margin:0;
@@ -1528,6 +1547,26 @@ body {
 			text-decoration: none;
 			padding: 0 0 0 85px;
 		}
+			.nav__faq li.cur a {
+				color:#d02947;
+				font-weight:bold;
+			}
+				.nav__faq li.cur a i {
+					background-image: url(../i/icon_faq_h.png);
+					width:74px;
+					height:72px;
+					top: -29px;
+					left: -3px;
+				}
+					.nav__faq li.cur a i.navigation_i {
+						background-position: 0 0;
+					}
+					.nav__faq li.cur a i.reg_i {
+						background-position: 0 -82px;
+					}
+					.nav__faq li.cur a i.plan_i {
+						background-position: 0 -164px;
+					}
 			.nav__faq a i {
 				position:absolute;
 				display:block;
@@ -1545,4 +1584,43 @@ body {
 				}
 				.nav__faq a i.plan_i {
 					background-position: 0 -136px;
+				}
+
+/*=======faqBox
+=================*/
+
+.faqBox {
+	margin: 0 0 113px;
+}
+	.faqBox ul {
+		margin: 107px 0 0 35px;
+	}
+		.faqBox ul li {
+			font:20px/22px 'pf_beausans_probbook';
+			color:#26a9e6;
+			list-style-type: disc;
+			margin: 0 0 23px;
+		}
+			.faqBox ul li:hover .quest {
+				text-decoration: underline;
+			}
+			.faqBox li .quest {
+				color:#26a9e6;
+				text-decoration: none;
+			}
+			.faqBox li .answer {
+				display:none;
+				color:#000;
+				font:18px/27px 'pf_beausans_probbook';
+				margin: 20px 0 38px 34px;
+			}
+			.faqBox ul li.cur {
+				list-style-type: circle;
+				color:#d02947;
+			}
+				.faqBox ul li.cur .quest {
+					color:#d02947;
+				}
+				.faqBox ul li.cur .answer {
+					display:block;
 				}
