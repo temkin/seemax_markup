@@ -6,8 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
 	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
 
-        <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="public/js/lib/jquery/jquery.carouFredSel-6.1.0-packed.js"></script>
 
 </head>
 <body>
@@ -20,7 +21,7 @@
 					</div><!--logo-->
 					<div class="mainMenu">
 						<ul>
-							<li><a href="#">О компании</a></li>
+							<li class="cur"><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
 							<li><a href="#">Продукция</a></li>
 							<li><a href="#">Поддержка</a></li>
@@ -34,8 +35,8 @@
 		<div class="navigation__prod">
 			<h3 class="title__nav info"><i></i>О компании</h3>
 			<ul class="nav__prod__i">
-				<li><a href="#">Информация о SeeMax</a></li>
-				<li class="cur"><a href="#">Новости</a></li>
+				<li class="cur"><a href="#">Информация о SeeMax</a></li>
+				<li><a href="#">Новости</a></li>
 				<li><a href="#">Блог</a></li>
 				<li><a href="#">Карьера в SeeMax</a></li>
 				<li><a href="#">Контакты</a></li>
@@ -83,6 +84,11 @@
 						<i class="gal__a prev"></i>
 						<i class="gal__a next"></i>
 						<div class="gallery__i">
+							<img src="public/i/pic_g.jpg" alt="">
+							<img src="public/i/pic_g.jpg" alt="">
+							<img src="public/i/pic_g.jpg" alt="">
+							<img src="public/i/pic_g.jpg" alt="">
+							<img src="public/i/pic_g.jpg" alt="">
 							<img src="public/i/pic_g.jpg" alt="">
 						</div><!--gallery__i-->
 					</div><!--galleryBox-->
@@ -177,7 +183,9 @@
 					© SeeMax 2013
 				</div><!--copy-->
 				<div class="region">
-					Ваш регион: Беларусь <i></i>
+					Ваш регион: <span>Беларусь <i></i></span>
+					<a href="#" class="rus">Россия <i></i></a>
+					<a href="#" class="uk">Украина <i></i></a>
 				</div><!--region-->
 			</div><!--footer__i-->
 		</div><!--footer-->

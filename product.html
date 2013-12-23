@@ -22,7 +22,7 @@
 						<ul>
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
-							<li><a href="#">Продукция</a></li>
+							<li class="cur"><a href="#">Продукция</a></li>
 							<li><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
 							<li><a href="#">Где купить?</a></li>
@@ -35,7 +35,7 @@
 			<h3 class="title__nav"><i></i>GPS-навигаторы</h3>
 			<ul class="nav__prod__i">
 				<li><a href="#">Видеорегистраторы</a></li>
-				<li class="cur"><a href="#">Все модели</a></li>
+				<li class="cur"><a href="#">Планшеты</a></li>
 				<li><a href="#">Экшн-камеры</a></li>
 			</ul>
 		</div><!--navigation-->
@@ -112,9 +112,14 @@
 					</div><!--catalog__ii-->
 				</div><!--catalog__i-->
 				<div class="pager">
-					<a href="#"></a>
-					<a href="#" class="cur"></a>
-					<a href="#"></a>
+					<div class="loader">
+						<a href="#"></a>
+						<a href="#" class="cur"></a>
+						<a href="#"></a>
+					</div><!--loader-->
+					<div class="archive">
+						<a href="#">Архив моделей</a>
+					</div><!--archive-->
 				</div><!--pager-->
 			</div><!--catalogBox-->
 		</div><!--catalogPage-->
@@ -164,7 +169,9 @@
 					© SeeMax 2013
 				</div><!--copy-->
 				<div class="region">
-					Ваш регион: Беларусь <i></i>
+					Ваш регион: <span>Беларусь <i></i></span>
+					<a href="#" class="rus">Россия <i></i></a>
+					<a href="#" class="uk">Украина <i></i></a>
 				</div><!--region-->
 			</div><!--footer__i-->
 		</div><!--footer-->
