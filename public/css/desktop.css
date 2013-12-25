@@ -585,9 +585,9 @@ body {
 =================*/
 
 .optionBox {
-	overflow:hidden;
-	zoom:1;
-	margin:0 -100px;
+	height:538px;
+	width: 1280px;
+	margin: 0 auto;
 }
 
 /*optionItem*/
@@ -619,9 +619,11 @@ body {
 	}
 	.optionItem.left {
 		padding:69px 135px 144px 122px;
+		margin: 0 0 0 -100px;
 	}
 	.optionItem.right {
-		padding:69px 122px 144px 135px;
+		padding: 69px 126px 144px 137px;
+		margin: 0 -100px 0 0;
 	}
 .optionIcon {
 	display:block;
@@ -1666,3 +1668,240 @@ body {
 				.faqBox ul li.cur .quest {
 					color:#d02947;
 				}
+
+/*========searchPage
+======================*/
+
+.searchPage {
+	margin: 74px 0 117px;
+}
+.search__cont {
+
+}
+	.search__cont input {
+		padding:0 24px;
+		width:700px;
+		height:48px;
+		border:3px solid #329ed0;
+		font:24px/24px 'pf_beausans_proregular';
+		color:#000;
+		vertical-align: middle;
+	}
+	.search__cont .search__btn {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		width:53px;
+		height:53px;
+		margin: 0 0 0 9px;
+		background:url(../i/search_ar.png) no-repeat 0 0;
+	}
+.title__search {
+	font:48px/50px 'pf_beausans_prosemibold';
+	color:#000;
+	margin: 85px 0 0;
+}
+.search__resultPage {
+	margin: 78px 0 0;
+}
+.search__item {
+	display:block;
+	text-decoration: none;
+	margin: 0 0 44px;
+	color:#000;
+}
+.search__item:hover {
+	text-decoration: underline;
+	color:#1183b8;
+}
+	.search__item:hover .search__itemTitle,
+	.search__item:hover .search__itemDescr {
+		color:#1183b8;
+	}
+	.search__itemTitle {
+		font:24px/28px 'pf_beausans_proregular';
+		color:#000;
+	}
+		.search__itemTitle i {
+			font-style:normal;
+			font-family: 'pf_beausans_prosemibold';
+		}
+		.search__itemTitle strong {
+			font-weight:normal;
+			font-family: 'pf_beausans_probold';
+		}
+	.search__itemDescr {
+		font:18px/27px Arial, sans-serif;
+		color:#000;
+		margin: 9px 0 0;
+	}
+.search__loader {
+	text-align: center;
+	margin: 97px 0 10px;
+
+}
+	.search__loader a {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		width:11px;
+		height:11px;
+		margin: 0 8px;
+		background: url(../i/bul_l.png) no-repeat 0 -42px;
+	}
+	.search__loader a:hover {
+		background-position: 0 -21px;
+	}
+	.search__loader a.cur {
+		background-position: 0 0;
+	}
+
+/*======registration
+=====================*/
+
+.registrationPage {
+	margin: 105px 0 0;
+
+}
+.reg__commaent {
+	font:18px/27px Arial, sans-serif;
+	color:#000;
+	margin: 78px 0 0;
+}
+
+/*pageForm*/
+
+.pageForm {
+	margin: 92px -100px 0;
+	padding: 120px 100px 44px;
+	background:url(../i/catalog_f.jpg) repeat-y 0 0;
+}
+.formBox {
+	margin: 0 0 119px;
+}
+.title__form {
+	font:30px/32px 'pf_beausans_prosemibold';
+	color:#fff;
+	margin: 0 0 0 30px;
+}
+.form__cont {
+	margin: 69px 0 0 0;
+}
+.form__item {
+	margin: 0 0 40px;
+}
+	.form__item label {
+		width: 239px;
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+		font:20px/20px 'pf_beausans_prosemibold';
+		color:#fff;
+		text-align:right;
+		margin: 0 31px 0 0;
+	}
+	.form__item.error_form .inputBox input {
+		border-color: #d02947;
+	}
+	.form__item .inputBox {
+		display: -moz-inline-stack;
+		display: inline-block;
+		vertical-align: middle;	        
+		zoom: 1;
+		*display: inline;
+	}
+		.form__item .inputBox.checkBox label {
+			width:auto;
+			font:18px/18px 'pf_beausans_proregular';
+			margin: 0 46px 0 8px;
+		}
+		.form__item .inputBox input {
+			vertical-align: middle;
+		}
+		.form__item .inputBox input[type="text"] {
+			width: 186px;
+			padding:0 15px;
+			height:42px;
+			border:4px solid #5e95bc;
+			border-radius:4px;
+			background:none;
+			font:18px/18px 'pf_beausans_proregular';
+			color:#fff;
+			
+			margin: 0 16px 0 0;
+		}
+		.form__item .inputBox.dateBlock input {
+			width: 54px;
+			padding: 0;
+			text-align: center;
+		}
+		.form__item .inputBox.bigInput input {
+			width: 304px;
+		}
+		.form__item .inputBox.bigInput input {
+			width: 341px;
+		}
+		.form__item .inputBox input:focus {
+			outline:none;
+		}
+		.form__item .inputBox select {
+			width: 228px;
+			padding: 0 0px 0 10px;
+			height: 50px;
+			border:4px solid #5e95bc;
+			border-radius:4px;
+			background:none;
+			font:18px/18px 'pf_beausans_proregular';
+			color:#fff;
+			vertical-align: middle;
+		}
+		.form__item .inputBox select option {
+			color:#000;
+		}
+		.form__item .inputBox  span {
+			font:italic 18px/20px Arial, sans-serif;
+			color:#fff;
+			vertical-align: middle;
+		}
+		.form__item .inputBox .item__i {
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;	        
+			zoom: 1;
+			*display: inline;
+			width:38px;
+			height:38px;
+			margin: 0 17px 0 0;
+		}
+			.form__item .inputBox .item__i.quest {
+				background:url(../i/q.png) no-repeat 0 0;
+			}
+			.form__item .inputBox .item__i.er_i {
+				background:url(../i/e.png) no-repeat 0 0;
+			}
+.button__form {
+	text-align: center;
+	margin: 89px 0 0;
+}
+	.button__form .cloudBtn {
+		border-color: #5586aa;
+		background:#5586aa;
+		color:#fff;
+		font-family: 'pf_beausans_prosemibold';
+		vertical-align: middle;
+		margin: 0;
+		font-size:20px;
+	}
+	.button__form span {
+		vertical-align: middle;
+		font:italic 18px/20px Arial, sans-serif;
+		color:#fff;
+	}
+
+

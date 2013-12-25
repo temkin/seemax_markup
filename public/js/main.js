@@ -5,7 +5,7 @@ $(document).ready(function(){
          $(".header__search").show();
          $(".search__slog input").focus();
         setTimeout(function(){
-            $(".close_ar").addClass("show");
+            $(".close_cross").addClass("show");
         },400);
          $(".header__i").hide();
      });
@@ -18,8 +18,8 @@ $(document).ready(function(){
     /* закрытие поиска по клику вне блока поиска */
     $(document).on("mousedown", function(e){
         if($(e.target).closest(".header__search").length != 1){
-            if($(".close_ar").hasClass("show")){
-                $(".close_ar").trigger("click");
+            if($(".close_cross").hasClass("show")){
+                $(".close_cross").trigger("click");
             }
         }
     });
