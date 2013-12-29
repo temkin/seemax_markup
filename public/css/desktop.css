@@ -607,7 +607,7 @@ body {
 	.optionItem:hover .optionIcon {
 		background-image: url(../i/icon_h.png);
 	}
-	.optionItem:hover .optionTitle,
+	.optionItem:hover .optionTitle a,
 	.optionItem:hover .optionDescr,
 	.optionItem:hover .optionDescr a,
 	.optionItem:hover .cloudBtn {
@@ -644,11 +644,14 @@ body {
 		background-position:0 -204px;
 	}
 .optionTitle {
-	font:30px/30px 'pf_beausans_probold';
-	color:#000;
+	font:30px/30px 'pf_beausans_probold';	
 	margin: 64px 0 0;
 	text-transform:uppercase;
 }
+	.optionTitle a {
+		text-decoration: none;
+		color:#000;
+	}
 .optionDescr {
 	margin: 28px 0 0;
 	font: 18px/27px Arial, sans-serif;
@@ -709,11 +712,14 @@ body {
 		.iconBan.serv {
 			background-image: url(../i/serv.png);
 		}
-	.titleBan {
-		color:#fff;
+	.titleBan {		
 		margin: 62px 0 0 4px;
 		text-transform:uppercase;
 		font:30px/30px 'pf_beausans_prosemibold', sans-serif;
+	}
+	.titleBan a {
+		text-decoration: none;
+		color:#fff;
 	}
 	.txtBan {
 		font:18px/27px Arial,sans-serif;
@@ -1904,4 +1910,143 @@ body {
 		color:#fff;
 	}
 
+/*=======mapsPage
+=================*/
 
+.mapsPage {
+
+}
+.titlePage {
+	font:48px/48px 'pf_beausans_prosemibold';
+	color:#000;
+	margin: 106px 0 0;
+}
+
+/*selectOption__maps*/
+
+.selectOption__maps {
+	position:relative;
+	margin: 68px 0 53px;
+}
+	.selectOption__maps select {
+		border:4px solid #329ed0;
+		border-radius:3px;
+		padding: 0 0 0 11px;
+		margin: 0 29px 0 0;
+		height: 51px;
+		width: 229px;
+		font:18px/18px 'pf_beausans_proregular';
+		color:#000;
+	}
+		.selectOption__maps select:focus {
+			outline:none;
+		}
+		.selectOption__maps option {
+
+		}
+	.openMaps {
+		display:block;
+		position:absolute;
+		top: 18px;
+		right: 21px;
+		padding: 0 9px 0 0;
+		color:#329ed0;
+		text-decoration: none;
+		font:18px/18px 'pf_beausans_prosemibold';
+	}
+		.openMaps.mapsVis {
+			color:#d02947;
+		}
+			.openMaps.mapsVis span {
+				border-color:#d02947;
+			}
+			.openMaps.mapsVis i {
+				top:0;
+				left:100%;
+				background:url(../i/ar_maps.png) no-repeat 50% 50%;
+			}
+		.openMaps span {
+			border-bottom: 1px dashed #329ed0;
+		}
+		.openMaps i {
+			display:block;
+			position:absolute;
+			top:0;
+			left:-25px;
+			width:15px;
+			height:18px;
+			background: url(../i/bul_maps.png) no-repeat 0 0;
+		}
+
+/*mapsBox*/
+.mapsBox.mapsVis {
+	display:block;
+}
+.mapsBox {
+	position:relative;
+	text-align: center;
+	margin: 0 0 82px;
+	display:none;
+}
+	.mapsBox i {
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		width:64px;
+		height:79px;
+		background: url(../i/marker.png) no-repeat 0 0;
+	}
+	.mapsBox img {
+
+	}
+
+/*info__maps*/
+
+.info__maps {
+
+}
+.info__maps__i {
+	border-bottom:1px solid #d7d7d7;
+	padding: 0 0 40px 19px;
+margin: 0 0 64px;
+}
+.infoMaps__item {
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;	        
+	zoom: 1;
+	*display: inline;
+}
+	.infoMaps__item .title {
+		font:30px/32px 'pf_beausans_prosemibold';
+		color:#000;
+		margin: 0 0 28px;
+	}
+		.infoMaps__item .title i {
+			display: -moz-inline-stack;
+			display: inline-block;
+			vertical-align: middle;	        
+			zoom: 1;
+			*display: inline;
+			width:15px;
+			height:18px;
+			margin: 0 0 0 15px;
+			background:url(../i/bul_maps.png) no-repeat 0 0;
+		}
+	.infoContact {
+		overflow:hidden;
+		zoom:1;
+	}
+		.infoContact__i {
+			float:left;
+			width:303px;
+			padding:0 10px 0 0;
+			font:18px/27px Arial, sans-serif;
+			color:#000;
+			margin: 0 0 26px;
+		}
+			.infoContact__i a {
+				text-decoration: none;
+				color:#000;
+			}
