@@ -190,7 +190,7 @@ $(document).ready(function(){
             width: 560,
             height: 170,
             auto: {
-                play: false
+                play: true
             },
             scroll: {
                 items:1
