@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    // Sticky files panel
+    var filesPanelBottomOffset = $(document).height() - $('.prodSpecification').position().top - $('.prodSpecification').height() - 50;
+    $.lockfixed('.boxFiles', {offset: {top: 20, bottom: filesPanelBottomOffset }});
+
     /* Показать/Спрятать поиск */
     $(".search i").click(function(){
          $(".header__search").show();
@@ -244,39 +248,58 @@ $(document).ready(function(){
 
         $('.preview__item', _this).each(function(i){
             
+            // Set an additional attribute for items
+            $(this).attr('item-id', i);
+
+
             $(this).click(function(){
-                $('.bigFotot__model', _this).trigger('slideTo', i);
-                $('.previewBox .preview__item.cur', _this).removeClass('cur');
-                $(this).addClass('cur');
+                $('.previewBox__i', _this).trigger('slideTo', $(this).attr('item-id') - 1 );
+
                 return false;
             });
         });
-        
+
+
+        $('.bigFotot__model img').each(function (i) {
+            $(this).attr('item-id', i);
+        });
+
 
         $('.previewBox__i', _this).carouFredSel({
             responsive: false,
-            circular: false,
+            circular: true,
             infinite: false,
             prev: $('.prev_ar.ar_l', _this),
             next: $('.prev_ar.ar_r', _this),
-            width: '550',
-            height:'125',
+            width: 546,//'546',
+            height: 135,//'125',
             align: 'center',
             auto: {
                 play: false
             },
             scroll: {
-                items:2
+                items:2,
+                onAfter: function () {
+
+                    // Get item-id value of selected item
+                    var itemId = $('.preview__item:eq(1)').attr('item-id');
+                    console.log(itemId);
+                    
+                    // Slide the big carousel to the same item-id
+                    $('.bigFotot__model').trigger('slideTo', parseInt(itemId)  );
+                    console.log(itemId);
+                }
             }, 
             items: {
                 visible: 3
             }
         });
 
+
         var _this = $(this);
         $('.bigFotot__model', _this).carouFredSel({
             responsive: false,
-            circular: false,
+            circular: true,
             infinite: false,
             width: '660',
             align: 'center',
@@ -285,12 +308,19 @@ $(document).ready(function(){
             },
             scroll: {
                 items:1,
-                fx: 'crossfade'
+                fx: 'crossfade',
+                onAfter: function () {
+                    $('.bigFotot__model').css('visibility', 'visible');
+                }
             }, 
             items: {
                 visible: 1
+            },
+            onCreate: function() {
+                $(this).trigger('slideTo', 1);
             }
         });
+
     });
 
 

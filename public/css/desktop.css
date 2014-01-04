@@ -1143,7 +1143,7 @@ body {
 		margin: 0 0 0 8px;
 	}
 
-/*=========specification
+//*=========specification
 ==========================*/
 
 .prodSpecification {
@@ -1211,6 +1211,7 @@ body {
 	text-align: center;
 	height:416px;
 	line-height: 416px;
+	visibility: hidden
 }
 	.bigFotot__model img {		
 		vertical-align:bottom;
@@ -1283,7 +1284,7 @@ body {
 		margin:0 0 0 -5px;
 		background:#d02947;
 	}
-		.preview__item.cur i {
+		.preview__item:nth-child(2) i {
 			display:block;
 		}
 
@@ -1333,6 +1334,7 @@ body {
 .visual__item {
 	height:170px;
 	width: 560px;
+	float: left;
 }
 	.visual__item .visual__pic {
 		float:left;
@@ -1425,6 +1427,7 @@ body {
 	right:0;
 	padding: 64px 0 48px 0;
 	width: 369px;
+	z-index: 999;
 }
 .titleFiles {
 	font:30px/32px 'pf_beausans_prosemibold';
