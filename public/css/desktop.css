@@ -135,7 +135,7 @@ body {
 
 .mainMenu {
 	position:absolute;
-	top: 32px;
+	top: 34px;
 	left: 263px;
 }
 	.mainMenu>ul {
@@ -197,6 +197,9 @@ body {
 		width:33px;
 		height:33px;
 		background: url(../i/search.png) no-repeat 0 0;
+	}
+	.search i:hover {
+		background-image: url(../i/search_h.png);
 	}
 
 /*=============header__search
@@ -262,6 +265,9 @@ body {
 	background: url(../i/s_ar.png) no-repeat 0 0;
 	cursor:pointer;
 }
+	.close_ar:hover {
+		background-position: 0 -43px;
+	}
 .close_cross {
 	display:block;
 	position:absolute;
@@ -269,9 +275,12 @@ body {
 	right: 34px;
 	width:33px;
 	height:33px;
-	background: url(../i/cross.png) no-repeat 0 0;
+	background: url(../i/cross.png) no-repeat 0 -43px;
 	cursor:pointer;
 }
+	.close_cross:hover {
+		background-position: 0 0;
+	}
 
 /*===========search__menu
 ==========================*/
@@ -407,9 +416,17 @@ body {
 		width:29px;
 		height:29px;
 		margin:0 5px 0 0;
-		background: url(../i/social.png) no-repeat 0 0;
 	}
 		.social_f a.vk {
+			background:url(../i/vk.png) no-repeat 0 0;
+		}
+		.social_f a.vk:hover {
+			background-position: 0 -39px;
+		}
+		.social_f a.fb {
+			background:url(../i/fb.png) no-repeat 0 0;
+		}
+		.social_f a.fb:hover {
 			background-position: 0 -39px;
 		}
 .region {
@@ -482,6 +499,7 @@ body {
 	.slider__ii {
 		position:relative;
 		height:542px;
+		overflow: hidden;
 	}
 
 
@@ -640,6 +658,10 @@ body {
 		border:4px solid #fff;
 		background: none;
 	}
+		.optionItem:hover .cloudBtn:hover {
+			background: #fff;
+			color:#26a9e6;
+		}
 	.optionItem.left {
 		padding:69px 135px 144px 122px;
 		margin: 0 0 0 -100px;
@@ -791,6 +813,7 @@ body {
 			}
 				.addMenu li a:hover {
 					color:#d22845;
+					text-decoration: underline;
 				}
 
 /*==================second==========================*/
@@ -902,24 +925,11 @@ body {
 	text-align: center;
 	overflow:hidden;
 	margin: 0 0 68px;
-	position:relative;
-	line-height: 170px;
-}
-.prod__pic_h {
-	display:none;
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	background: url(../i/ar_prod.png) no-repeat 50% 50% rgba(0, 0, 0, 0.3);
-	border-radius:10px;
 }
 	.prod__pic img {
-		vertical-align: bottom;
 	}
-		.prod__item:hover .prod__pic .prod__pic_h {
-			display:block;
+		.prod__item:hover .prod__pic img {
+			margin:-170px 0 0;
 		}
 
 /*prod__descr*/
@@ -2109,39 +2119,31 @@ margin: 0 0 64px;
 =====================*/
 
 .mainMenu__add {
+	display:none;
 	position:absolute;
 	width:100%;
 	z-index:800;
-	height:79px;
-	top:84px;
+	height:72px;
+	top: 100%;
 	left:0;
 }
 .mainMenu__add .search__bord {
 	top:0;
 	height:72px;
-	border-top:7px solid #fff;
 }
 .mainMenu__add_i {
 	position:absolute;
 	top:0;
-	left:0;
-	width:100%;
-	z-index:5;
-	background: url(../i/grad.png) repeat-y 50% 0;
-	height:79px;
-}
-.menu__bul {
-	display:block;
-	position:absolute;
-	top:0px;
 	left:50%;
 	margin:0 0 0 -740px;
 	width:1480px;
-	height:7px;
-	background:url(../i/bul_add.png) no-repeat 50% 0;
+	z-index:5;
+	background: url(../i/grad.png) repeat-y 50% 0;
+	height:72px;
 }
 	.mainMenu__add_i ul {
-		margin:0 0 0 270px;
+		margin: 0 0 0 343px;
+		width:1280px;
 	}
 		.mainMenu__add_i ul li {
 			display: -moz-inline-stack;
@@ -2155,5 +2157,8 @@ margin: 0 0 64px;
 				font:14px/16px 'pf_beausans_proregular';
 				color:#fff;
 				text-decoration: none;
-				padding:32px 30px 25px;
+				padding: 29px 21px 27px;
+			}
+			.mainMenu__add_i li a:hover {
+				background: #1183b8;
 			}
