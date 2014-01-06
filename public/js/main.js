@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-    // Sticky files panel
-    var filesPanelBottomOffset = $(document).height() - $('.prodSpecification').position().top - $('.prodSpecification').height() - 50;
-    $.lockfixed('.boxFiles', {offset: {top: 20, bottom: filesPanelBottomOffset }});
-
+    
     /* Показать/Спрятать поиск */
     $(".search i").click(function(){
          $(".header__search").show();
@@ -32,7 +29,7 @@ $(document).ready(function(){
     /*** Slider Handler ***/
 
     var sliderInterval = 5000;
-    var sliderElementsNum = $('.slider__ii').children().length;
+    var sliderElementsNum = $('.slider__i').children().length;
     var sliderActive = 1;
 
     
@@ -320,6 +317,10 @@ $(document).ready(function(){
                 $(this).trigger('slideTo', 1);
             }
         });
+        // Sticky files panel
+    var filesPanelBottomOffset = $(document).height() - $('.prodSpecification').position().top - $('.prodSpecification').height() - 50;
+    $.lockfixed('.boxFiles', {offset: {top: 20, bottom: filesPanelBottomOffset }});
+
 
     });
 
