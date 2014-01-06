@@ -206,7 +206,7 @@ body {
 	display:none;
 	position:relative;
 	background: #fff;
-	z-index:800;
+	z-index:850;
 }
 .header__searchI {
 	width:1280px;
@@ -765,7 +765,7 @@ body {
 }
 	.addMenu ul {
 		float:left;
-		margin: 0 0 0 146px;
+		margin: 0 0 0 95px;
 	}
 		.addMenu ul:first-child {
 			margin:0;
