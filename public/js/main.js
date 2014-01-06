@@ -275,7 +275,7 @@ $(document).ready(function(){
                 play: false
             },
             scroll: {
-                items:2,
+                items:3,
                 onAfter: function () {
 
                     // Get item-id value of selected item

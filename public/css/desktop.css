@@ -1263,8 +1263,7 @@ body {
 		max-width:140px;
 		vertical-align:middle;
 	}
-	.preview__item i {
-		display:none;
+	.bul__preview {
 		position:absolute;
 		bottom:18px;
 		left:50%;
@@ -1274,9 +1273,6 @@ body {
 		margin:0 0 0 -5px;
 		background:#d02947;
 	}
-		.preview__item:nth-child(2) i {
-			display:block;
-		}
 
 /*======characteristicsBox
 ===========================*/
@@ -1404,7 +1400,7 @@ body {
 .featuresBox {
 	min-height:640px;
 	position:relative;
-	margin: 119px -100px 142px;
+	margin: 119px 0px 142px -100px;
 	padding:0 100px;
 }
 
@@ -1416,7 +1412,7 @@ body {
 	top:0;
 	right:0;
 	padding: 64px 0 48px 0;
-	width: 369px;
+	width: 268px;
 	z-index: 999;
 }
 .titleFiles {
@@ -1445,7 +1441,7 @@ body {
 			font:18px/28px Arial, sans-serif;
 			color:#fff;
 			text-decoration:none;
-			padding: 19px 164px 20px 84px;
+			padding: 19px 70px 20px 84px;
 		}
 			.files__option li a:hover {
 				background:#1183b8;
