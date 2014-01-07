@@ -565,6 +565,7 @@ body {
 		padding:0 0 15px 59px;
 		margin:0 0 0 47px;
 		cursor:default;
+		cursor:pointer;
 	}
 		.nav__i:first-child {
 			background:none;
@@ -821,12 +822,13 @@ body {
 /*=====navigation__prod
 ========================*/
 
-.navigation__prod {
+.navigation__prod.nav_product {
 	height:70px;
 	width:1280px;
 	margin:0 auto;
+	position:relative;
 }
-/*.title__nav {
+.navigation__prod.nav_product .title__nav {
 	float:left;
 	margin:0 0 0 -100px;
 	width:468px;
@@ -837,7 +839,7 @@ body {
 	padding: 28px 126px 28px 0;
 	vertical-align: middle;	
 }
-	.title__nav i {
+	.navigation__prod.nav_product .title__nav i {
 		display: -moz-inline-stack;
 		display: inline-block;
 		vertical-align: middle;	        
@@ -848,15 +850,49 @@ body {
 		background:url(../i/nav.png) no-repeat 0 0;
 		margin: 0px 16px 0 0;
 	}
-	.title__nav.info i {
+	.navigation__prod.nav_product .title__nav.info i {
 		background:url(../i/i.png) no-repeat 100% 0px;
 		height:16px;
 		margin-top:-1px;
 	}
-	.title__nav.sup i {
-		background:url(../i/sup.png) no-repeat 100% 0;
-	}*/
 
+/*===nav__i
+============*/
+
+.navigation__prod.nav_product .nav__prod__i {
+	background: #329ed0;
+	float:left;
+	width:886px;
+	margin:0 -100px 0 0;
+	overflow:hidden;
+	zoom:1;
+	padding: 0;
+}
+	.navigation__prod.nav_product .nav__prod__i li {
+		float:left;
+	}
+		.navigation__prod.nav_product .nav__prod__i li a {
+			display:block;
+			font:14px/14px 'pf_beausans_proregular';
+			color:#fff;
+			text-decoration: none;
+			padding: 28px 22px 29px 22px;
+		}
+		.navigation__prod.nav_product .nav__prod__i li.cur a {
+			background: #1183b8;
+		}
+		.navigation__prod.nav_product .nav__prod__i li a:hover {
+			background: #1183b8;
+		}
+
+/*=====navigation__prod
+========================*/
+
+.navigation__prod {
+	height:70px;
+	width:1280px;
+	margin:0 auto;
+}
 /*===nav__i
 ============*/
 
@@ -920,11 +956,26 @@ body {
 	text-decoration:none;
 }
 
+.prod__pic_h {
+	display:none;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background: url(../i/ar_prod.png) no-repeat 50% 50%;
+	border-radius:10px;
+}
+	.prod__item:hover .prod__pic .prod__pic_h {
+		display:block;
+	}
+
 .prod__pic {
 	height:170px;
 	text-align: center;
 	overflow:hidden;
 	margin: 0 0 68px;
+	position:relative;
 }
 	.prod__pic img {
 	}
