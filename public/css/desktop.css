@@ -1130,6 +1130,7 @@ body {
 .ad__i {
 	float:left;
 }
+
 	.ad__i.max {
 		width:752px;
 	}
@@ -1137,11 +1138,25 @@ body {
 		width:728px;
 	}
 	.ad__i.top {
-		height:574px;
+		height:572px;
 	}
+		.ad__i.top .ad__txt {
+			background:#26a9e6;
+			height:500px;
+		}
+		.ad__i.top .ad__txt:hover {
+			background:#1183b8;
+		}
 	.ad__i.bot {
 		height:540px;
 	}
+		.ad__i.bot .ad__txt {
+			height:468px;
+			background:#1183b8;
+		}
+			.ad__i.bot .ad__txt:hover {
+				background:#26a9e6;
+			}
 .ad__img {
 	position:relative;
 }
@@ -1163,13 +1178,9 @@ body {
 			display:block;
 		}
 .ad__txt {
-	background:#26a9e6;
 	height:100%;
 	padding: 72px 190px 0 118px;
 }
-	.ad__txt:hover {
-		background:#1183b8;
-	}
 	.ad__txt .ad__icon {
 		display:block;
 		width:58px;
@@ -1193,6 +1204,10 @@ body {
 		background:none;
 		margin: 0 0 0 8px;
 	}
+		.ad__txt .cloudBtn:hover {
+			background:#fff;
+			color:#26a9e6;
+		}
 
 //*=========specification
 ==========================*/
@@ -1246,7 +1261,7 @@ body {
  		background:#26a9e6;
  		color:#fff;
  		text-transform: uppercase;
- 		font:30px/30px 'pf_beausans_probold';
+ 		font:28px/30px 'pf_beausans_probold';
  		padding: 8px 24px 4px 24px;
  	}
  	.cloudBtn.btn_blue:hover {

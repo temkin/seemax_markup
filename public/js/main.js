@@ -272,10 +272,10 @@ $(document).ready(function(){
             height: 135,//'125',
             align: 'center',
             auto: {
-                play: false
+                play: true
             },
             scroll: {
-                items:3,
+                items:1,
                 onAfter: function () {
 
                     // Get item-id value of selected item
