@@ -1197,6 +1197,9 @@ body {
 		height:58px;
 		background:url(../i/i_ban.png) no-repeat 0 0;
 	}
+		.ad__txt .ad__icon.ar_icon {
+			background: url(../i/icon_h.png) no-repeat 0 0;
+		}
 	.ad__txt_title {
 		color:#fff;
 		margin: 62px 0 0 4px;
@@ -1208,6 +1211,12 @@ body {
 		color:#fff;
 		margin: 28px 0 65px 7px;
 	}
+		.ad__txt_i a {
+			color:#fff;
+		}
+			.ad__txt_i a:hover {
+				text-decoration: none;
+			}
 	.ad__txt .cloudBtn {
 		border-color:#fff;
 		color:#fff;
@@ -1643,7 +1652,7 @@ body {
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
-		margin: 0 61px 0 39px;
+		margin: 0 56px 0 39px;
 	}
 	.section__i .name__item {
 		display: -moz-inline-stack;
@@ -1653,7 +1662,7 @@ body {
 		*display: inline;
 		font:30px/30px 'pf_beausans_prosemibold';
 		color:#000;
-		width: 381px;
+		width: 345px;
 		margin:0 10px 0 0;
 	}
 	.section__i .section__option {
@@ -1662,6 +1671,7 @@ body {
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
+		width: 665px;
 	}
 		.section__i .section__option li {
 			display: -moz-inline-stack;
@@ -1669,23 +1679,25 @@ body {
 			vertical-align: middle;	        
 			zoom: 1;
 			*display: inline;
-			margin: 0 44px 0 0;
+			margin: 0 40px 0 0;
 		}
 			.section__i .section__option li a {
 				display:block;
 				position:relative;
-				font:18px/18px Arial, sans-serif;
+				font: 18px/38px Arial, sans-serif;
 				color:#000;
 				text-decoration: none;
-				padding: 0 0 0 30px;
+				min-width: 168px;
 			}
 				.section__i .section__option a i {
-					position:absolute;
-					top:2px;
-					left:0;
-					font:normal 18px/18px 'pf_beausans_probold';
+					display: -moz-inline-stack;
+					display: inline-block;
+					vertical-align: middle;	        
+					zoom: 1;
+					font:normal 16px/18px 'pf_beausans_probold';
 					color:#329ed0;
 					text-transform: uppercase;
+					margin:0 10px 0 0;
 				}
 					.section__i .section__option a i.arrow_s {
 						width:16px;
@@ -1709,7 +1721,7 @@ body {
 		font:48px/48px 'pf_beausans_prosemibold';
 	}
 .nav__faq {
-	margin: 81px 0 0;
+	margin: 0 0 0 -150px;
 }
 .main_faq .nav__faq {
 	margin: 98px 0 0 15px;
@@ -1723,11 +1735,9 @@ body {
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
-		margin: 0 0 0 150px;
+		margin: 92px 0 0 150px;
+		min-width: 309px;
 	}
-		.nav__faq li:first-child {
-			margin:0;
-		}
 		.nav__faq li a {
 			display:block;
 			position:relative;
@@ -1765,6 +1775,13 @@ body {
 				height:58px;
 				background-image: url(../i/icon_faq.png);
 			}
+				.nav__faq a:hover {
+					color:#d02947;
+					text-decoration:underline;
+				}
+				.nav__faq a:hover i {
+					background-image: url(../i/icon_faq_hm.png);
+				}
 				.nav__faq a i.navigation_i {
 					background-position: 0 0;
 				}
@@ -1773,6 +1790,12 @@ body {
 				}
 				.nav__faq a i.plan_i {
 					background-position: 0 -136px;
+				}
+				.nav__faq a i.action_cam {
+					background-position: 0 -204px;
+				}
+				.nav__faq a i.plan_child {
+					background-position: 0 -272px;
 				}
 
 /*=======faqBox
