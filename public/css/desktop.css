@@ -776,6 +776,9 @@ body {
 		.txtBan a {
 			color:#fff;
 		}
+			.txtBan a:hover {
+				text-decoration: none;
+			}
 
 /*==========addMenu
 ====================*/
@@ -891,8 +894,10 @@ body {
 
 /*=====navigation__prod
 ========================*/
-
 .navigation__prod {
+	background: #329ed0;
+}
+.navigation__prod_ii {
 	height:70px;
 	width:1280px;
 	margin:0 auto;
@@ -1074,6 +1079,12 @@ body {
 		font:18px/27px Arial, sans-serif;
 		margin: 54px 0 0;
 	}
+	.content p a {
+		color:#329ed0;
+	}
+		.content p a:hover {
+			text-decoration: none;
+		}
 	.content ol {
 		margin: 27px 0 0 25px;
 		font:18px/27px Arial, sans-serif;
@@ -1120,6 +1131,9 @@ body {
 			margin:-18px 0 0;
 			z-index:80;
 		}
+			.galleryBox .gal__a:hover {
+				background-image: url(../i/arrow_g_h.png);
+			}
 			.galleryBox .gal__a.prev {
 				background-position: 0 0;
 				left:28px;
