@@ -1854,7 +1854,7 @@ body {
 	margin: 74px 0 117px;
 }
 .search__cont {
-
+	position:relative;
 }
 	.search__cont input {
 		padding:0 24px;
@@ -1865,8 +1865,21 @@ body {
 		color:#000;
 		vertical-align: middle;
 	}
+		.search__cont .close__search {
+			display:block;
+			position:absolute;
+			top: 19px;
+			left: 720px;
+			width:15px;
+			height:15px;
+			background:url(../i/search_cross.png) no-repeat 0 0;
+		}
+			.search__cont .close__search:hover  {
+				background-position: 0 -25px;
+			}
 	.search__cont input:focus {
 		outline:none;
+		border-color: #d02947;
 	}
 	.search__cont .search__btn {
 		display: -moz-inline-stack;
@@ -1879,6 +1892,9 @@ body {
 		margin: 0 0 0 9px;
 		background:url(../i/search_ar.png) no-repeat 0 0;
 	}
+		.search__cont .search__btn:hover {
+			background-position: 0 -63px;
+		}
 .title__search {
 	font:48px/50px 'pf_beausans_prosemibold';
 	color:#000;
