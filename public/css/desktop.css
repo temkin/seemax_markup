@@ -53,10 +53,9 @@
 
 body {
 	background:#fff;
-	min-width:1280px;
+	min-width:1480px;
 }
 .page {
-	overflow:hidden;
 	min-width: 1280px;
 }
 
@@ -773,6 +772,14 @@ body {
 		color:#fff;
 		margin: 46px 0 0 5px;
 	}
+	.txtBan .cloudBtn {
+		border-color: #fff;
+		background:none;
+	}
+		.txtBan .cloudBtn:hover {
+			background:#fff;
+			color:#26a9e6;
+		}
 		.txtBan a {
 			color:#fff;
 		}
@@ -1738,8 +1745,12 @@ body {
 	margin: 0 0 0 -150px;
 }
 .main_faq .nav__faq {
-	margin: 98px 0 0 15px;
+	margin: 98px 0 0 -125px;
 }
+	.main_faq .nav__faq li {
+		margin: 92px 0 0 140px;
+		width: auto;
+	}
 	.main_faq .nav__faq li a {
 		padding: 0 0 0 87px;
 	}
@@ -1762,24 +1773,10 @@ body {
 		}
 			.nav__faq li.current a {
 				color:#d02947;
-				font-weight:bold;
 			}
 				.nav__faq li.current a i {
-					background-image: url(../i/icon_faq_h.png);
-					width:74px;
-					height:72px;
-					top: -29px;
-					left: -3px;
+					background-image: url(../i/icon_faq_hm.png);
 				}
-					.nav__faq li.current a i.navigation_i {
-						background-position: 0 0;
-					}
-					.nav__faq li.current a i.reg_i {
-						background-position: 0 -82px;
-					}
-					.nav__faq li.current a i.plan_i {
-						background-position: 0 -164px;
-					}
 			.nav__faq a i {
 				position:absolute;
 				display:block;
