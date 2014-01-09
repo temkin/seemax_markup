@@ -1162,11 +1162,11 @@ body {
 		width:728px;
 	}
 	.ad__i.top {
-		height:572px;
+		height:574px;
 	}
 		.ad__i.top .ad__txt {
 			background:#26a9e6;
-			height:500px;
+			height:502px;
 		}
 		.ad__i.top .ad__txt:hover {
 			background:#1183b8;
@@ -1274,7 +1274,7 @@ body {
 /*descr__model*/
 
 .descr__model {
-	margin: 62px 0 0 0;
+	margin: 57px 0 0 0;
 }
 
 .name__model {
@@ -1627,7 +1627,7 @@ body {
 
 
 	.support__section.cur .section__title {
-		background: url(../i/title_s.jpg) no-repeat 50% -219px;
+		background-image: url(../i/title_s.jpg);
 	}
 		.support__section.cur .section__title i {
 			background-position: 0 -35px;

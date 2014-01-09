@@ -272,7 +272,7 @@ $(document).ready(function(){
             height: 135,//'125',
             align: 'center',
             auto: {
-                play: true
+                play: false
             },
             scroll: {
                 items:1,
