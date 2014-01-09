@@ -2176,7 +2176,7 @@ body {
 .mapsBox {
 	position:relative;
 	text-align: center;
-	margin: 0 0 82px;
+	margin: 0 0 35px;
 	display:none;
 }
 	.mapsBox i {
@@ -2198,23 +2198,27 @@ body {
 
 }
 .info__maps__i {
-	border-bottom:1px solid #d7d7d7;
-	padding: 0 0 40px 19px;
-margin: 0 0 64px;
+	
 }
 .infoMaps__item {
-	display: -moz-inline-stack;
-	display: inline-block;
-	vertical-align: top;	        
-	zoom: 1;
-	*display: inline;
+	border-top:1px solid #d7d7d7;
+	padding: 46px 0 20px 19px;
+	margin: 0 0;
+	overflow:hidden;
+	zoom:1;
 }
+	.infoMaps__item:first-child {
+		border:0;
+	}
 	.infoMaps__item .title {
 		font:30px/32px 'pf_beausans_prosemibold';
 		color:#000;
 		margin: 0 0 28px;
+		display: -moz-inline-stack;
+		float:left;
+		width: 374px;
 	}
-		.infoMaps__item .title i {
+		.infoMaps__item .title a {
 			display: -moz-inline-stack;
 			display: inline-block;
 			vertical-align: middle;	        
@@ -2225,18 +2229,30 @@ margin: 0 0 64px;
 			margin: 0 0 0 15px;
 			background:url(../i/bul_maps.png) no-repeat 0 0;
 		}
+			.infoMaps__item .title a:hover {
+				background-position: 0 -28px;
+			}
 	.infoContact {
 		overflow:hidden;
 		zoom:1;
 	}
+		.infoContact strong {
+			display:block;
+			font:bold 18px/18px Arial, sans-serif;
+			color:#000;
+			margin: 0 0 31px;
+		}
 		.infoContact__i {
 			float:left;
-			width:303px;
+			width: 350px;
 			padding:0 10px 0 0;
 			font:18px/27px Arial, sans-serif;
 			color:#000;
-			margin: 0 0 26px;
+			margin: 11px 0 26px 162px;
 		}
+			.infoContact__i:first-child {
+				margin:11px 0 26px;
+			}
 			.infoContact__i a {
 				text-decoration: none;
 				color:#000;

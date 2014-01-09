@@ -46,7 +46,7 @@
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
 							<li><a href="#">Продукция</a></li>
-							<li><a href="#">Поддержка</a></li>
+							<li class="cur"><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
 							<li><a href="#">Где купить?</a></li>
 						</ul>
@@ -85,16 +85,12 @@
 					<h1 class="titlePage">Сервисные центры</h1>
 					<div class="selectOption__maps">
 						<select>
-							<option>Беларусь</option>
-							<option>Москва</option>
-							<option>Украина</option>
-						</select>
-						<select>
 							<option>Все города</option>
 							<option>Минск</option>
 							<option>Гродно</option>
 						</select>
 						<a href="#" class="openMaps mapsVis"><span>Закрыть карту</span><i></i></a>
+						<a href="#" class="openMaps" style="display:none"><span>Показать карту</span><i></i></a>
 					</div><!--selectOption__maps-->
 					<div class="mapsBox mapsVis">
 						<i style="top: 140px; left: 809px;"></i>
@@ -106,110 +102,86 @@
 						<img src="public/i/maps.jpg" alt="">
 					</div><!--mapsBox-->
 					<div class="info__maps">
-						<div class="info__maps__i">
-							<div class="infoMaps__item">
-								<h3 class="title">Минск<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										Сервисный центр «Гайка», <br>
-										ул. Громова, 14, офис 259
-										<br><br>
-										+375 17 256-56-78<br>
-										+375 29 567-56-34
-										<br><br>
-										skype: gaika1578<br>
-										<a href="#">support@seemax.by</a>
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-							<div class="infoMaps__item">
-								<h3 class="title">Брест<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										Сервисный центр «Ключ»,<br> 
-										ул. Гоголя, 82, офис 10
-										<br><br>
-										+375 162 110-45-11<br>
-										+375 162 871-12-00<br>
-										+375 29 459-45-45<br>
-										+375 29 678-76-33
-										<br><br>
-										<a href="#">support@seemax.by</a>
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-							<div class="infoMaps__item">
-								<h3 class="title">Витебск<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										Торговый дом «Услада»,<br> 
-										пр-т. Фрунзе, 43, пав. 34
-										<br><br>
-										+375 162 110-45-11<br>
-										+375 162 871-12-00<br>
-										+375 29 459-45-45<br>
-										+375 29 678-76-33
-									</div><!--infoContact__i-->
-									<div class="infoContact__i">
-										Компания «Навигатор»,<br> 
-										ул. Кирова, 11/1, офис 45
-										<br><br>
-										+375 162 110-45-11<br>
-										+375 162 871-12-00<br>
-										+375 29 459-45-45<br>
-										+375 29 678-76-33
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-						</div><!--info__maps__i-->
-						<div class="info__maps__i">
-							<div class="infoMaps__item">
-								<h3 class="title">Гомель<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										ИП Путевой,<br> 
-										ул. Старая, 67, офис 10
-										<br><br>
-										+375 17 256-56-78<br>
-										+375 29 567-56-34
-										<br><br>
-										skype: putevojpavel<br>
-										<a href="#">putevoj@gmail.com</a>
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-							<div class="infoMaps__item">
-								<h3 class="title">Могилёв<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										Торговый центр «Магнит»,<br> 
-										ул. Ленина,4, пав. 101
-										<br><br>
-										+375 162 110-45-11<br>
-										+375 162 871-12-00<br>
-										+375 29 459-45-45<br>
-										+375 29 678-76-33
-										<br><br>
-										<a href="#">support@seemax.by</a>
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-							<div class="infoMaps__item">
-								<h3 class="title">Гродно<i></i></h3>
-								<div class="infoContact">
-									<div class="infoContact__i">
-										Сервисный центр «Шило»,<br> 
-										бул. Волошина, 11, офис. 2
-										<br><br>
-										+375 162 110-45-11<br>
-										+375 162 871-12-00<br>
-										+375 29 459-45-45<br>
-										+375 29 678-76-33
-									</div><!--infoContact__i-->
-								</div><!--infoContact-->
-							</div><!--infoMaps__item-->
-						</div><!--info__maps__i-->
-						
+						<div class="infoMaps__item">
+							<h3 class="title">Минск<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>Сервисный центр «Гайка»</strong>
+									ул. Громова, 14, офис 259
+									<br>
+									+375 17 256-56-78, +375 29 567-56-34
+									<br>
+									skype: gaika1578;
+									<a href="#">support@seemax.by</a>
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
+						<div class="infoMaps__item">
+							<h3 class="title">Брест<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>Сервисный центр «Ключ»</strong> 
+									ул. Гоголя, 82, офис 10
+									<br>
+									+375 162 110-45-11, 
+									+375 162 871-12-00<br>
+									<a href="#">support@seemax.by</a>
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
+						<div class="infoMaps__item">
+							<h3 class="title">Витебск<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>Торговый дом «Услада»</strong> 
+									пр-т. Фрунзе, 43, пав. 34<br>
+									+375 162 110-45-11,
+									+375 162 871-12-00
+								</div><!--infoContact__i-->
+								<div class="infoContact__i">
+									<strong>Компания «Навигатор»</strong> 
+									ул. Кирова, 11/1, офис 45<br>
+									+375 162 110-45-11,
+									+375 162 871-12-00
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
+						<div class="infoMaps__item">
+							<h3 class="title">Гомель<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>ИП Путевой</strong>
+									ул. Старая, 67, офис 10<br>
+									+375 17 256-56-78,
+									+375 29 567-56-34<br>
+									skype: putevojpavel;
+									<a href="#">putevoj@gmail.com</a>
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
+						<div class="infoMaps__item">
+							<h3 class="title">Могилёв<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>Торговый центр «Магнит»</strong> 
+									ул. Ленина,4, пав. 101<br>
+									+375 162 110-45-11,
+									+375 162 871-12-00<br>
+									<a href="#">support@seemax.by</a>
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
+						<div class="infoMaps__item">
+							<h3 class="title">Гродно<a href="#"></a></h3>
+							<div class="infoContact">
+								<div class="infoContact__i">
+									<strong>Сервисный центр «Шило»</strong> 
+									бул. Волошина, 11, офис. 2<br>
+									+375 162 110-45-11,
+									+375 162 871-12-00
+								</div><!--infoContact__i-->
+							</div><!--infoContact-->
+						</div><!--infoMaps__item-->
 					</div><!--info__maps-->
 				</div><!--mapsPage-->
 			</div><!--contentBox-->
