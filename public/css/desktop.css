@@ -834,7 +834,6 @@ body {
 
 .navigation__prod.nav_product {
 	height:70px;
-	width:1280px;
 	margin:0 auto;
 	position:relative;
 }
@@ -2268,6 +2267,7 @@ body {
 	height:72px;
 	top: 100%;
 	left:0;
+	overflow: hidden;
 }
 .mainMenu__add .search__bord {
 	top:0;
