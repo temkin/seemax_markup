@@ -1168,6 +1168,8 @@ body {
 			}
 .ad__img {
 	position:relative;
+	height: 100%;
+	width:100%;
 }
 	.ad__img img {
 		height: 574px;
