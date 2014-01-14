@@ -1305,10 +1305,9 @@ body {
 .previewBox {
 	height:135px;
 	position:relative;
-	overflow:hidden;
 	margin: 60px 0 0;
 	padding: 0 55px 0;
-	width: 515px;
+	width: 540px;
 
 }
 	.previewBox .prev_ar {
@@ -1360,6 +1359,8 @@ body {
 		vertical-align:middle;
 	}
 	.bul__preview {
+		top: 114px;
+		z-index: 99;
 		position:absolute;
 		bottom:18px;
 		left:50%;
@@ -2287,3 +2288,4 @@ body {
 .loader a{cursor: default;}
 .zoomWrapper{border: 0 !important;}
 .zoomWrapperTitle{display: none !important;}
+.preview-wrapper{width: 531px;overflow: hidden;}

@@ -19,14 +19,12 @@ $(document).ready(function(){
 										.replace('{search_url}', this.search_url)
 										.replace('{search_title}', this.search_title)
 										.replace('{num}', this.num)
-										
 										.replace('{search_descr}', this.search_descr);
 						});
 						$(html).appendTo('.search__resultPage');
 						$('.search__loader').loader("stop");
 						track_load++; //loaded group increment
                     	loading = false; 
-						console.log(html);
      				},
         			error: function (){
         				console.log("Error ajax request");
