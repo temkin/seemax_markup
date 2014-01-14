@@ -8,8 +8,20 @@
     <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="public/js/main.js"></script>
     <script type="text/javascript" src="public/js/lib/jquery/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script type="text/javascript" src="public/js/dropdown.js"></script>
 </head>
 <body>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		    //Dropdown
+	    var dd = new DropDown( $('#dd') );
+
+	    $(document).click(function() {
+	        // all dropdowns
+	        $('.wrapper-dropdown-1').removeClass('active');
+	    });
+	});
+	</script>
 	<div class="page second">
 		<div class="header">
 			<div class="header__search">
@@ -84,14 +96,17 @@
 			<div class="contentBox">
 				<div class="mapsPage">
 					<h1 class="titlePage">Сервисные центры</h1>
+					<div id="dd" class="wrapper-dropdown-1">
+					    <span>Все города</span>
+					    <ul class="dropdown">
+					        <li><a href="#">Все города</a></li>
+					        <li><a href="#">Минск</a></li>
+					        <li><a href="#">Гродно</a></li>
+					    </ul>
+					</div>
 					<div class="selectOption__maps">
-						<select>
-							<option>Все города</option>
-							<option>Минск</option>
-							<option>Гродно</option>
-						</select>
-						<a href="#" class="openMaps mapsVis"><span>Закрыть карту</span><i></i></a>
-						<a href="#" class="openMaps" style="display:none"><span>Показать карту</span><i></i></a>
+						<a href="#" class="openMaps mapsVis" style="display:none"><span>Закрыть карту</span><i></i></a>
+						<a href="#" class="openMaps" ><span>Показать карту</span><i></i></a>
 					</div><!--selectOption__maps-->
 					<div class="mapsBox mapsVis">
 						<i style="top: 140px; left: 809px;"></i>

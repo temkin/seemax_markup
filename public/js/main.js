@@ -158,17 +158,17 @@ $(document).ready(function(){
 
      $('.support__i .support__section').each(function(){
         $('.section__title', this).click(function(){
-            
+            var self = this;
             var _service = $(this).parent();
             if (_service.hasClass('cur')){
                 _service.removeClass('cur').find('.section__content').slideUp('slow');
             } else {
                 $('.cur .section__content').slideUp('slow');
-                $('.cur').removeClass('cur');
-                _service.addClass('cur').find('.section__content').slideDown('slow');
-                var destination = $(this).parent().offset().top;
-                $('html, body').animate({scrollTop:destination}, 800);
-
+                $('.contentBox .cur').removeClass('cur');
+                _service.addClass('cur').find('.section__content').slideDown('slow', function (){
+                    var destination = $(self).parent().offset().top;
+                    $('html, body').animate({scrollTop:destination}, 800);
+                });
             }
 
             return false;
@@ -288,9 +288,19 @@ $(document).ready(function(){
         $(this).prev().val('');
     });
 
-    
-
-
+    //Maps
+    $('.openMaps').on("click", function (e){
+        $('.mapsBox').slideDown();
+        $('.mapsVis').show();
+        $(this).hide();
+        e.preventDefault();
+    });
+    $('.mapsVis').on("click", function (){
+        $('.mapsBox').slideUp();
+        $('.openMaps').show();
+        $(this).hide();
+        e.preventDefault();
+    });
 
 
 
