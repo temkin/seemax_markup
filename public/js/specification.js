@@ -13,8 +13,8 @@ $(document).ready(function(){
 
 
             $(this).click(function(){
-            	console.log(this);
-                $('.previewBox__i', _this).trigger('slideTo', $(this).attr('item-id'));
+                var direction = 'next';
+                $('.previewBox__i', _this).trigger('slideTo', $(this).attr('item-id')-1);
                 return false;
             });
         });
@@ -43,7 +43,6 @@ $(document).ready(function(){
 
                     // Get item-id value of selected item
                     var itemId = $('.preview__item:eq(1)').attr('item-id');
-                    console.log(itemId);
                     
                     // Slide the big carousel to the same item-id
                     $('.bigFotot__model').trigger('slideTo', parseInt(itemId)  );
