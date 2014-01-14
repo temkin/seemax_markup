@@ -1634,7 +1634,7 @@ body {
 	}
 .section__content {
 	display:none;
-	padding:0 100px;
+	padding: 0 4%;
 }
 .section__i {
 	border-top:1px solid #d7d7d7; 
@@ -1650,7 +1650,7 @@ body {
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
-		margin: 0 56px 0 39px;
+		margin: 0 2% 0 2%;
 	}
 	.section__i .name__item {
 		display: -moz-inline-stack;
@@ -1660,8 +1660,7 @@ body {
 		*display: inline;
 		font:30px/30px 'pf_beausans_prosemibold';
 		color:#000;
-		width: 345px;
-		margin:0 10px 0 0;
+		margin: 0 4% 0 0;
 	}
 	.section__i .section__option {
 		display: -moz-inline-stack;
@@ -1677,7 +1676,7 @@ body {
 			vertical-align: middle;	        
 			zoom: 1;
 			*display: inline;
-			margin: 0 40px 0 0;
+			margin: 0 4% 0 0;
 		}
 			.section__i .section__option li a {
 				display:block;
