@@ -638,7 +638,7 @@ body {
 	.optionItem:hover .optionTitle a,
 	.optionItem:hover .optionDescr,
 	.optionItem:hover .optionDescr a,
-	.optionItem:hover .cloudBtn {
+	.optionItem:hover .cloudBtn, .optionItem:hover h3 {
 		color:#fff;
 	}
 	.optionItem:hover .cloudBtn {
