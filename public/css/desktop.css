@@ -2285,3 +2285,5 @@ body {
 .fotoBox__model .caroufredsel_wrapper{height: 450px !important;width: 662px !important;}
 .loader a.pre-cur {background-position: 0 -21px;}
 .loader a{cursor: default;}
+.zoomWrapper{border: 0 !important;}
+.zoomWrapperTitle{display: none !important;}
