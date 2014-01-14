@@ -267,20 +267,12 @@ $(document).ready(function(){
     });
 
     //Main menu add events
-    if ($('.mainMenu__add').css('display') == 'none'){
-        $('.with-sub').on('mouseover',function (){
-            $('.mainMenu__add').fadeIn("fast");
-        });
-        $('.mainMenu ul li').on('mouseover', function(){
-            if(!this.hasAttribute("class")){
-                $('.mainMenu__add').fadeOut("fast");
-            }
-        });
 
-        $('.mainMenu__add').on('mouseleave',function (){
-            $('.mainMenu__add').fadeOut("fast");
-        });
-    }
+    $('.with-sub').hover(
+        function (){$('.mainMenu__add').fadeIn("fast");},
+        function (){$('.mainMenu__add').fadeOut("fast");}
+    );
+
 
     //Choose region
     $('.region span i').on('mouseover', function (){

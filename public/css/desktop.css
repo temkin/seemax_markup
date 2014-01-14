@@ -113,16 +113,15 @@ body {
 ==================*/
 
 .header__norm {
-	position:relative;
 	height:91px;
 }
 
 /*logo*/
 
 .logo {
-	position:absolute;
-	top: 32px;
-	left:0;
+	display: inline-block;
+	margin: 34px 0 0 0;
+	width: 12%;
 	}
 	.logo a {
 
@@ -134,12 +133,13 @@ body {
 /*mainMenu*/
 
 .mainMenu {
-	position:absolute;
-	top: 34px;
-	left: 263px;
+	display: inline-block;
+	margin-left: 9%;
+	width: 77%;
 }
 	.mainMenu>ul {
 		height:40px;
+		width: 100%;
 	}
 		.mainMenu>ul>li {
 			display: -moz-inline-stack;
@@ -147,7 +147,9 @@ body {
 			vertical-align: middle;	        
 			zoom: 1;
 			*display: inline;
-			margin: 0 48px 0 0;
+			margin: 0 4% 0 0;
+			
+			width: 10%;
 		}
 			.mainMenu>ul>li>a {
 				font:16px/18px 'pf_beausans_proregular';
@@ -165,7 +167,6 @@ body {
 
 			.mainMenu .mainMenu__add {
 				position:absolute;
-				width:100%;
 			}
 			.mainMenu li ul {
 
@@ -2242,7 +2243,7 @@ body {
 	width:100%;
 	z-index:800;
 	height:72px;
-	top: 100%;
+	top: 91px;
 	left:0;
 	overflow: hidden;
 }
@@ -2251,17 +2252,16 @@ body {
 	height:72px;
 }
 .mainMenu__add_i {
-	position:absolute;
-	top:0;
-	left: 680px;
-	margin:0 0 0 -740px;
-	width:1480px;
-	z-index:5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1480px;
+	z-index: 5;
 	background: url(../i/grad.png) repeat-y 50% 0;
-	height:72px;
+	height: 72px;
 }
 	.mainMenu__add_i ul {
-		margin: 0 0 0 343px;
+		margin: 0 0 0 287px;
 		max-width:1280px;
 	}
 		.mainMenu__add_i ul li {
