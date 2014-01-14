@@ -303,18 +303,5 @@ $(document).ready(function(){
     });
 
 
-    //Dropdown
-    var dd = new DropDown( $('#dd') );
-
-    $(document).click(function() {
-        // all dropdowns
-        $('.wrapper-dropdown-1').removeClass('active');
-    });
-
-    
-
-
-
-
 
 }); /* END $(document).ready() */

@@ -11,6 +11,17 @@
     <script type="text/javascript" src="public/js/dropdown.js"></script>
 </head>
 <body>
+	<script type="text/javascript">
+	$(document).ready(function () {
+		    //Dropdown
+	    var dd = new DropDown( $('#dd') );
+
+	    $(document).click(function() {
+	        // all dropdowns
+	        $('.wrapper-dropdown-1').removeClass('active');
+	    });
+	});
+	</script>
 	<div class="page second">
 		<div class="header">
 			<div class="header__search">
