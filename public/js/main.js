@@ -288,6 +288,29 @@ $(document).ready(function(){
         $(this).prev().val('');
     });
 
+    //Maps
+    $('.openMaps').on("click", function (e){
+        $('.mapsBox').slideDown();
+        $('.mapsVis').show();
+        $(this).hide();
+        e.preventDefault();
+    });
+    $('.mapsVis').on("click", function (){
+        $('.mapsBox').slideUp();
+        $('.openMaps').show();
+        $(this).hide();
+        e.preventDefault();
+    });
+
+
+    //Dropdown
+    var dd = new DropDown( $('#dd') );
+
+    $(document).click(function() {
+        // all dropdowns
+        $('.wrapper-dropdown-1').removeClass('active');
+    });
+
     
 
 
