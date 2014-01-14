@@ -167,7 +167,8 @@ $(document).ready(function(){
                 $('.cur').removeClass('cur');
                 _service.addClass('cur').find('.section__content').slideDown('slow');
                 var destination = $(this).parent().offset().top;
-                window.scrollTo(0,destination);
+                $('html, body').animate({scrollTop:destination}, 800);
+
             }
 
             return false;
