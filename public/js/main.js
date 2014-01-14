@@ -158,7 +158,7 @@ $(document).ready(function(){
 
      $('.support__i .support__section').each(function(){
         $('.section__title', this).click(function(){
-
+            
             var _service = $(this).parent();
             if (_service.hasClass('cur')){
                 _service.removeClass('cur').find('.section__content').slideUp('slow');
@@ -166,10 +166,12 @@ $(document).ready(function(){
                 $('.cur .section__content').slideUp('slow');
                 $('.cur').removeClass('cur');
                 _service.addClass('cur').find('.section__content').slideDown('slow');
+                var destination = $(this).parent().offset().top;
+                window.scrollTo(0,destination);
             }
+
             return false;
         })
-
     });
 
      //FAQ
@@ -222,6 +224,8 @@ $(document).ready(function(){
         var _this = $(this);
         $('.nav__faq li', _this).each(function(i){
             $(this).click(function(){
+                $('.boxDescrCarousel').carouFredSel({scroll:{fx:"fade"}});
+                $('.boxDescrCarousel').trigger('pause');
                 $('.boxDescrCarousel', _this).trigger('slideTo', i);
                 $('.nav__faq li.current', _this).removeClass('current');
                 $(this).addClass('current');
@@ -285,6 +289,13 @@ $(document).ready(function(){
     $('.region').on('mouseleave', function (){
         $('.region a').hide();
     });
+
+    //Search
+    $('.close__search').on("click", function (){
+        $(this).prev().val('');
+    });
+
+    
 
 
 
