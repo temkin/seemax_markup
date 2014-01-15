@@ -1229,12 +1229,6 @@ body {
 			color:#26a9e6;
 		}
 
-//*=========specification
-==========================*/
-
-.prodSpecification {
-
-}
 .modelReview {
 	margin: 90px 0 0;
 }
@@ -2261,7 +2255,7 @@ body {
 	height: 72px;
 }
 	.mainMenu__add_i ul {
-		margin: 0 0 0 287px;
+		margin: 0 0 0 276px;
 		max-width:1280px;
 	}
 		.mainMenu__add_i ul li {
@@ -2278,7 +2272,8 @@ body {
 				text-decoration: none;
 				padding: 29px 21px 27px;
 			}
-			.mainMenu__add_i li a:hover {
+		.mainMenu__add_i ul li.cur,
+			.mainMenu__add_i li a:hover  {
 				background: #1183b8;
 			}
 .loader, .search__loader{display: none;}
