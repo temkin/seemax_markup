@@ -1784,7 +1784,7 @@ body {
 /*=======faqBox
 =================*/
 .boxFaq__tab {
-	margin: 0 0 132px;
+	margin: 0 0 100px;
 }
 .faqBox {
 	
@@ -2368,7 +2368,7 @@ body {
 }
 .transparent-dd .dropdown li a{color: white}
 .transparent-dd .dropdown li:hover a{background: #0f5b96} 
-.boxFaq__tab .caroufredsel_wrapper{overflow: visible !important;}
+.boxFaq__tab .caroufredsel_wrapper{padding: 0 0 125px 0;}
 .miniBox__faq {margin: 84px 0 0 2.9%;}
 
 
