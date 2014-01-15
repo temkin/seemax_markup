@@ -959,7 +959,7 @@ body {
 		background:#6479a4;
 	}
 	.prod__item.prod__item_archiv:hover .prod__descr {
-		color:#a0a0a0;
+		color:#6479a4;
 	}
 
 .prod__pic_h {
@@ -1713,7 +1713,6 @@ body {
 	font:30px/30px 'pf_beausans_probold';
 	color:#000;
 	text-transform: uppercase;
-	margin: 0 0 0 17px;
 }
 	.main_faq .title__faq {
 		font:48px/48px 'pf_beausans_prosemibold';
@@ -1722,11 +1721,13 @@ body {
 	margin: 0 0 0 -150px;
 }
 .main_faq .nav__faq {
-	margin: 98px 0 0 -125px;
+	margin: 98px 0 0 -7%;
 }
+
+
 	.main_faq .nav__faq li {
-		margin: 92px 0 0 140px;
-		width: auto;
+		margin: 92px 0 0 6%;
+		width: 27%;	
 	}
 	.main_faq .nav__faq li a {
 		padding: 0 0 0 87px;
@@ -1795,7 +1796,7 @@ body {
 	
 }
 	.faqBox ul {
-		padding: 107px 0 0 35px;
+		padding: 107px 0 0 50px;
 	}
 		.faqBox ul li {
 			font:20px/22px 'pf_beausans_probbook';
@@ -2315,7 +2316,7 @@ body {
     position: absolute;
     right: 0; /* Size */
     width: 100%;
-    top: 41px;
+    top: 42px;
 	left: -4px;
  
     /* Styles */
@@ -2330,7 +2331,7 @@ body {
     display: block;
     text-decoration: none;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 10px;
 }
  
 /* Hover state */
@@ -2350,4 +2351,27 @@ body {
 }
   
 .wrapper-dropdown-1.active {
-}        
+	border-bottom:0 
+	-moz-border-radius: 5px 5px 0 0; /* Firefox */  
+	-webkit-border-radius: 5px 5px 0 0; /* Safari, Chrome */  
+	border-radius: 5px 5px 0 0; 
+	border-bottom-color: transparent;
+}    
+.transparent-dd{
+	background: #1a6da8;
+	color: white;
+	border-color:#5b91b6; 
+}    
+.transparent-dd:after{
+	content: url(../i/dd-arrow-white.png);
+}
+.transparent-dd .dropdown{
+	background: #1a6da8;
+	border-color:#5b91b6 !important; 
+
+}
+.transparent-dd .dropdown li a{color: white}
+.transparent-dd .dropdown li:hover a{background: #0f5b96} 
+.boxFaq__tab .caroufredsel_wrapper{overflow: visible !important;}
+
+
