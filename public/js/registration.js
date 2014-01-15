@@ -18,4 +18,10 @@ $(document).ready(function () {
     		e.stopPropagation();
     	}
     );
+
+    $('#day').datepicker().on('changeDate', function(ev){
+   		$("#day").val(ev.date.getDate());
+   		$("#month").val(ev.date.getMonth());
+   		$("#year").val(ev.date.getYear());
+  	});;
 });
