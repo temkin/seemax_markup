@@ -1947,7 +1947,7 @@ body {
 
 .pageForm {
 	margin: 92px 0 0;
-	padding: 120px 100px 44px;
+	padding: 120px 60px 44px;
 	background:url(../i/catalog_f.jpg) repeat-y 0 0;
 }
 .formBox {
@@ -2051,6 +2051,7 @@ body {
 		}
 			.form__item .inputBox .item__i.quest {
 				background:url(../i/q.png) no-repeat 0 0;
+				 -moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;
 			}
 			.form__item .inputBox .item__i.er_i {
 				background:url(../i/e.png) no-repeat 0 0;
@@ -2370,6 +2371,13 @@ body {
 .transparent-dd .dropdown li:hover a{background: #0f5b96} 
 .boxFaq__tab .caroufredsel_wrapper{padding: 0 0 125px 0;}
 .miniBox__faq {margin: 84px 0 0 2.9%;}
+.serial-help-device{
+	display: inline-block; 
+	color: white;
+	font: 16px/16px 'pf_beausans_prolight';
+	display: none;
+}
+.serial-help-device * {display: inline-block; }
 
 
 

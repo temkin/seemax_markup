@@ -112,6 +112,10 @@
 										<input type="text">
 										<i class="item__i quest"></i>
 									</div><!--inputBox-->
+									<div class="serial-help-device">
+										<img src="public/i/help-device.png" alt="">
+										<p>Двенадцатизначный код на тыльной стороне планшета.</p>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Место покупки:</label>
@@ -152,12 +156,13 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Страна проживания:</label>
-									<div class="inputBox">
-										<select>
-											<option>Нидерланды</option>
-											<option>Аляска</option>
-										</select>
-									</div><!--inputBox-->
+									<div id="country-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Нидерланды</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Нидерланды</a></li>
+									        <li><a href="#">Аляска</a></li>
+									    </ul>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Телефон:</label>
@@ -175,10 +180,13 @@
 								<div class="form__item">
 									<label>Я узнал о SeeMax:</label>
 									<div class="inputBox ">
-										<select>
-											<option>Из утренних газет</option>
-											<option>Из утренних газет</option>
-										</select>
+									<div id="know-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Из интернета</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Из утренних газет</a></li>
+									        <li><a href="#">Из интернета</a></li>
+									    </ul>
+									</div>
 									</div><!--inputBox-->
 								</div><!--form__item-->
 								<div class="form__item">

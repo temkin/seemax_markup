@@ -80,6 +80,6 @@ $(document).ready(function(){
         });
         // Sticky files panel
     var filesPanelBottomOffset = $(document).height() - $('.prodSpecification').position().top - $('.prodSpecification').height()+100 ;
-    $.lockfixed('.boxFiles', {offset: {top: 0, bottom: filesPanelBottomOffset }});
+    $.lockfixed('.boxFiles', {offset: {top: 105, bottom: filesPanelBottomOffset }});
     });
 });
