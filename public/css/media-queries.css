@@ -9,7 +9,6 @@
 
 @media (max-width: 1280px) {
 	.modelReview .cabinet__i.cab_l {margin: 0 7% 0 2% !important;}
-	.searchPage {margin: 74px 5% 117px;}
+	.searchPage {margin: 50px 5% 117px;}
 	.header-title {margin: 0 2%;}
-	.miniBox__faq {margin: 84px 0 0 2.5%;}
 }

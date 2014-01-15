@@ -1715,7 +1715,7 @@ body {
 	margin: 0 0 0 -150px;
 }
 .main_faq .nav__faq {
-	margin: 98px 0 0 -7%;
+	margin: 98px 0 0 -6.6%;
 }
 
 
@@ -1784,13 +1784,13 @@ body {
 /*=======faqBox
 =================*/
 .boxFaq__tab {
-	margin: 0 0 113px;
+	margin: 0 0 132px;
 }
 .faqBox {
 	
 }
 	.faqBox ul {
-		padding: 107px 0 0 50px;
+		padding: 107px 0 0 62px;
 	}
 		.faqBox ul li {
 			font:20px/22px 'pf_beausans_probbook';
@@ -1807,6 +1807,7 @@ body {
 			}
 			.faqBox li .answer {
 				display:none;
+				width: 800px;
 				color:#000;
 				font:18px/27px 'pf_beausans_probbook';
 				margin: 20px 0 38px 34px;
@@ -2368,5 +2369,7 @@ body {
 .transparent-dd .dropdown li a{color: white}
 .transparent-dd .dropdown li:hover a{background: #0f5b96} 
 .boxFaq__tab .caroufredsel_wrapper{overflow: visible !important;}
+.miniBox__faq {margin: 84px 0 0 2.9%;}
+
 
 
