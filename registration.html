@@ -5,8 +5,16 @@
 	<title>see:max</title>
 	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
 	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
+	<link rel="stylesheet" type="text/css" href="public/css/media-queries.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/bootstrap-combined.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/datepicker.css">
+
         <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="public/js/main.js"></script>
+        <script type="text/javascript" src="public/js/dropdown.js"></script>
+        <script type="text/javascript" src="public/js/registration.js"></script>
 </head>
 <body>
 	<div class="page second">
@@ -82,22 +90,25 @@
 		</div><!--navigation-->
 			<div class="contentBox">
 				<div class="registrationPage">
-					<h1 class="title__search">Регистрация продукта</h1>
-					<div class="reg__commaent">
-						Пожалуйста введите серийный номер продукта, дату покупки, а также личный данные. Эта информация позволит повысить качество обслуживания клиентов . После регистрации устройства вы получите 3 месяца дополнительной гарантии.
-					</div><!--reg__commaent-->
+					<div class="header-title">
+						<h1 class="title__search">Регистрация продукта</h1>
+						<div class="reg__commaent">
+							Пожалуйста введите серийный номер продукта, дату покупки, а также личный данные. Эта информация позволит повысить качество обслуживания клиентов . После регистрации устройства вы получите 3 месяца дополнительной гарантии.
+						</div><!--reg__commaent-->
+					</div>
 					<div class="pageForm">
 						<div class="formBox">
 							<h2 class="title__form">Информация о продукте</h2>
 							<div class="form__cont">
 								<div class="form__item">
 									<label>Продукт:</label>
-									<div class="inputBox">
-										<select>
-											<option>Видеорегистратор</option>
-											<option>Планшеты</option>
-										</select>
-									</div><!--inputBox-->
+									<div id="product-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Видеорегистратор</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Видеорегистратор</a></li>
+									        <li><a href="#">Планшеты</a></li>
+									    </ul>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Серийный номер:</label>
@@ -105,22 +116,27 @@
 										<input type="text">
 										<i class="item__i quest"></i>
 									</div><!--inputBox-->
+									<div class="serial-help-device">
+										<img src="public/i/help-device.png" alt="">
+										<p>Двенадцатизначный код на тыльной стороне планшета.</p>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Место покупки:</label>
-									<div class="inputBox">
-										<select>
-											<option>Онлайн-магазин</option>
-											<option>магазин</option>
-										</select>
-									</div><!--inputBox-->
+									<div id="place-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Онлайн-магазин</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Онлайн-магазин</a></li>
+									        <li><a href="#">Магазин</a></li>
+									    </ul>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Дата покупки:</label>
 									<div class="inputBox dateBlock">
-										<input type="text" placeholder="Д">
-										<input type="text" placeholder="M">
-										<input type="text" placeholder="Г">
+										<input id="day" type="text" placeholder="Д">
+										<input id="month" type="text" placeholder="M">
+										<input id="year" type="text" placeholder="Г">
 									</div><!--inputBox-->
 								</div><!--form__item-->
 							</div><!--form__cont-->
@@ -144,12 +160,13 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Страна проживания:</label>
-									<div class="inputBox">
-										<select>
-											<option>Нидерланды</option>
-											<option>Аляска</option>
-										</select>
-									</div><!--inputBox-->
+									<div id="country-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Нидерланды</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Нидерланды</a></li>
+									        <li><a href="#">Аляска</a></li>
+									    </ul>
+									</div>
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Телефон:</label>
@@ -167,10 +184,13 @@
 								<div class="form__item">
 									<label>Я узнал о SeeMax:</label>
 									<div class="inputBox ">
-										<select>
-											<option>Из утренних газет</option>
-											<option>Из утренних газет</option>
-										</select>
+									<div id="know-dd" class="wrapper-dropdown-1 transparent-dd">
+									    <span>Из интернета</span>
+									    <ul class="dropdown">
+									        <li><a href="#">Из утренних газет</a></li>
+									        <li><a href="#">Из интернета</a></li>
+									    </ul>
+									</div>
 									</div><!--inputBox-->
 								</div><!--form__item-->
 								<div class="form__item">

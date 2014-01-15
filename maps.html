@@ -14,7 +14,7 @@
 	<script type="text/javascript">
 	$(document).ready(function () {
 		    //Dropdown
-	    var dd = new DropDown( $('#dd') );
+	    var dd = new DropDown( $('#city') );
 
 	    $(document).click(function() {
 	        // all dropdowns
@@ -96,18 +96,20 @@
 			<div class="contentBox">
 				<div class="mapsPage">
 					<h1 class="titlePage">Сервисные центры</h1>
-					<div id="dd" class="wrapper-dropdown-1">
-					    <span>Все города</span>
-					    <ul class="dropdown">
-					        <li><a href="#">Все города</a></li>
-					        <li><a href="#">Минск</a></li>
-					        <li><a href="#">Гродно</a></li>
-					    </ul>
+					<div class="filter-bar">
+						<div id="city" class="wrapper-dropdown-1">
+						    <span>Все города</span>
+						    <ul class="dropdown">
+						        <li><a href="#">Все города</a></li>
+						        <li><a href="#">Минск</a></li>
+						        <li><a href="#">Гродно</a></li>
+						    </ul>
+						</div>
+						<div class="selectOption__maps">
+							<a href="#" class="openMaps mapsVis" style="display:none"><span>Закрыть карту</span><i></i></a>
+							<a href="#" class="openMaps" ><span>Показать карту</span><i></i></a>
+						</div><!--selectOption__maps-->
 					</div>
-					<div class="selectOption__maps">
-						<a href="#" class="openMaps mapsVis" style="display:none"><span>Закрыть карту</span><i></i></a>
-						<a href="#" class="openMaps" ><span>Показать карту</span><i></i></a>
-					</div><!--selectOption__maps-->
 					<div class="mapsBox mapsVis">
 						<i style="top: 140px; left: 809px;"></i>
 						<i style="left: 825px; top: 343px;"></i>
