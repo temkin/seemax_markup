@@ -118,7 +118,7 @@
 									</div><!--inputBox-->
 									<div class="serial-help-device">
 										<img src="public/i/help-device.png" alt="">
-										<p>Двенадцатизначный код на тыльной стороне планшета.</p>
+										<p>Двеннадцатизначный код на тыльной стороне или торце устройства</p>
 									</div>
 								</div><!--form__item-->
 								<div class="form__item">
@@ -133,10 +133,8 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Дата покупки:</label>
-									<div class="inputBox dateBlock">
-										<input id="day" type="text" placeholder="Д">
-										<input id="month" type="text" placeholder="M">
-										<input id="year" type="text" placeholder="Г">
+									<div class="inputBox dateBlock" data-date-format="dd-mm-yyyy" >
+										<input id="choose-date" type="text" value="dd/mm/yyyy">
 									</div><!--inputBox-->
 								</div><!--form__item-->
 							</div><!--form__cont-->

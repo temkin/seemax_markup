@@ -7,21 +7,18 @@ $(document).ready(function () {
 
     $(document).click(function() {
     	$('.wrapper-dropdown-1').removeClass('active');
-        $('.serial-help-device').fadeOut('fast');
-        $('.form__item .inputBox .item__i.quest').css('opacity',0.5);
     });
 
-    $('.item__i.quest').on('click',
-    	function (e){
+    $('.item__i.quest').hover(function (e){
     		$(this).css('opacity',1);
-    		$('.serial-help-device').css({opacity: 0, display: 'inline-block'}).animate({opacity:1},600);
+            $('.serial-help-device').fadeIn('fast');
     		e.stopPropagation();
-    	}
+    	},
+        function (){
+            $('.serial-help-device').fadeOut('fast');
+            $('.form__item .inputBox .item__i.quest').css('opacity',0.5);
+        }
     );
 
-    $('#day').datepicker().on('changeDate', function(ev){
-   		$("#day").val(ev.date.getDate());
-   		$("#month").val(ev.date.getMonth());
-   		$("#year").val(ev.date.getYear());
-  	});;
+    $('#choose-date').datepicker();
 });
