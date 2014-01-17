@@ -39,6 +39,14 @@ $(document).ready(function () {
         },
         "Данное поле не может содержать цифры"
     ); 
+    $.bt_validate.method(
+        'serial', 
+        function(value) {
+            ;
+            return (value.replace(/\s/g, "").replace(/\-/g,"").length == 12);
+        },
+        "Данное поле заполнено неверно."
+    ); 
     $.bt_validate.after_validate = function(method, value, params, result) {
         if (!result){
             $(this).addClass("input-error");
