@@ -402,7 +402,7 @@ body {
 	}
 .social_f {
 	float:left;
-	padding: 26px 0 0 22px;
+	padding: 26px 0 0 39px;
 }
 	.social_f a {
 		display: -moz-inline-stack;
@@ -778,7 +778,7 @@ body {
 .addMenu {
 	overflow:hidden;
 	zoom:1;
-	max-width:1240px;
+	max-width:1226px;
 	margin:72px auto 0;
 }
 	.addMenu ul {
@@ -940,7 +940,7 @@ body {
 	width:100%;
 }
 .catalog__ii {
-	margin:0 -23px;
+	/margin:0 -23px;
 }
 
 /*prod__item*/
@@ -1239,6 +1239,8 @@ body {
 		width:100%;
 		overflow: hidden;
 		zoom: 1;
+		padding: 0 40px;
+		box-sizing: border-box;
 	}
 		.modelReview .cabinet__i {
 			display:block;
@@ -1261,6 +1263,8 @@ body {
 .name__model {
 	font:48px/57px 'pf_beausans_prosemibold';
 	color:#000;
+	position:relative;
+	left:-2px;
 }
 
 .txt__model {
@@ -1491,7 +1495,7 @@ body {
 .featuresBox {
 	min-height:640px;
 	position:relative;
-	padding:0 100px;
+	padding:0 39px;
 }
 
 /*boxFiles*/
@@ -1615,13 +1619,13 @@ body {
 	font:36px/36px 'pf_beausans_prosemibold';
 	color:#fff;
 	position:relative;
-	padding: 79px 100px 84px;
+	padding: 79px 38px 84px;
 }
 	.section__title i {
 		display:block;
 		position:absolute;
 		top: 77px;
-		right: 105px;
+		right: 40px;
 		width:17px;
 		height:25px;
 		background:url(../i/ar_title.png) no-repeat 0 0;
@@ -1712,7 +1716,7 @@ body {
 		font:48px/48px 'pf_beausans_prosemibold';
 	}
 .nav__faq {
-	margin: 0 0 0 -150px;
+	margin: 0 0 0 -6.6%;
 }
 .main_faq .nav__faq {
 	margin: 98px 0 0 -6.6%;
@@ -1721,7 +1725,7 @@ body {
 
 	.main_faq .nav__faq li {
 		margin: 92px 0 0 6%;
-		width: 27%;	
+		/*width: 27%;	was ist das?!*/ 
 	}
 	.main_faq .nav__faq li a {
 		padding: 0 0 0 87px;
@@ -1732,7 +1736,7 @@ body {
 		vertical-align: middle;	        
 		zoom: 1;
 		*display: inline;
-		margin: 92px 0 0 150px;
+		margin: 92px 0 0 6%;
 		min-width: 309px;
 	}
 		.nav__faq li a {
@@ -1787,10 +1791,14 @@ body {
 	margin: 0 0 100px;
 }
 .faqBox {
-	
+	display:none;
+}
+
+.faqBox.active {
+	display:block;
 }
 	.faqBox ul {
-		padding: 107px 0 0 62px;
+		padding:28px 0 0 59px;
 	}
 		.faqBox ul li {
 			font:20px/22px 'pf_beausans_probbook';
@@ -1947,7 +1955,7 @@ body {
 
 .pageForm {
 	margin: 92px 0 0;
-	padding: 120px 30px 44px;
+	padding: 120px 60px 44px;
 	background:url(../i/catalog_f.jpg) repeat-y 0 0;
 }
 .formBox {
@@ -1976,7 +1984,7 @@ body {
 		text-align:right;
 		margin: 0 31px 0 0;
 	}
-	.form__item.error_form .inputBox input {
+	.form__item.error_form .inputBox input[type="text"] {
 		border-color: #d02947;
 	}
 	.form__item .inputBox {
@@ -1986,6 +1994,7 @@ body {
 		zoom: 1;
 		*display: inline;
 	}
+
 		.form__item .inputBox.checkBox label {
 			width:auto;
 			font:18px/18px 'pf_beausans_proregular';
@@ -2007,6 +2016,8 @@ body {
 			margin: 0 16px 0 0;
 		}
 		.form__item .inputBox.dateBlock input {
+			width: 54px;
+			padding: 0;
 			text-align: center;
 		}
 		.form__item .inputBox.bigInput input {
@@ -2066,11 +2077,6 @@ body {
 		vertical-align: middle;
 		margin: 0;
 		font-size:20px;
-	}
-	.button__form .cloudBtn:hover{
-		color: #329ed0;
-		background: white;
-		border-color:white;
 	}
 	.button__form span {
 		vertical-align: middle;
@@ -2150,6 +2156,7 @@ body {
 }
 .mapsBox {
 	position:relative;
+	z-index:11;
 	text-align: center;
 	overflow: hidden;
 	margin: 0 0 35px;
@@ -2289,12 +2296,12 @@ body {
 .zoomWrapperTitle{display: none !important;}
 .preview-wrapper{width: 531px;overflow: hidden;}
 .header__searchI .logo{margin-left: 40px;}
-.filter-bar{margin: 34px 0}
+.filter-bar{margin:34px 0;position:relative;z-index:12}
 /*---------------------------dropdown----------------------------*/
 .wrapper-dropdown-1 {
 	display: inline-block;
 	position: relative;
-	width: 196px;
+	width: 200px;
 	padding: 10px;
 	background: white;
 	color: black;
@@ -2317,6 +2324,7 @@ body {
     right: 0; /* Size */
     width: 100%;
     top: 40px;
+    margin: 0;
 	left: -4px;
  
     /* Styles */
@@ -2324,7 +2332,7 @@ body {
     font-weight: normal; /* Overwrites previous font-weight: bold; */
  
     /* Hiding */
-    display: none;
+    opacity: 0;
     pointer-events: none;
 }
 .wrapper-dropdown-1 .dropdown li a {
@@ -2341,7 +2349,7 @@ body {
 }
 /* Active state */
 .wrapper-dropdown-1.active .dropdown {
-    display: block;
+    opacity: 1;
     pointer-events: auto;
     border: 4px solid #329ed0;
     border-top: 0;
@@ -2351,6 +2359,7 @@ body {
 }
   
 .wrapper-dropdown-1.active {
+	border-bottom:0 
 	-moz-border-radius: 5px 5px 0 0; /* Firefox */  
 	-webkit-border-radius: 5px 5px 0 0; /* Safari, Chrome */  
 	border-radius: 5px 5px 0 0; 
@@ -2372,12 +2381,12 @@ body {
 .transparent-dd .dropdown li a{color: white}
 .transparent-dd .dropdown li:hover a{background: #0f5b96} 
 .boxFaq__tab .caroufredsel_wrapper{padding: 0 0 125px 0;}
-.miniBox__faq {margin: 84px 0 0 2.9%;}
+.miniBox__faq {margin: 84px 0 0 39px}
 .serial-help-device{
+	display: inline-block; 
 	color: white;
 	font: 16px/16px 'pf_beausans_prolight';
 	display: none;
-	float: right;
 }
 .serial-help-device * {display: inline-block; }
 

@@ -16,8 +16,13 @@
 
 </head>
 <body>
-	<div class="page second">
+
 		<div class="header">
+			<div class="headerBord">
+				<div class="header__bord bord_p"></div><!--footer__bord bord_p-->
+				<div class="header__bord bord_b"></div><!--footer__bord bord_b-->
+				<div class="header__bord bord_g"></div><!--footer__bord bord_g-->
+			</div><!--hederBord-->
 			<div class="header__search">
 				<div class="header__searchI">
 					<div class="logo">
@@ -52,19 +57,19 @@
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
 							<li class="with-sub"><a href="#">Продукция</a>
-								<div class="mainMenu__add">
-									<div class="search__bord bord_p"></div>
-									<div class="search__bord bord_b"></div>
-									<div class="mainMenu__add_i">
-										<ul>
-											<li><a href="#">GPS-навигаторы</a></li>
-											<li><a href="#">Видеорегистраторы</a></li>
-											<li><a href="#">Планшеты</a></li>
-											<li><a href="#">Экшн-камеры</a></li>
-											<li><a href="#">Детские планшеты</a></li>
-										</ul>
-									</div>
-								</div><!--mainMenu__add-->
+							<div class="mainMenu__add">
+								<div class="search__bord bord_p"></div>
+								<div class="search__bord bord_b"></div>
+								<div class="mainMenu__add_i">
+									<ul>
+										<li><a href="#">GPS-навигаторы</a></li>
+										<li><a href="#">Видеорегистраторы</a></li>
+										<li><a href="#">Планшеты</a></li>
+										<li><a href="#">Экшн-камеры</a></li>
+										<li><a href="#">Детские планшеты</a></li>
+									</ul>
+								</div>
+							</div><!--mainMenu__add-->
 							</li>
 							<li><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
@@ -76,7 +81,6 @@
 					</div><!--search-->
 				</div><!--header__norm-->
 			</div><!--header__i-->
-
 		</div><!--header-->	
 			<div class="contentBox">
 				<div class="searchPage">
@@ -207,7 +211,6 @@
 				</div><!--region-->
 			</div><!--footer__i-->
 		</div><!--footer-->
-	</div><!--page-->
 	<script type="text/template" id="search-item-template">
 	<a href="{search_url}" class="search__item">
 		<h3 class="search__itemTitle"><i>{num}</i> {search_title}

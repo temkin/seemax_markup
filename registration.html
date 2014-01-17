@@ -67,7 +67,7 @@
 									</div>
 								</div><!--mainMenu__add-->
 							</li>
-							<li><a href="#">Поддержка</a></li>
+							<li class="cur"><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
 							<li><a href="#">Где купить?</a></li>
 						</ul>
@@ -83,8 +83,8 @@
 				<ul class="nav__prod__i">
 					<li><a href="#">Скачать</a></li>
 					<li><a href="#">Сервисные центры</a></li>
-					<li class="cur"><a href="#">FAQ</a></li>
-					<li><a href="#">Регистрация продукта</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="cur"><a href="#">Регистрация продукта</a></li>
 				</ul>
 			</div>
 		</div><!--navigation-->
@@ -118,7 +118,7 @@
 									</div><!--inputBox-->
 									<div class="serial-help-device">
 										<img src="public/i/help-device.png" alt="">
-										<p>Двеннадцатизначный код на тыльной стороне или торце устройства</p>
+										<p>Двенадцатизначный код на тыльной стороне планшета.</p>
 									</div>
 								</div><!--form__item-->
 								<div class="form__item">
@@ -133,8 +133,10 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Дата покупки:</label>
-									<div class="inputBox dateBlock" data-date-format="dd-mm-yyyy" >
-										<input id="choose-date" type="text" value="dd/mm/yyyy">
+									<div class="inputBox dateBlock">
+										<input id="day" type="text" placeholder="Д">
+										<input id="month" type="text" placeholder="M">
+										<input id="year" type="text" placeholder="Г">
 									</div><!--inputBox-->
 								</div><!--form__item-->
 							</div><!--form__cont-->
@@ -175,7 +177,7 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>E-mail:</label>
-									<div class="inputBox bigbigInput">
+									<div class="inputBox bigInput">
 										<input type="text" placeholder="Константинопольский-Мусоргский">
 									</div><!--inputBox-->
 								</div><!--form__item-->

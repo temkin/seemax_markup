@@ -221,39 +221,48 @@ $(document).ready(function(){
 
      //FAQ TAB
 
-     $('.boxFaq__tab').each(function(){
-        var _this = $(this);
-        $('.nav__faq li', _this).each(function(i){
-            $(this).click(function(){
-                $('.boxDescrCarousel').carouFredSel({scroll:{fx:"fade"}});
-                $('.boxDescrCarousel').trigger('pause');
-                $('.boxDescrCarousel', _this).trigger('slideTo', i);
-                $('.nav__faq li.current', _this).removeClass('current');
-                $(this).addClass('current');
-                return false;
-            });
-        });
+    //  $('.boxFaq__tab').each(function(){
+    //     var _this = $(this);
+    //     $('.nav__faq li', _this).each(function(i){
+    //         $(this).click(function(){
+    //             $('.boxDescrCarousel').carouFredSel({scroll:{fx:"fade"}});
+    //             $('.boxDescrCarousel').trigger('pause');
+    //             $('.boxDescrCarousel', _this).trigger('slideTo', i);
+    //             $('.nav__faq li.current', _this).removeClass('current');
+    //             $(this).addClass('current');
+    //             return false;
+    //         });
+    //     });
         
-        $('.boxDescrCarousel', _this).carouFredSel({
-            responsive: false,
-            circular: false,
-            infinite: false,
-            align: 'left',
-            width: '100%',
-            auto: {
-                play: false
-            },
-            scroll: {
-                items:1
-            }, 
-            items: {
-                visible: 1,
-                width: 960
-            }
-        })
+    //     $('.boxDescrCarousel', _this).carouFredSel({
+    //         responsive: false,
+    //         circular: false,
+    //         infinite: false,
+    //         align: 'left',
+    //         width: '100%',
+    //         auto: {
+    //             play: false
+    //         },
+    //         scroll: {
+    //             items:1
+    //         }, 
+    //         items: {
+    //             visible: 1,
+    //             width: 960
+    //         }
+    //     })
+    // });
+    
+    $('.nav__faq li').click(function(){
+        $('.nav__faq li').removeClass('current');
+        $(this).addClass('current');
+    
+        var n = $(this).index();
+        $('.faqBox').hide();
+        $('.faqBox').eq(n).show();
+
+        return false;
     });
-
-
 
     //Parallax
     $(window).scroll(function() {
