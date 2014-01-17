@@ -74,7 +74,6 @@ body {
 	position:relative;
 	height:91px;
 	margin:0 auto;
-	padding: 0 40px;
 }
 
 /*header__bord*/
@@ -114,6 +113,7 @@ body {
 
 .header__norm {
 	height:91px;
+	padding: 0 40px;
 }
 
 /*logo*/
@@ -965,20 +965,6 @@ body {
 	}
 	.prod__item.prod__item_archiv:hover .prod__descr {
 		color:#6479a4;
-	}
-
-.prod__pic_h {
-	display:none;
-	position:absolute;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
-	background: url(../i/ar_prod.png) no-repeat 50% 60px;
-	border-radius:10px;
-}
-	.prod__item:hover .prod__pic .prod__pic_h {
-		display:block;
 	}
 
 .prod__pic {
@@ -1978,7 +1964,7 @@ body {
 	margin: 0 0 40px;
 }
 	.form__item label {
-		width: 239px;
+		width: 20%;
 		display: -moz-inline-stack;
 		display: inline-block;
 		vertical-align: middle;	        
@@ -1989,8 +1975,8 @@ body {
 		text-align:right;
 		margin: 0 31px 0 0;
 	}
-	.form__item.error_form .inputBox input[type="text"] {
-		border-color: #d02947;
+	.form__item .inputBox .input-error {
+		border-color: #d02947 !important;
 	}
 	.form__item .inputBox {
 		display: -moz-inline-stack;
@@ -1999,6 +1985,9 @@ body {
 		zoom: 1;
 		*display: inline;
 	}
+	.inputBox.with-text{width: 75%;}
+	.inputBox.with-text input{width: 22% !important}
+	.inputBox.with-text span{display: inline-block;width: 70%;}
 
 		.form__item .inputBox.checkBox label {
 			width:auto;
@@ -2061,9 +2050,6 @@ body {
 			.form__item .inputBox .item__i.quest {
 				background:url(../i/q.png) no-repeat 0 0;
 				 -moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;
-			}
-			.form__item .inputBox .item__i.er_i {
-				background:url(../i/e.png) no-repeat 0 0;
 			}
 .button__form {
 	text-align: center;
@@ -2383,12 +2369,14 @@ body {
 .boxFaq__tab .caroufredsel_wrapper{padding: 0 0 125px 0;}
 .miniBox__faq {margin: 84px 0 0 39px}
 .serial-help-device{
-	display: inline-block; 
 	color: white;
 	font: 16px/16px 'pf_beausans_prolight';
 	display: none;
+	float: right;
+	width: 50%;
 }
 .serial-help-device * {display: inline-block; }
+.serial-help-device p{width: 80%;}
 
 /*-------------------checkbox-----------------*/
 
@@ -2421,5 +2409,13 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 
 .css-label{
 	background-image:url(../i/cbx.png);
-
-
+}
+/*--------bootstrap error restyling-----------*/
+.tooltip-arrow{display: none;}
+.tooltip-inner{
+	background: url(../i/e.png) no-repeat left center !important;
+	padding: 12px 0 12px 44px !important;
+	font-size: 19px;
+	max-width: 560px !important;
+	font: italic 18px/20px Arial, sans-serif !important;
+}
