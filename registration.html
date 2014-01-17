@@ -118,7 +118,7 @@
 									</div><!--inputBox-->
 									<div class="serial-help-device">
 										<img src="public/i/help-device.png" alt="">
-										<p>Двенадцатизначный код на тыльной стороне планшета.</p>
+										<p>Двеннадцатизначный код на тыльной стороне или торце устройства</p>
 									</div>
 								</div><!--form__item-->
 								<div class="form__item">
@@ -133,10 +133,8 @@
 								</div><!--form__item-->
 								<div class="form__item">
 									<label>Дата покупки:</label>
-									<div class="inputBox dateBlock">
-										<input id="day" type="text" placeholder="Д">
-										<input id="month" type="text" placeholder="M">
-										<input id="year" type="text" placeholder="Г">
+									<div class="inputBox" data-date-format="dd-mm-yyyy" >
+          							<input id="choose-date" type="text" value="дд/мм/гггг">
 									</div><!--inputBox-->
 								</div><!--form__item-->
 							</div><!--form__cont-->
@@ -196,8 +194,10 @@
 								<div class="form__item">
 									<label>Подписаться на новости</label>
 									<div class="inputBox checkBox">
-										<input type="checkbox"> <label>E-mail</label>
-										<input type="checkbox"> <label>SMS</label>
+										<input id="e-mail-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+										<label for="e-mail-cbx" name="e-mail-cbx" class="css-label">E-mail</label>
+										<input id="sms-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+										<label for="sms-cbx" name="e-mail-cbx" class="css-label">SMS</label>
 									</div><!--inputBox-->
 								</div><!--form__item-->
 							</div><!--form__cont-->
