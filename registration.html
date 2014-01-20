@@ -5,8 +5,18 @@
 	<title>see:max</title>
 	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
 	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
+	<link rel="stylesheet" type="text/css" href="public/css/media-queries.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/bootstrap-combined.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/datepicker.css">
+
         <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="public/js/main.js"></script>
+        <script type="text/javascript" src="public/js/dropdown.js"></script>
+        <script type="text/javascript" src="public/js/registration.js"></script>
+        <script src="public/js/lib/bootstrap.validate.js"></script>
+		<script src="public/js/lib/bootstrap.validate.en.js"></script>
 </head>
 <body>
 	<div class="page second">
@@ -44,8 +54,22 @@
 						<ul>
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
-							<li><a href="#">Продукция</a></li>
-							<li><a href="#">Поддержка</a></li>
+							<li class="with-sub"><a href="#">Продукция</a>
+								<div class="mainMenu__add">
+									<div class="search__bord bord_p"></div>
+									<div class="search__bord bord_b"></div>
+									<div class="mainMenu__add_i">
+										<ul>
+											<li><a href="#">GPS-навигаторы</a></li>
+											<li><a href="#">Видеорегистраторы</a></li>
+											<li><a href="#">Планшеты</a></li>
+											<li><a href="#">Экшн-камеры</a></li>
+											<li><a href="#">Детские планшеты</a></li>
+										</ul>
+									</div>
+								</div><!--mainMenu__add-->
+							</li>
+							<li class="cur"><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
 							<li><a href="#">Где купить?</a></li>
 						</ul>
@@ -55,135 +79,136 @@
 					</div><!--search-->
 				</div><!--header__norm-->
 			</div><!--header__i-->
-			<div class="mainMenu__add">
-				<div class="search__bord bord_p"></div>
-				<div class="search__bord bord_b"></div>
-				<div class="mainMenu__add_i">
-					<ul>
-						<li><a href="#">GPS-навигаторы</a></li>
-						<li><a href="#">Видеорегистраторы</a></li>
-						<li><a href="#">Планшеты</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-						<li><a href="#">Детские планшеты</a></li>
-					</ul>
-				</div>
-			</div><!--mainMenu__add-->
 		</div><!--header-->	
 		<div class="navigation__prod">
-			<ul class="nav__prod__i">
-				<li><a href="#">Скачать</a></li>
-				<li><a href="#">Сервисные центры</a></li>
-				<li class="cur"><a href="#">FAQ</a></li>
-				<li><a href="#">Регистрация продукта</a></li>
-			</ul>
+			<div class="navigation__prod_ii">
+				<ul class="nav__prod__i">
+					<li><a href="#">Скачать</a></li>
+					<li><a href="#">Сервисные центры</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="cur"><a href="#">Регистрация продукта</a></li>
+				</ul>
+			</div>
 		</div><!--navigation-->
 			<div class="contentBox">
 				<div class="registrationPage">
-					<h1 class="title__search">Регистрация продукта</h1>
-					<div class="reg__commaent">
-						Пожалуйста введите серийный номер продукта, дату покупки, а также личный данные. Эта информация позволит повысить качество обслуживания клиентов . После регистрации устройства вы получите 3 месяца дополнительной гарантии.
-					</div><!--reg__commaent-->
+					<div class="header-title">
+						<h1 class="title__search">Регистрация продукта</h1>
+						<div class="reg__commaent">
+							Пожалуйста введите серийный номер продукта, дату покупки, а также личный данные. Эта информация позволит повысить качество обслуживания клиентов . После регистрации устройства вы получите 3 месяца дополнительной гарантии.
+						</div><!--reg__commaent-->
+					</div>
 					<div class="pageForm">
-						<div class="formBox">
-							<h2 class="title__form">Информация о продукте</h2>
-							<div class="form__cont">
-								<div class="form__item">
-									<label>Продукт:</label>
-									<div class="inputBox">
-										<select>
-											<option>Видеорегистратор</option>
-											<option>Планшеты</option>
-										</select>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Серийный номер:</label>
-									<div class="inputBox">
-										<input type="text">
-										<i class="item__i quest"></i>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Место покупки:</label>
-									<div class="inputBox">
-										<select>
-											<option>Онлайн-магазин</option>
-											<option>магазин</option>
-										</select>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Дата покупки:</label>
-									<div class="inputBox dateBlock">
-										<input type="text" placeholder="Д">
-										<input type="text" placeholder="M">
-										<input type="text" placeholder="Г">
-									</div><!--inputBox-->
-								</div><!--form__item-->
-							</div><!--form__cont-->
-						</div><!--formBox-->
-						<div class="formBox">
-							<h2 class="title__form">Личная информация</h2>
-							<div class="form__cont">
-								<div class="form__item error_form">
-									<label>Имя:</label>
-									<div class="inputBox">
-										<input type="text">
-										<i class="item__i er_i"></i>
-										<span>Данное поле не может содержать цифры</span>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Фамилия:</label>
-									<div class="inputBox bigInput">
-										<input type="text" placeholder="Константинопольский-Мусоргский">
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Страна проживания:</label>
-									<div class="inputBox">
-										<select>
-											<option>Нидерланды</option>
-											<option>Аляска</option>
-										</select>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Телефон:</label>
-									<div class="inputBox">
-										<input type="text">
-										<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>E-mail:</label>
-									<div class="inputBox bigbigInput">
-										<input type="text" placeholder="Константинопольский-Мусоргский">
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Я узнал о SeeMax:</label>
-									<div class="inputBox ">
-										<select>
-											<option>Из утренних газет</option>
-											<option>Из утренних газет</option>
-										</select>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-								<div class="form__item">
-									<label>Подписаться на новости</label>
-									<div class="inputBox checkBox">
-										<input type="checkbox"> <label>E-mail</label>
-										<input type="checkbox"> <label>SMS</label>
-									</div><!--inputBox-->
-								</div><!--form__item-->
-							</div><!--form__cont-->
-							<div class="button__form">
-								<button class="cloudBtn">Зарегистрировать устройство</button>
-								<span>Осталось указать номер телефона</span>
-							</div><!--button__form-->
-						</div><!--formBox-->
-					</div><!--pageForm-->
+						<form id="reg-form">
+							<div class="formBox">
+								<h2 class="title__form">Информация о продукте</h2>
+								<div class="form__cont">
+									<div class="form__item">
+										<label>Продукт:</label>
+										<div id="product-dd" class="wrapper-dropdown-1 transparent-dd">
+										    <span>Видеорегистратор</span>
+										    <ul class="dropdown">
+										        <li><a href="#">Видеорегистратор</a></li>
+										        <li><a href="#">Планшеты</a></li>
+										    </ul>
+										</div>
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Серийный номер:</label>
+										<div class="inputBox">
+											<input type="text" validate="required|serial">
+											<i class="item__i quest"></i>
+										</div><!--inputBox-->
+										<div class="serial-help-device">
+											<img src="public/i/help-device.png" alt="">
+											<p>Двеннадцатизначный код на тыльной стороне или торце устройства</p>
+										</div>
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Место покупки:</label>
+										<div id="place-dd" class="wrapper-dropdown-1 transparent-dd">
+										    <span>Онлайн-магазин</span>
+										    <ul class="dropdown">
+										        <li><a href="#">Онлайн-магазин</a></li>
+										        <li><a href="#">Магазин</a></li>
+										    </ul>
+										</div>
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Дата покупки:</label>
+										<div class="inputBox" data-date-format="dd-mm-yyyy" >
+	          							<input id="choose-date" type="text" placeholder="дд/мм/гггг" validate="required">
+										</div><!--inputBox-->
+									</div><!--form__item-->
+								</div><!--form__cont-->
+							</div><!--formBox-->
+							<div class="formBox">
+								<h2 class="title__form">Личная информация</h2>
+								<div class="form__cont">
+									<div class="form__item error_form">
+										<label>Имя:</label>
+										<div class="inputBox" >
+											<input type="text" validate="required|name">
+											<i class="item__i er_i"></i>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Фамилия:</label>
+										<div class="inputBox bigInput">
+											<input type="text"  validate="required|name">
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Страна проживания:</label>
+										<div id="country-dd" class="wrapper-dropdown-1 transparent-dd">
+										    <span>Нидерланды</span>
+										    <ul class="dropdown">
+										        <li><a href="#">Нидерланды</a></li>
+										        <li><a href="#">Аляска</a></li>
+										    </ul>
+										</div>
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Телефон:</label>
+										<div class="inputBox with-text">
+											<input type="text" validate="required|phone">
+											<!--<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>-->
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>E-mail:</label>
+										<div class="inputBox bigInput">
+											<input type="text" validate="required|email">
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Я узнал о SeeMax:</label>
+										<div class="inputBox ">
+										<div id="know-dd" class="wrapper-dropdown-1 transparent-dd">
+										    <span>Из интернета</span>
+										    <ul class="dropdown">
+										        <li><a href="#">Из утренних газет</a></li>
+										        <li><a href="#">Из интернета</a></li>
+										    </ul>
+										</div>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Подписаться на новости</label>
+										<div class="inputBox checkBox">
+											<input id="e-mail-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+											<label for="e-mail-cbx" name="e-mail-cbx" class="css-label">E-mail</label>
+											<input id="sms-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+											<label for="sms-cbx" name="e-mail-cbx" class="css-label">SMS</label>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+								</div><!--form__cont-->
+								<div class="button__form">
+									<input type="submit" class="cloudBtn" value="Зарегистрировать устройство">
+								</div><!--button__form-->
+							</div><!--formBox-->
+						</div><!--pageForm-->
+					</form>
 				</div><!--registrationPage-->
 			</div><!--contentBox-->
 		<div class="addMenu">

@@ -5,15 +5,24 @@
 	<title>see:max</title>
 	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
 	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
+	<link rel="stylesheet" type="text/css" href="public/css/media-queries.css">
+
 
     <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="public/js/main.js"></script>
     <script type="text/javascript" src="public/js/lib/jquery/jquery.carouFredSel-6.1.0-packed.js"></script>
+    <script type="text/javascript" src="public/js/search.js"></script>
+    <script type="text/javascript" src="public/js/loader.js"></script>
 
 </head>
 <body>
-	<div class="page second">
+
 		<div class="header">
+			<div class="headerBord">
+				<div class="header__bord bord_p"></div><!--footer__bord bord_p-->
+				<div class="header__bord bord_b"></div><!--footer__bord bord_b-->
+				<div class="header__bord bord_g"></div><!--footer__bord bord_g-->
+			</div><!--hederBord-->
 			<div class="header__search">
 				<div class="header__searchI">
 					<div class="logo">
@@ -47,7 +56,21 @@
 						<ul>
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Магазин</a></li>
-							<li><a href="#">Продукция</a></li>
+							<li class="with-sub"><a href="#">Продукция</a>
+							<div class="mainMenu__add">
+								<div class="search__bord bord_p"></div>
+								<div class="search__bord bord_b"></div>
+								<div class="mainMenu__add_i">
+									<ul>
+										<li><a href="#">GPS-навигаторы</a></li>
+										<li><a href="#">Видеорегистраторы</a></li>
+										<li><a href="#">Планшеты</a></li>
+										<li><a href="#">Экшн-камеры</a></li>
+										<li><a href="#">Детские планшеты</a></li>
+									</ul>
+								</div>
+							</div><!--mainMenu__add-->
+							</li>
 							<li><a href="#">Поддержка</a></li>
 							<li><a href="#">Партнёрам</a></li>
 							<li><a href="#">Где купить?</a></li>
@@ -58,33 +81,12 @@
 					</div><!--search-->
 				</div><!--header__norm-->
 			</div><!--header__i-->
-			<div class="mainMenu__add">
-				<div class="search__bord bord_p"></div>
-				<div class="search__bord bord_b"></div>
-				<div class="mainMenu__add_i">
-					<ul>
-						<li><a href="#">GPS-навигаторы</a></li>
-						<li><a href="#">Видеорегистраторы</a></li>
-						<li><a href="#">Планшеты</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-						<li><a href="#">Детские планшеты</a></li>
-					</ul>
-				</div>
-			</div><!--mainMenu__add-->
 		</div><!--header-->	
-		<div class="navigation__prod">
-			<ul class="nav__prod__i">
-				<li class="cur"><a href="#">Информация о SeeMax</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Блог</a></li>
-				<li><a href="#">Карьера в SeeMax</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</div><!--navigation-->
 			<div class="contentBox">
 				<div class="searchPage">
 					<div class="search__cont">
 						<input type="text">
+						<i class="close__search"></i>
 						<a href="#" class="search__btn"></a>
 					</div><!--search__cont-->
 					<h2 class="title__search">Китайская стена — 44 результата</h2>
@@ -149,72 +151,6 @@
 								Восточная тема уже давно в моде. Наклейка «Китайская стена» подойдёт в любое помещение...
 							</div><!--search__itemDescr-->
 						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>11.</i> <strong>Китайская стена</strong> наклейка</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>12.</i> <strong>Китайская стена</strong> наклейка на ноутбук</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>13.</i> <strong>Китайская стена</strong> траффарет на стену</h3>
-							<div class="search__itemDescr">
-								Восточная тема уже давно в моде. Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>14.</i> <strong>Китайская стена</strong> наклейка</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>15.</i> <strong>Китайская стена</strong> наклейка на ноутбук</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>16.</i> <strong>Китайская стена</strong> траффарет на стену</h3>
-							<div class="search__itemDescr">
-								Восточная тема уже давно в моде. Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>17.</i> <strong>Китайская стена</strong> наклейка</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>18.</i> <strong>Китайская стена</strong> наклейка на ноутбук</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>19.</i> <strong>Китайская стена</strong> траффарет на стену</h3>
-							<div class="search__itemDescr">
-								Восточная тема уже давно в моде. Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>20.</i> <strong>Китайская стена</strong> наклейка</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
-						<a href="#" class="search__item">
-							<h3 class="search__itemTitle"><i>21.</i> <strong>Китайская стена</strong> наклейка на ноутбук</h3>
-							<div class="search__itemDescr">
-								Наклейка «Китайская стена» подойдёт в любое помещение...
-							</div><!--search__itemDescr-->
-						</a><!--search__item-->
 					</div><!--search__resultPage-->
 					<div class="search__loader">
 						<a href="#"></a>
@@ -275,6 +211,14 @@
 				</div><!--region-->
 			</div><!--footer__i-->
 		</div><!--footer-->
-	</div><!--page-->
+	<script type="text/template" id="search-item-template">
+	<a href="{search_url}" class="search__item">
+		<h3 class="search__itemTitle"><i>{num}</i> {search_title}
+		</h3>
+		<div class="search__itemDescr">
+			{search_descr}
+		</div>
+	</a>
+	</script>
 </body>
 </html>
