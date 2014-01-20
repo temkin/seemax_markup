@@ -1997,7 +1997,8 @@ body {
 		.form__item .inputBox input {
 			vertical-align: middle;
 		}
-		.form__item .inputBox input[type="text"] {
+
+		.form__item .inputBox input[type="text"],.form__item .message textarea  {
 			width: 186px;
 			padding:0 15px;
 			height:42px;
@@ -2051,10 +2052,37 @@ body {
 				background:url(../i/q.png) no-repeat 0 0;
 				 -moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;
 			}
+			.form__item .message textarea{
+				width: 341px;
+				height: 175px;
+				padding: 15px;
+			}
+			.form__item.with-textarea label{vertical-align: top; margin-top: 10px;}
+			.question-form {margin-top: 0; display: none;}
+			.question-btn{
+				position: relative;
+				padding-right: 30px;
+			}
+			.question-btn:after, .transparent-dd:after{
+				content: " ";
+				background: url(../i/dd-arrow-white.png) no-repeat 0 -12px;
+				position: absolute;
+				right: 10px;
+				height: 13px;
+				width: 12px;
+				display: block;
+				top: 15px;
+				overflow: hidden;
+			}
+			.question-btn.active:after{
+				background-position: 0 0;
+			}
 .button__form {
 	text-align: center;
 	margin: 89px 0 0;
 }
+.question-submit{text-align: left;padding-left: 23%;}
+
 	.button__form .cloudBtn {
 		border-color: #5586aa;
 		background:#5586aa;
@@ -2283,6 +2311,8 @@ body {
 .preview-wrapper{width: 531px;overflow: hidden;}
 .header__searchI .logo{margin-left: 40px;}
 .filter-bar{margin:34px 0;position:relative;z-index:12}
+
+
 /*---------------------------dropdown----------------------------*/
 .wrapper-dropdown-1 {
 	display: inline-block;
@@ -2346,7 +2376,6 @@ body {
 }
   
 .wrapper-dropdown-1.active {
-	border-bottom:0;
 	-moz-border-radius: 5px 5px 0 0; /* Firefox */  
 	-webkit-border-radius: 5px 5px 0 0; /* Safari, Chrome */  
 	border-radius: 5px 5px 0 0; 
@@ -2358,7 +2387,8 @@ body {
 	border-color:#5b91b6; 
 }    
 .transparent-dd:after{
-	content: url(../i/dd-arrow-white.png);
+	content: " ";
+	top:15px;
 }
 .transparent-dd .dropdown{
 	background: #1a6da8;
@@ -2420,6 +2450,5 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	max-width: 560px !important;
 	font: italic 18px/20px Arial, sans-serif !important;
 }
-.tooltip.right {
-	margin-left: 20px !important;
-}
+.tooltip.right {margin-left: 20px !important;}
+
