@@ -28,7 +28,7 @@ $(document).ready(function () {
     $.bt_validate.method(
         'phone', 
         function(value) {
-            return value.length == 11 && value.match(/^\d+$/);
+            return value.length <= 12 && value.match(/^\d+$/);
         },
         "Номер телефона должен состоять из 11 цифр и включать код города и страны"
     );  
