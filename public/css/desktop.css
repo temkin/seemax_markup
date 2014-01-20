@@ -2328,6 +2328,7 @@ body {
 	 -webkit-border-radius: 5px; /* Safari, Chrome */  
 	 border-radius: 5px; /* CSS3 */ 
 }
+
 .wrapper-dropdown-1 *{font: 18px/18px 'pf_beausans_prolight' !important;}
 .wrapper-dropdown-1:after{
 	content: url(../i/dd-arrow.png);
@@ -2408,7 +2409,8 @@ body {
 }
 .serial-help-device * {display: inline-block; }
 .serial-help-device p{width: 80%;}
-
+.purple, .purple .dropdown{background: #3d5b80; border-color:white !important;}
+.purple .dropdown li a:hover{background: #27527a;}
 /*-------------------checkbox-----------------*/
 
 input[type=checkbox].css-checkbox {
@@ -2490,6 +2492,22 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	padding-right: 25px;
 }
 .news-item{margin-bottom: 160px;}
-.iconDiller{background: url(../i/diller-icon.png) no-repeat center;}
-
+.iconDiller{background: url(../i/icon_h.png) no-repeat 0 -136px;}
+.where-buy-head{
+	font-family:'pf_beausans_proregular';
+	padding: 153px 3%;
+	color: white;
+	background: url(../i/404-bg.png);
+}
+.where-buy-head h1{font-size: 48px;}
+.where-buy-head h2{
+	font-size: 18px;
+	margin: 60px 0;	
+	padding-left: 82px;
+	line-height: 29px;
+	width: 50%;
+	font-family: Arial;
+	font-weight: normal;
+	background: url(../i/marker-icon.png) no-repeat left center;
+}
 
