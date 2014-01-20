@@ -737,7 +737,7 @@ body {
 	width: 442px;
 	text-decoration: none;
 }
-	.iconBan {
+	.iconBan , .iconDiller{
 		display:block;
 		width:58px;
 		height:58px;
@@ -2490,4 +2490,6 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	padding-right: 25px;
 }
 .news-item{margin-bottom: 160px;}
+.iconDiller{background: url(../i/diller-icon.png) no-repeat center;}
+
 
