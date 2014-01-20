@@ -12,6 +12,15 @@
 
 </head>
 <body>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("<style type='text/css' id='arrowFadeCss' />").appendTo("head");
+			$(window).on('resize', function (){
+				var heightImg = $('.news.content .news-item .news-body img').height();
+				$("#arrowFadeCss").text('.news.content .news-item .news-body a:after{height:'+ heightImg+'px !important;}');
+			});
+		});
+	</script>
 	<div class="header">
 			<div class="headerBord">
 				<div class="header__bord bord_p"></div><!--footer__bord bord_p-->
@@ -79,35 +88,70 @@
 	</div><!--header-->
 	<div class="page">
 		<div class="content news">
-			<div class="bannerBox">
+			
 				<h1>Новости для диллеров</h1>
 				<div class="news-wrapper">
 					<div class="news-item">
 						<div class="news-header">
 							<span class="news-date">20.11.2013</span>
-							<h2>Розыгрыш навигаторов SeeMax</h2>
+							<h2><a href="#">Розыгрыш навигаторов SeeMax</a></h2>
 						</div>
 						<div class="news-body">
-							<img src="public/i/news-image.png"/>
+							<a href="#">
+								<img src="public/i/news-image.png"/>
+							</a>
 						</div>
 						<div class="news-descr">
 							<p>
 								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
-GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: http://auto.tut.by/news/offtop/380995.html</p>	
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-header">
+							<span class="news-date">20.11.2013</span>
+							<h2><a href="#">Подведены итоги конкурса</a></h2>
+						</div>
+						<div class="news-body">
+							<a href="#">
+								<img src="public/i/news-image2.png"/>
+							</a>
+						</div>
+						<div class="news-descr">
+							<p>
+								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-header">
+							<span class="news-date">20.11.2013</span>
+							<h2><a href="#">Подведены итоги конкурса</a></h2>
+						</div>
+						<div class="news-body">
+							<a href="#">
+								<img src="public/i/news-image3.png"/>
+							</a>
+						</div>
+						<div class="news-descr">
+							<p>
+								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
 						</div>
 					</div>
 				</div>
-				<div class="bannerBox__i">
-					<div class="bannerDescr">
-						<i class="iconBan"></i>
-						<h3 class="titleBan"><a href="#">Интернет-магазин Seemax</a></h3>
-						<div class="txtBan">
-							Мы подумали о том, чтобы вы могли <a href="#">купить</a> любую продукцию SeeMax, не выходя из дома, или даже не вставая с дивана, .Добро пожаловать в наш интернет-магазин
-						</div><!--txtBan-->
-					</div><!--bannerDescr-->
-				</div><!--bannerBox__i-->
-			</div><!--bannerBox-->
 		</div><!--content-->
+		<div class="bannerBox">
+					<div class="bannerBox__i">
+						<div class="bannerDescr">
+							<i class="iconBan"></i>
+							<h3 class="titleBan"><a href="#">Интернет-магазин Seemax</a></h3>
+							<div class="txtBan">
+								Мы подумали о том, чтобы вы могли <a href="#">купить</a> любую продукцию SeeMax, не выходя из дома, или даже не вставая с дивана, .Добро пожаловать в наш интернет-магазин
+							</div><!--txtBan-->
+						</div><!--bannerDescr-->
+					</div><!--bannerBox__i-->
+			</div><!--bannerBox-->
 		<div class="addMenu">
 			<ul class="cols">
 				<li class="titleLink"><a href="#">О компании</a></li>
