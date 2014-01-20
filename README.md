@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Project preview pages
-=======
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/temkin/seemax_markup/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 *Available pages for preview:* 
@@ -14,4 +11,3 @@ Project preview pages
 * http://temkin.github.io/seemax_markup/search.html
 * http://temkin.github.io/seemax_markup/specification.html
 * http://temkin.github.io/seemax_markup/support.html
->>>>>>> master
