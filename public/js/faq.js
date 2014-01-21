@@ -8,5 +8,5 @@ $(document).ready(function (){
     	$(this).toggleClass('active');
     	e.preventDefault();
     });
-
+    $('#partner-form').bt_validate();
 });
