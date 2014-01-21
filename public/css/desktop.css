@@ -2510,4 +2510,31 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	font-weight: normal;
 	background: url(../i/marker-icon.png) no-repeat left center;
 }
+.open-close-buts a{
+	border-bottom: 1px dashed white; 
+	color: white; 
+	text-decoration: none;
+	font: 18px/18px 'pf_beausans_proregular';
+	position: relative;
+}
+
+.open-map:after{
+	content: " ";
+	background: url(../i/marker-cross.png) no-repeat 0 -13px;
+	position: absolute;
+	right: -24px;
+	top: 2px;
+	height: 18px;
+	width: 18px;
+}
+.close-map:after{
+	content: " ";
+	background: url(../i/marker-cross.png) no-repeat 0 0px;
+	position: absolute;
+	right: -22px;
+	top: 7px;
+	height: 12px;
+	width: 14px;
+}
+.close-map, .map-image{display: none;}
 
