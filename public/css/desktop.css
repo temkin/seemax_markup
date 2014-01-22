@@ -260,7 +260,7 @@ body {
 	display:block;
 	position:absolute;
 	top: 28px;
-	right: 90px;
+	right: 337px;
 	width:33px;
 	height:33px;
 	background: url(../i/s_ar.png) no-repeat 0 0;
@@ -327,7 +327,7 @@ body {
 	padding: 34px 0 18px;
 }
 	.serch__menuI ul {
-		margin: 0 0 0 493px;
+		margin: 0 0 0 387px;
 	}
 		.serch__menuI li {
 			margin: 0 0 14px;
@@ -402,7 +402,7 @@ body {
 	}
 .social_f {
 	float:left;
-	padding: 26px 0 0 39px;
+	padding: 19px 0 0 39px;
 }
 	.social_f a {
 		display: -moz-inline-stack;
@@ -430,7 +430,7 @@ body {
 	float:right;
 	font:18px/20px Arial, sans-serif;
 	color:#000;
-	margin: 25px 25px 0 0;
+	margin: 25px 63px 0 0;
 }
 	.region a {
 		display:none;
@@ -471,7 +471,7 @@ body {
 .slider__i {
 	display: none;	
 	text-decoration: none;
-	position:relative;
+	position:absolute;
 }
 .linkSlide {
 	display:block;
@@ -530,7 +530,7 @@ body {
 				.slider__txt i {
 					display: -moz-inline-stack;
 					display: inline-block;
-					vertical-align: middle;	        
+					vertical-align: -4px;	        
 					zoom: 1;
 					*display: inline;
 					width:21px;
@@ -542,6 +542,10 @@ body {
 .slider__nav {
 	height:97px;
 	padding: 25px 0 30px 0;
+}
+.slides-wrapper{
+	position: relative;
+	height: 542px;
 }
 	.nav__i {
 		position:relative;
@@ -1701,7 +1705,6 @@ body {
 .title__faq {
 	font:30px/30px 'pf_beausans_probold';
 	color:#000;
-	text-transform: uppercase;
 }
 	.main_faq .title__faq {
 		font:48px/48px 'pf_beausans_prosemibold';
@@ -1710,7 +1713,7 @@ body {
 	margin: 0 0 0 -6.6%;
 }
 .main_faq .nav__faq {
-	margin: 98px 0 0 -6.6%;
+	margin: 0 0 0 -6.6%;
 }
 
 

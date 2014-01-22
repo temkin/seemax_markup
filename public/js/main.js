@@ -29,7 +29,6 @@ $(document).ready(function(){
     var sliderInterval = 5000;
     var sliderElementsNum = $('.slider__i').children().length;
     var sliderActive = 1;
-    var animationEnd = true;
 
     
     // Animate nav images: zoom in/out
@@ -41,7 +40,7 @@ $(document).ready(function(){
             left: -0,
             width: 82,
             height: 82
-        }, 400);
+        }, 250);
     }
 
     function navZoomIn(navObj) // `nav__i` -> navObj
@@ -51,7 +50,7 @@ $(document).ready(function(){
             left: -30,
             width:124,
             height:124
-        }, 400);
+        }, 250);
     }
 
 
@@ -59,10 +58,8 @@ $(document).ready(function(){
     var sliderMove = function () {
         
         // Hide previous slide
-        $('.slider_bg_' + String(sliderActive) ).fadeOut("fast", function(){
-            $('.slider_bg_' + String(sliderActive) ).fadeIn("fast");   
-        }); 
-            // Previous navigation item handling
+        $('.slider_bg_' + String(sliderActive) ).fadeOut('slow'); 
+           // Previous navigation item handling
         var navObj = $('.slider__nav .nav__i:nth-child(' + String(sliderActive) + ')');
         navObj.removeClass('cur');
 
@@ -75,6 +72,8 @@ $(document).ready(function(){
         if (sliderActive > sliderElementsNum){
             sliderActive = 1;
         }
+        $('.slider_bg_' + String(sliderActive) ).fadeIn("slow");   
+
         
         // The next navigation item handling
         var navObj = $('.slider__nav .nav__i:nth-child(' + String(sliderActive) + ')');
@@ -105,14 +104,11 @@ $(document).ready(function(){
             $('.cur').removeClass('cur');
             $(this).addClass("cur");
         }
-        if (sliderActive != toSlideNumber && animationEnd){
-            animationEnd = false;
-            $('.slider_bg_' + String(sliderActive) ).fadeOut("fast", function(){
-                $('.slider_bg_' + String(toSlideNumber)).fadeIn("fast", function(){
-                    sliderActive = toSlideNumber;
-                    animationEnd = true;
-                });
-            });
+        if (sliderActive != toSlideNumber){
+            $('.slider_bg_' + String(sliderActive)).fadeOut('slow');
+            $('.slider_bg_' + String(toSlideNumber)).fadeIn('slow');
+            sliderActive = toSlideNumber;
+
         }
     });
 
@@ -252,17 +248,6 @@ $(document).ready(function(){
     //         }
     //     })
     // });
-    
-    $('.nav__faq li').click(function(){
-        $('.nav__faq li').removeClass('current');
-        $(this).addClass('current');
-    
-        var n = $(this).index();
-        $('.faqBox').hide();
-        $('.faqBox').eq(n).show();
-
-        return false;
-    });
 
     //Parallax
     $(window).scroll(function() {

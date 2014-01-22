@@ -1,7 +1,7 @@
 $.bt_validate.method(
     'phone', 
     function(value) {
-        return value.length <= 12 && value.match(/^\d+$/);
+        return value.match(/^[0-9()-+ ]+$/ );
     },
     "Номер телефона должен состоять из 11 цифр и включать код города и страны"
 );  
@@ -10,14 +10,14 @@ $.bt_validate.method(
     function(value) {
         return (!(/[\d]/.test(value)));
     },
-    "Данное поле не может содержать цифры"
+    "Данное поле может содержать только кириллические буквы"
 ); 
 $.bt_validate.method(
     'serial', 
     function(value) {
         return (value.replace(/\s/g, "").replace(/\-/g,"").length == 12);
     },
-    "Данное поле заполнено неверно."
+    "Введите корректный серийный номер."
 ); 
 $.bt_validate.after_validate = function(method, value, params, result) {
     if (!result){
@@ -27,6 +27,6 @@ $.bt_validate.after_validate = function(method, value, params, result) {
         $(this).removeClass("input-error");
     }
 }
-$.bt_validate.text["required"] = "Это поле должно быть заполнено.";
-$.bt_validate.text["email"] = "Введен неверный e-mail.";
-$.bt_validate.text["datetime"] = "Введена неверная дата";
+$.bt_validate.text["required"] = "Заполните это поле, пожалуйста.";
+$.bt_validate.text["email"] = "Введите корректный e-mail.";
+$.bt_validate.text["datetime"] = "Введите корректную дату.";
