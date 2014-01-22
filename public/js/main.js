@@ -265,7 +265,7 @@ $(document).ready(function(){
 
     $('.with-sub').hover(
         function (){$('.mainMenu__add').fadeIn("fast");},
-        function (){$('.mainMenu__add').fadeOut("fast");}
+        function (){$('.mainMenu__ad').fadeOut("fast");}
     );
 
 
