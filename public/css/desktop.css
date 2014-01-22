@@ -511,6 +511,7 @@ body {
 				font:36px/42px 'pf_beausans_prosemibold';
 				color:#fff;
 				padding: 38px 0 39px 99px;
+
 			}
 			.slider__txt {
 				background:#1183b8;
@@ -1171,7 +1172,7 @@ body {
 			height:502px;
 		}
 
-		.ad__i.top .ad__txt, .ad__i.bot .ad__txt{
+		.ad__i.top .ad__txt, .ad__i.bot .ad__txt, .slider__title h2, .slider__txt {
 			-webkit-transition: background-color .3s ease-in,color .3s ease-in;
 			-moz-transition: background-color .3s ease-in,color .3s ease-in;
 			-ms-transition: background-color .3s ease-in,color .3s ease-in;
