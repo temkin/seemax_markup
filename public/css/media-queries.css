@@ -8,10 +8,11 @@
 
 @media (max-width: 1280px) {
 	.nav__title, .nav__i.cur .nav__title {font: 19px/26px 'pf_beausans_prolight';}
-	
+
 }
 @media (max-width: 1100px) {
 	.slides-wrapper {height: 500px;}
+	.mainMenu>ul>li>a {font-size: 12px;}
 }
 @media (max-width: 970px){
 	.slides-wrapper {height: 435px;}

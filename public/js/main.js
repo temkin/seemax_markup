@@ -1,7 +1,7 @@
 $(document).ready(function(){
     /* Показать/Спрятать поиск */
     $(".search i").click(function(){
-         $(".header__search").show();
+         $(".header__search").fadeIn("fast");
          $(".search__slog input").focus();
         setTimeout(function(){
             $(".close_cross").addClass("show");
@@ -10,8 +10,9 @@ $(document).ready(function(){
      });
      $(".close_cross").click(function(){
          $(this).removeClass("show");
-         $(".header__search").hide();
-         $(".header__i").show();
+         $(".header__search").fadeOut("fast", function (){
+            $(".header__i").show();
+        });
      });
 
     /* закрытие поиска по клику вне блока поиска */
@@ -215,6 +216,12 @@ $(document).ready(function(){
         })
     });
 
+
+     //region
+    $('.region').hover(
+        function (){$('.region a').fadeIn("fast");},
+        function (){$('.region a').fadeOut("fast");}
+    );
      //FAQ TAB
 
     //  $('.boxFaq__tab').each(function(){
@@ -253,11 +260,13 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
         var offset = (scrollTop-300)/5;
-        if (offset < 20 && scrollTop >= 300){
+        if (offset < 150 && scrollTop >= 300){
             $('.linkSlide img').css('margin-top', -offset );
             $('.nav__i .boxImg').css('top', -offset);
             $('.nav__i.cur .boxImg').css('top', -offset - 96);
-
+        }
+        if (scrollTop >= 370 && -(scrollTop-370)/5>=-150){
+            $('.bannerBox__i').css('background-position-y', -(scrollTop-370)/5);
         }
     });
 
@@ -267,15 +276,6 @@ $(document).ready(function(){
         function (){$('.mainMenu__add').fadeIn("fast");},
         function (){$('.mainMenu__ad').fadeOut("fast");}
     );
-
-
-    //Choose region
-    $('.region span i').on('mouseover', function (){
-        $('.region a').show();
-    });
-    $('.region').on('mouseleave', function (){
-        $('.region a').hide();
-    });
 
     //Search
     $('.close__search').on("click", function (){
