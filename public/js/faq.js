@@ -6,6 +6,9 @@ $(document).ready(function (){
     $('.question-btn').on('click', function (e){
     	$('.question-form').slideToggle();
     	$(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('html, body').animate({scrollTop: $('.pageForm.question-form').offset().top}, 800); 
+        }
     	e.preventDefault();
     });
     $('#partner-form').bt_validate();
@@ -19,6 +22,6 @@ $(document).ready(function (){
 
         return false;
     });
-    $('#send-requst').on('click', function (){
+    $('#send-request').on('click', function (){
     });
 });
