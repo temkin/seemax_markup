@@ -354,6 +354,7 @@ body {
 .footer {
 	position:relative;
 	padding:153px 0 0;
+	overflow: hidden;
 }
 
 /*footer__bord*/
@@ -389,6 +390,8 @@ body {
 
 .footer__i {
 	height:90px;
+	max-width: 1480px;
+	margin: 0 auto;
 	}
 .social_f {
 	float:left;
@@ -486,7 +489,7 @@ body {
 			position:absolute;
 			top:82px;
 			left:0;
-			width: 562px;
+			width: 38%;
 			text-decoration: none;
 			z-index:5;
 		}
@@ -510,7 +513,7 @@ body {
 				background:#26a9e6;
 				font:36px/42px 'pf_beausans_prosemibold';
 				color:#fff;
-				padding: 38px 0 39px 99px;
+				padding: 38px 0 39px 18%;
 
 			}
 			.slider__txt {
@@ -518,7 +521,7 @@ body {
 				border-radius:0 0 15px 0;
 				font:18px/27px Arial, sans-serif;
 				color:#fff;
-				padding: 15px 69px 29px 97px;
+				padding: 15px 69px 29px 18%;
 			}
 				.slider__txt i {
 					display: -moz-inline-stack;
@@ -961,7 +964,7 @@ body {
 
 .catalogBox {
 	margin: 0 7%;
-	padding: 86px 0 0;
+	padding: 163px 0 0;
 }
 .catalog__i {
 	overflow:hidden;
@@ -1046,6 +1049,12 @@ body {
 			height:11px;
 			background: url(../i/bul.png) no-repeat 0 0;
 			margin:0 9px;
+			opacity: 0;
+			-webkit-transition: opacity .2s ease-in;
+			-moz-transition: opacity .2s ease-in;
+			-ms-transition: opacity .2s ease-in;
+			-o-transition: opacity .2s ease-in;
+			transition: opacity .2s ease-in;
 		}
 			.loader a.cur {
 				background-position: 0 -42px;
@@ -2323,6 +2332,7 @@ body {
 }
 	.mainMenu__add_i ul {
 		margin: 0 0 0 23.9%;
+		font-size: 0;
 	}
 		.mainMenu__add_i ul li {
 			display: -moz-inline-stack;

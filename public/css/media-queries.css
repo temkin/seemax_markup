@@ -1,6 +1,8 @@
 @media (max-width: 940px) {
 	.nav__i.cur .nav__title{font-weight: bold;}
 	.slider__ii {height: 440px;}
+	.slider__txt{font-size: 12px;}
+	.slider__title h2 {font-size: 23px;}
 }
 @media (max-width: 700px) {
 	.addMenu li a {font: 12px/18px 'pf_beausans_proregular';}
