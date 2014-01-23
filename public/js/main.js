@@ -158,16 +158,19 @@ $(document).ready(function(){
             var self = this;
             var _service = $(this).parent();
             if (_service.hasClass('cur')){
-                _service.removeClass('cur').find('.section__content').slideUp('slow');
+                _service.removeClass('cur').find('.section__content').slideUp();
             } else {
+                var curContentHeight = $('.cur .section__content').height();
+                if($('.supportBox .cur').offset()){
+                    var curElemTop = $('.supportBox .cur').offset().top;
+                }
                 $('.cur .section__content').slideUp('slow');
                 $('.contentBox .cur').removeClass('cur');
-                _service.addClass('cur').find('.section__content').slideDown('slow', function (){
-                    var destination = $(self).parent().offset().top;
-                    $('html, body').animate({scrollTop:destination}, 800);
-                });
+                _service.addClass('cur').find('.section__content').slideDown();
+                $('.contentBox .cur h3').css('opacity', 1);
+                var destination = $(self).parent().offset().top > curElemTop?$(self).parent().offset().top  - curContentHeight:$(self).parent().offset().top;
+                $('html, body').animate({scrollTop:destination}, 800);
             }
-
             return false;
         })
     });
@@ -190,31 +193,6 @@ $(document).ready(function(){
 
     });
 
-     // speciffication2
-
-     $('.visual_characteristic').each(function(){
-        var _this = $(this);
-        
-        $('.visual__i', _this).carouFredSel({
-            responsive: false,
-            circular: true,
-            infinite: false,
-            width: 560,
-            height: 170,
-            auto: {
-                play: true
-            },
-            scroll: {
-                items:1
-            }, 
-            items: {
-                visible: 1
-            }, 
-            pagination: {
-                container: $('.visual__loader', _this)
-            }
-        })
-    });
 
 
      //region
@@ -274,7 +252,7 @@ $(document).ready(function(){
 
     $('.with-sub').hover(
         function (){$('.mainMenu__add').fadeIn("fast");},
-        function (){$('.mainMenu__ad').fadeOut("fast");}
+        function (){$('.mainMenu__add').fadeOut("fast");}
     );
 
     //Search
