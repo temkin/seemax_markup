@@ -944,7 +944,7 @@ body {
 			font:14px/14px 'pf_beausans_proregular';
 			color:#fff;
 			text-decoration: none;
-			padding: 28px 22px 29px 22px;
+			padding: 28px 22px 28px 22px;
 		}
 		.nav__prod__i li.cur a {
 			background: #1183b8;
@@ -1243,14 +1243,14 @@ body {
 		}
 	.ad__txt_title {
 		color:#fff;
-		margin: 62px 0 0 4px;
+		margin: 62px 0 0 0;
 		text-transform:uppercase;
 		font:30px/30px 'pf_beausans_probold', sans-serif;
 	}
 	.ad__txt_i {
 		font:18px/27px Arial,sans-serif;
 		color:#fff;
-		margin: 28px 0 8% 7px;
+		margin: 28px 0 8% 0;
 	}
 		.ad__txt_i a {
 			color:#fff;
@@ -2384,12 +2384,19 @@ body {
 }
 
 .wrapper-dropdown-1 *{font: 18px/18px 'pf_beausans_prolight' !important;}
+
 .wrapper-dropdown-1:after{
 	content: url(../i/dd-arrow.png);
 	right: 12px;
 	top: 12px;
 	position: absolute;
 }
+.wrapper-dropdown-1.active:after{
+	-moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
+
+
 .wrapper-dropdown-1 .dropdown {
     /* Size & position */
     position: absolute;
@@ -2467,6 +2474,7 @@ body {
 	width: 80%;
 	line-height: 21px;
 	vertical-align: middle;
+	margin-bottom: 0;
 }
 .purple, .purple .dropdown{background: #3d5b80; border-color:white !important;}
 .purple .dropdown li a:hover{background: #27527a;}

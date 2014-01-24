@@ -16,8 +16,15 @@ $(document).ready(function () {
         }
     );
     //datepicker
-    $('#choose-date').datepicker({format:"dd/mm/yyyy"});
+    $('#choose-date').datepicker({format:"dd/mm/yyyy"})
+        .on('changeDate', function(ev){
+            $(this).datepicker('hide');
+        });;
 
     //validation
     $('#reg-form').bt_validate();
+
+    $('.cloudBtn').on('click', function (){
+        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
+    });
 });

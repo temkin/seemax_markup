@@ -23,10 +23,10 @@ $.bt_validate.after_validate = function(method, value, params, result) {
     if (!result){
         $(this).addClass("input-error");
         $('.form__item .inputBox .item__i.quest').hide();
-        $('#send-request').removeClass('active');
+        $('.cloudBtn').removeClass('active');
     }else{
         $(this).removeClass("input-error");
-        $('#send-request').addClass('active');
+        $('.cloudBtn').addClass('active');
     }
 }
 $.bt_validate.text["required"] = "Заполните это поле, пожалуйста.";
