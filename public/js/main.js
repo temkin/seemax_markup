@@ -134,7 +134,7 @@ $(document).ready(function(){
     $('.galleryBox').each(function(){
         var _this = $(this);
         $('.gallery__i', _this).carouFredSel({
-            width: 1280,
+            width: 1480,
             height: 648,
             prev: $('.gal__a.prev', _this),
             next: $('.gal__a.next', _this),
@@ -267,7 +267,7 @@ $(document).ready(function(){
         $(this).hide();
         e.preventDefault();
     });
-    $('.mapsVis').on("click", function (){
+    $('.mapsVis').on("click", function (e){
         $('.mapsBox').slideUp();
         $('.openMaps').show();
         $(this).hide();

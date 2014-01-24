@@ -1115,8 +1115,8 @@ body {
 		}
 	.content blockquote {
 		font: 36px/54px 'pf_beausans_prolight';
-		margin: 100px auto 100px auto;
-		text-align: center;
+		margin: 143px auto;
+		width: 860px;
 	}
 	.content .bannerBox {
 		margin: 93px auto 0;
@@ -1130,7 +1130,7 @@ body {
 		margin: 86px 0 0;
 	}
 		.galleryBox img {
-			width:1280px;
+			width:1480px;
 		}
 		.galleryBox .gal__a {
 			display:block;
@@ -1920,11 +1920,12 @@ body {
 }
 .search__item:hover {
 	text-decoration: underline;
-	color:#1183b8;
+	color:#E52B50;
+
 }
 	.search__item:hover .search__itemTitle,
 	.search__item:hover .search__itemDescr {
-		color:#1183b8;
+		color:#E52B50;
 	}
 	.search__itemTitle {
 		font:24px/28px 'pf_beausans_proregular';
@@ -2129,6 +2130,13 @@ body {
 		margin: 0;
 		font-size:20px;
 	}
+	.button__form .cloudBtn.active{
+		border: 3px solid white;
+		background: transparent;
+	}
+	.button__form .cloudBtn.active:hover{
+		background: white;
+	}
 	.button__form span {
 		vertical-align: middle;
 		font:italic 18px/20px Arial, sans-serif;
@@ -2288,8 +2296,10 @@ body {
 				margin:11px 0 26px;
 			}
 			.infoContact__i a {
-				text-decoration: none;
-				color:#000;
+				color:#329ed0;
+			}
+			.infoContact__i a:hover{
+				color: #C74375;
 			}
 /*=====mainMenu__add
 =====================*/
@@ -2347,7 +2357,7 @@ body {
 .zoomWrapperTitle{display: none !important;}
 .preview-wrapper{width: 531px;overflow: hidden;}
 .header__searchI .logo{margin-left: 40px;}
-.filter-bar{margin:34px 0;position:relative;z-index:12}
+.filter-bar{margin: 66px 0 55px 0;position:relative;z-index:12}
 
 
 /*---------------------------dropdown----------------------------*/
@@ -2365,6 +2375,13 @@ body {
 	 -webkit-border-radius: 5px; /* Safari, Chrome */  
 	 border-radius: 5px; /* CSS3 */ 
 }
+.wrapper-dropdown-1:focus{
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+}
 
 .wrapper-dropdown-1 *{font: 18px/18px 'pf_beausans_prolight' !important;}
 .wrapper-dropdown-1:after{
@@ -2381,6 +2398,7 @@ body {
     top: 40px;
     margin: 0;
 	left: -4px;
+	z-index: 9999;
  
     /* Styles */
     background: #fff;
@@ -2445,7 +2463,11 @@ body {
 	width: 50%;
 }
 .serial-help-device * {display: inline-block; }
-.serial-help-device p{width: 80%;}
+.serial-help-device p{
+	width: 80%;
+	line-height: 21px;
+	vertical-align: middle;
+}
 .purple, .purple .dropdown{background: #3d5b80; border-color:white !important;}
 .purple .dropdown li a:hover{background: #27527a;}
 /*-------------------checkbox-----------------*/
@@ -2488,6 +2510,12 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	font-size: 19px;
 	max-width: 560px !important;
 	font: italic 18px/20px Arial, sans-serif !important;
+}
+.tooltip{
+	display: inline-block !important; 
+	position: static !important; 
+	vertical-align: middle !important;
+	padding: 0 !important;
 }
 .tooltip.right {margin-left: 20px !important;}
 
@@ -2575,3 +2603,8 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 .close-map, .map-image{display: none;}
 .zoomPreload{color: #333333 !important;}
+.galleryBox.info-gallery .caroufredsel_wrapper{
+	margin: 0 auto !important;
+	width: auto !important;
+	max-width: 1480px;
+}

@@ -5,10 +5,6 @@ $(document).ready(function () {
     var countrydd = new DropDown( $('#country-dd') );
     var  knowdd = new DropDown( $('#know-dd') );
 
-    $(document).click(function() {
-    	$('.wrapper-dropdown-1').removeClass('active');
-    });
-
     $('.item__i.quest').hover(
     	function (e){
     		$(this).css('opacity',1);

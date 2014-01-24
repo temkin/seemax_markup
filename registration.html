@@ -108,39 +108,44 @@
 								<div class="form__cont">
 									<div class="form__item">
 										<label>Продукт:</label>
-										<div id="product-dd" class="wrapper-dropdown-1 transparent-dd">
+										<div id="product-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="1">
 										    <span>Видеорегистратор</span>
 										    <ul class="dropdown">
 										        <li><a href="#">Видеорегистратор</a></li>
-										        <li><a href="#">Планшеты</a></li>
+										        <li><a href="#">Планшет</a></li>
+										        <li><a href="#">GPS-навигатор</a></li>
+										        <li><a href="#">Экшн-камера</a></li>
+										        <li><a href="#">Детский планшет</a></li>
 										    </ul>
 										</div>
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Серийный номер:</label>
 										<div class="inputBox">
-											<input type="text" validate="required|serial">
+											<input type="text" validate="required|serial" tabindex="2">
 											<i class="item__i quest"></i>
 										</div><!--inputBox-->
 										<div class="serial-help-device">
 											<img src="public/i/help-device.png" alt="">
-											<p>Двеннадцатизначный код на тыльной стороне или торце устройства</p>
+											<p>Серийный номер состоит из цифр и латинских букв и находится на тыльной стороне или в торце устройства</p>
 										</div>
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Место покупки:</label>
-										<div id="place-dd" class="wrapper-dropdown-1 transparent-dd">
+										<div id="place-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="3">
 										    <span>Онлайн-магазин</span>
 										    <ul class="dropdown">
 										        <li><a href="#">Онлайн-магазин</a></li>
-										        <li><a href="#">Магазин</a></li>
+										        <li><a href="#">Магазин техники</a></li>
+										        <li><a href="#">Точка на рынке</a></li>
+										        <li><a href="#">По объявлению</a></li>
 										    </ul>
 										</div>
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Дата покупки:</label>
 										<div class="inputBox" data-date-format="dd-mm-yyyy" >
-	          							<input id="choose-date" type="text" placeholder="дд/мм/гггг" validate="required">
+	          							<input id="choose-date" type="text" placeholder="дд/мм/гггг" validate="required" tabindex="4">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 								</div><!--form__cont-->
@@ -151,19 +156,19 @@
 									<div class="form__item error_form">
 										<label>Имя:</label>
 										<div class="inputBox" >
-											<input type="text" validate="required|name">
+											<input type="text" validate="required|name" tabindex="5">
 											<i class="item__i er_i"></i>
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Фамилия:</label>
 										<div class="inputBox bigInput">
-											<input type="text"  validate="required|name">
+											<input type="text"  validate="required|name" tabindex="6">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Страна проживания:</label>
-										<div id="country-dd" class="wrapper-dropdown-1 transparent-dd">
+										<div id="country-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="7">
 										    <span>Нидерланды</span>
 										    <ul class="dropdown">
 										        <li><a href="#">Нидерланды</a></li>
@@ -174,24 +179,30 @@
 									<div class="form__item">
 										<label>Телефон:</label>
 										<div class="inputBox with-text">
-											<input type="text" validate="required|phone">
+											<input type="text" validate="required|phone" tabindex="8">
 											<!--<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>-->
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>E-mail:</label>
 										<div class="inputBox bigInput">
-											<input type="text" validate="required|email">
+											<input type="text" validate="required|email" tabindex="9">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Я узнал о SeeMax:</label>
 										<div class="inputBox ">
-										<div id="know-dd" class="wrapper-dropdown-1 transparent-dd">
-										    <span>Из интернета</span>
+										<div id="know-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="10">
+										    <span>От знакомых</span>
 										    <ul class="dropdown">
-										        <li><a href="#">Из утренних газет</a></li>
-										        <li><a href="#">Из интернета</a></li>
+										        <li><a href="#">От знакомых</a></li>
+										        <li><a href="#">Из рекламы на радио</a></li>
+										        <li><a href="#">Из наружной рекламы</a></li>
+										        <li><a href="#">Из рекламы в печати
+</a></li>
+										        <li><a href="#">Из интернет-рекламы</a></li>
+										        <li><a href="#">Через интернет-поисковики</a></li>
+										        <li><a href="#">Другое</a></li>
 										    </ul>
 										</div>
 										</div><!--inputBox-->
@@ -199,15 +210,15 @@
 									<div class="form__item">
 										<label>Подписаться на новости</label>
 										<div class="inputBox checkBox">
-											<input id="e-mail-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+											<input id="e-mail-cbx" class="css-checkbox" type="checkbox" checked="checked" tabindex="11"/>
 											<label for="e-mail-cbx" name="e-mail-cbx" class="css-label">E-mail</label>
-											<input id="sms-cbx" class="css-checkbox" type="checkbox" checked="checked"/>
+											<input id="sms-cbx" class="css-checkbox" type="checkbox" checked="checked" tabindex="12"/>
 											<label for="sms-cbx" name="e-mail-cbx" class="css-label">SMS</label>
 										</div><!--inputBox-->
 									</div><!--form__item-->
 								</div><!--form__cont-->
 								<div class="button__form">
-									<input type="submit" class="cloudBtn" value="Зарегистрировать устройство">
+									<input type="submit" class="cloudBtn" value="Зарегистрировать устройство" tabindex="13">
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->

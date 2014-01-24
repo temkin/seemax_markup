@@ -14,6 +14,12 @@ DropDown.prototype = {
             $(this).toggleClass('active');
             return false;
         });
+
+        obj.dd.on('blur', function(event){
+            $(this).removeClass('active');
+            return false;
+        });
+ 
  
         obj.opts.on('click',function(){
             var opt = $(this);

@@ -15,7 +15,7 @@ $.bt_validate.method(
 $.bt_validate.method(
     'serial', 
     function(value) {
-        return (value.replace(/\s/g, "").replace(/\-/g,"").length == 12);
+        return !(/[^0-9a-zA-Z\s\-]/.test(value)) && value.replace(/[\s\-]/g,"").length<=16;
     },
     "Введите корректный серийный номер."
 ); 
@@ -23,8 +23,10 @@ $.bt_validate.after_validate = function(method, value, params, result) {
     if (!result){
         $(this).addClass("input-error");
         $('.form__item .inputBox .item__i.quest').hide();
+        $('#send-request').removeClass('active');
     }else{
         $(this).removeClass("input-error");
+        $('#send-request').addClass('active');
     }
 }
 $.bt_validate.text["required"] = "Заполните это поле, пожалуйста.";
