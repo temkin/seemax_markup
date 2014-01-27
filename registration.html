@@ -16,8 +16,9 @@
         <script type="text/javascript" src="public/js/dropdown.js"></script>
         <script src="public/js/lib/bootstrap.validate.js"></script>
 		<script src="public/js/lib/bootstrap.validate.en.js"></script>
-        <script src="public/js/users-validation.js"></script>
         <script type="text/javascript" src="public/js/registration.js"></script>
+        <script src="public/js/users-validation.js"></script>
+
         
 
 </head>
@@ -111,7 +112,7 @@
 										<div id="product-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="1">
 										    <span>Видеорегистратор</span>
 										    <ul class="dropdown">
-										        <li><a href="#">Видеорегистратор</a></li>
+										        
 										        <li><a href="#">Планшет</a></li>
 										        <li><a href="#">GPS-навигатор</a></li>
 										        <li><a href="#">Экшн-камера</a></li>
@@ -122,7 +123,7 @@
 									<div class="form__item">
 										<label>Серийный номер:</label>
 										<div class="inputBox">
-											<input type="text" validate="required|serial" tabindex="2">
+											<input type="text" validate="required|serial" name="serial" tabindex="2">
 											<i class="item__i quest"></i>
 										</div><!--inputBox-->
 										<div class="serial-help-device">
@@ -135,7 +136,6 @@
 										<div id="place-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="3">
 										    <span>Онлайн-магазин</span>
 										    <ul class="dropdown">
-										        <li><a href="#">Онлайн-магазин</a></li>
 										        <li><a href="#">Магазин техники</a></li>
 										        <li><a href="#">Точка на рынке</a></li>
 										        <li><a href="#">По объявлению</a></li>
@@ -145,7 +145,7 @@
 									<div class="form__item">
 										<label>Дата покупки:</label>
 										<div class="inputBox" data-date-format="dd-mm-yyyy" >
-	          							<input id="choose-date" type="text" placeholder="дд/мм/гггг" validate="required" tabindex="4">
+	          							<input id="choose-date" type="text" placeholder="дд/мм/гггг" validate="required" name="date" tabindex="4">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 								</div><!--form__cont-->
@@ -156,14 +156,14 @@
 									<div class="form__item error_form">
 										<label>Имя:</label>
 										<div class="inputBox" >
-											<input type="text" validate="required|name" tabindex="5">
+											<input type="text" name="name" validate="required|name" tabindex="5">
 											<i class="item__i er_i"></i>
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Фамилия:</label>
 										<div class="inputBox bigInput">
-											<input type="text"  validate="required|name" tabindex="6">
+											<input type="text"  validate="required|name" name="lastName" tabindex="6">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
@@ -171,7 +171,6 @@
 										<div id="country-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="7">
 										    <span>Беларусь</span>
 										    <ul class="dropdown">
-										        <li><a href="#">Беларусь</a></li>
 										        <li><a href="#">Украина</a></li>
 										        <li><a href="#">Россия</a></li>
 										    </ul>
@@ -180,14 +179,14 @@
 									<div class="form__item">
 										<label>Телефон:</label>
 										<div class="inputBox with-text">
-											<input type="text" validate="required|phone" tabindex="8">
+											<input type="text" validate="required|phone" name="phone" tabindex="8">
 											<!--<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>-->
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>E-mail:</label>
 										<div class="inputBox bigInput">
-											<input type="text" validate="required|email" tabindex="9">
+											<input type="text" name="email" validate="required|email" tabindex="9">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
@@ -196,7 +195,6 @@
 										<div id="know-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="10">
 										    <span>От знакомых</span>
 										    <ul class="dropdown">
-										        <li><a href="#">От знакомых</a></li>
 										        <li><a href="#">Из рекламы на радио</a></li>
 										        <li><a href="#">Из наружной рекламы</a></li>
 										        <li><a href="#">Из рекламы в печати
@@ -219,7 +217,7 @@
 									</div><!--form__item-->
 								</div><!--form__cont-->
 								<div class="button__form">
-									<input type="submit" class="cloudBtn active" value="Зарегистрировать устройство" tabindex="13">
+									<input type="submit" class="cloudBtn" value="Зарегистрировать устройство" tabindex="13">
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->

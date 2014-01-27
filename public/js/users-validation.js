@@ -44,7 +44,6 @@ $(document).ready(function (){
         }else{
             $('.cloudBtn').removeClass('active');
         }
-
     }
     var allFieldsOk = function (fields){
         var res = true;

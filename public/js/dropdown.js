@@ -24,8 +24,16 @@ DropDown.prototype = {
         obj.opts.on('click',function(){
             var opt = $(this);
             obj.val = opt.text();
+
+            $.each(obj.opts, function (num, opt){
+                console.log($(opt).text()+" --- " + obj.val);
+                if ($(opt).text() ==  obj.val){
+                    $(opt).find('a').text(obj.placeholder.text());
+                }
+            });
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
+
         });
     },
     getValue : function() {

@@ -2056,7 +2056,7 @@ body {
 			width: 304px;
 		}
 		.form__item .inputBox.bigInput input {
-			width: 341px;
+			width: 27%;
 		}
 		.form__item .inputBox input:focus {
 			outline:none;
@@ -2533,6 +2533,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	padding: 0 !important;
 	max-width: 67%;
 }
+.bigInput .tooltip {max-width: 60%;}
 
 /*-----------news--------------------------*/
 .content{margin: 0 7%}

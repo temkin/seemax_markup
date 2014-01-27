@@ -66,7 +66,7 @@ $(document).ready(function(){
             },
             scroll: {
                 items:1,
-                fx:"cover-fade"
+                duration:800
             }, 
             items: {
                 visible: 1
