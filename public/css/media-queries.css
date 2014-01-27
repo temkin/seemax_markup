@@ -29,3 +29,6 @@
 @media (max-width: 870px){
 	.slides-wrapper {height: 400px;}
 }
+@media (max-width: 1140px){
+	.form__item .inputBox.bigInput input {width: 200px;}
+}

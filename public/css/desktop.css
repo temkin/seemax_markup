@@ -1975,8 +1975,9 @@ body {
 
 .pageForm {
 	margin: 92px 0 0;
-	padding: 120px 60px 44px;
+	padding: 120px 0 60px 44px;
 	background:url(../i/catalog_f.jpg) repeat-y 0 0;
+
 }
 .formBox {
 	margin: 0 0 119px;
@@ -2008,6 +2009,7 @@ body {
 		border-color: #d02947 !important;
 	}
 	.form__item .inputBox {
+		width: 75%;
 		display: -moz-inline-stack;
 		display: inline-block;
 		vertical-align: middle;	        
@@ -2028,7 +2030,7 @@ body {
 		}
 
 		.form__item .inputBox input[type="text"],.form__item .message textarea  {
-			width: 186px;
+			width: 20%;
 			padding:0 15px;
 			height:42px;
 			border:4px solid #5e95bc;
@@ -2127,6 +2129,7 @@ body {
 	}
 	.button__form .cloudBtn.active:hover{
 		background: white;
+		color: #5586aa;
 	}
 	.button__form span {
 		vertical-align: middle;
@@ -2507,16 +2510,17 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	background: url(../i/e.png) no-repeat left center !important;
 	padding: 12px 0 12px 63px !important;
 	font-size: 19px;
-	max-width: 560px !important;
+	max-width: 100% !important;
 	font: italic 18px/20px Arial, sans-serif !important;
+	text-align: left !important;
 }
 .tooltip{
 	display: inline-block !important; 
 	position: static !important; 
 	vertical-align: middle !important;
 	padding: 0 !important;
+	max-width: 67%;
 }
-.tooltip.right {margin-left: 20px !important;}
 
 /*-----------news--------------------------*/
 .content{margin: 0 7%}
