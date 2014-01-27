@@ -1689,6 +1689,7 @@ body {
 		zoom: 1;
 		display: inline-block;
 		width: 59%;
+		text-align: left;
 	}
 		.section__i .section__option li {
 			vertical-align: middle;
@@ -1696,6 +1697,16 @@ body {
 			display: inline-block;
 			margin-left: 8%;
 		}
+		.section__i .section__option.many-items li {
+			margin-left: 0;
+			width: 33%;
+		}
+		.section__i .section__option.many-items{
+			width: 54%;
+			padding-left: 5%;
+		}
+
+
 			.section__i .section__option li a {
 				display:block;
 				position:relative;
@@ -2181,13 +2192,14 @@ body {
 	}
 		.openMaps.mapsVis {
 			color:#d02947;
+			margin-right: 11px;
 		}
 			.openMaps.mapsVis span {
 				border-color:#d02947;
 			}
 			.openMaps.mapsVis i {
 				top:0;
-				left:100%;
+				left: 90%;
 				background:url(../i/ar_maps.png) no-repeat 50% 50%;
 			}
 		.openMaps span {
