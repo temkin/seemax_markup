@@ -1714,6 +1714,14 @@ body {
 				color:#000;
 				text-decoration: none;
 			}
+			.section__i .section__option li a:hover{
+				text-decoration: underline;
+				color: #d02947;
+			}
+			.section__i .section__option li a:hover i{
+				color: #d02947;
+			}
+
 				.section__i .section__option a i {
 					display: -moz-inline-stack;
 					display: inline-block;
