@@ -2049,7 +2049,7 @@ body {
 			background:none;
 			font:18px/18px 'pf_beausans_prolight';
 			color:#fff;
-			margin: 0 16px 0 0;
+			margin: 12px 16px 12px 0;
 		}
 		.form__item .inputBox input[type="text"]::-webkit-input-placeholder{color: white; opacity: 0.5}
 		.form__item .inputBox.bigInput input {
