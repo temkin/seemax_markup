@@ -1987,7 +1987,7 @@ body {
 .pageForm {
 	margin: 92px 0 0;
 	padding: 120px 0 60px 44px;
-	background:url(../i/catalog_f.jpg) repeat-y 0 0;
+	background:url(../i/catalog-f.png) repeat-y 0 0;
 
 }
 .formBox {
@@ -2474,6 +2474,7 @@ body {
 	display: none;
 	float: right;
 	width: 50%;
+	margin-top: -60px;
 }
 .serial-help-device * {display: inline-block; }
 .serial-help-device p{
