@@ -10,12 +10,18 @@
 
 @media (max-width: 1280px) {
 	.nav__title, .nav__i.cur .nav__title {font: 19px/26px 'pf_beausans_prolight';}
-
+	.section__i .section__option li {margin-left: 5%;}
+	.section__i .name__item {font-size: 20px;}
+	.section__i img {margin: 0 5% 0 0;}
+	.section__i .section__option {width: 63%}
 }
 @media (max-width: 1100px) {
 	.slides-wrapper {height: 500px;}
 	.mainMenu>ul>li>a {font-size: 12px;}
 	.tooltip-inner{font-size: 14px !important;}
+	.section__i img {margin: 0 4% 0 0;}
+	.section__i .section__option {width: 64%;}
+	.section__i .section__option li a {font: 12px/38px Arial, sans-serif;}
 }
 @media (max-width: 970px){
 	.slides-wrapper {height: 435px;}

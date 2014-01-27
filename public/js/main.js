@@ -172,7 +172,8 @@ $(document).ready(function(){
                 $('html, body').animate({scrollTop:destination}, 800);
             }
             return false;
-        })
+        });
+        $('.section__title').on('mouseover' , function (){$(this).css('opacity',1);});
     });
 
      //FAQ

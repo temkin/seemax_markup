@@ -14,7 +14,7 @@ $(document).ready(function (){
         $(this).addClass('current');
     
         var n = $(this).index();
-        $('.faqBox').fadeOut();
+        $('.faqBox').hide();
         $('.faqBox').eq(n).fadeIn();
 
         return false;

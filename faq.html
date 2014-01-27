@@ -12,8 +12,8 @@
     <script type="text/javascript" src="public/js/dropdown.js"></script>
     <script src="public/js/lib/bootstrap.validate.js"></script>
 	<script src="public/js/lib/bootstrap.validate.en.js"></script>
-    <script src="public/js/users-validation.js"></script>
     <script type="text/javascript" src="public/js/faq.js"></script>
+    <script src="public/js/users-validation.js"></script>
     <script type="text/javascript" src="public/js/main.js"></script>
     <script type="text/javascript" src="public/js/lib/bootstrap.min.js"></script>
 
@@ -416,20 +416,20 @@
 									<div class="form__item error_form">
 										<label>Имя и фамилия:</label>
 										<div class="inputBox">
-											<input type="text" validate="required|name" tabindex="1">
+											<input type="text" name="name" validate="required|name" tabindex="1">
 											<i class="item__i er_i"></i>
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Телефон:</label>
 										<div class="inputBox with-text">
-											<input type="text" validate="required|phone" tabindex="2">
+											<input type="text" name="phone" validate="required|phone" tabindex="2">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>E-mail:</label>
 										<div class="inputBox bigInput">
-											<input type="text" validate="required|email" tabindex="3">
+											<input type="text" name="email" validate="required|email" tabindex="3">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
@@ -455,7 +455,7 @@
 									</div><!--form__item-->
 								</div><!--form__cont-->
 								<div class="button__form question-submit">
-									<input id="send-request" type="submit" class="cloudBtn active" value="Отправить вопрос" tabindex="6">
+									<input id="send-request" type="submit" class="cloudBtn" value="Отправить вопрос" tabindex="6">
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</form></div>
