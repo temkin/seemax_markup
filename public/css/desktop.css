@@ -264,7 +264,7 @@ body {
 	display:block;
 	position:absolute;
 	top: 28px;
-	right: 34px;
+	right: 113px;
 	width:33px;
 	height:33px;
 	background: url(../i/cross.png) no-repeat 0 -43px;
@@ -1116,6 +1116,7 @@ body {
 			font:18px/27px Arial, sans-serif;
 			font-weight: normal !important;
 			margin: 0 0 27px;
+			width: 42%;
 		}
 	.content blockquote {
 		font: 36px/54px 'pf_beausans_prolight';
@@ -1197,6 +1198,7 @@ body {
 		}
 	.ad__i.bot {
 		height:540px;
+		overflow: hidden;
 	}
 		.ad__i.bot .ad__txt {
 			height:468px;
@@ -1245,6 +1247,9 @@ body {
 		.ad__txt .ad__icon.ar_icon {
 			background: url(../i/icon_h.png) no-repeat 0 0;
 		}
+
+	.ad__txt .ad__icon.arrow-i{background: url(../i/arrow-i.png) no-repeat 0 0;}
+	.ad__txt .ad__icon.dash-i{background: url(../i/dash-i.png) no-repeat 0 0;}
 	.ad__txt_title {
 		color:#fff;
 		margin: 62px 0 0 0;
@@ -1257,6 +1262,7 @@ body {
 		color:#fff;
 		margin: 28px 0 8% 0;
 	}
+	.ad__txt_i ul {margin-top: 30px; list-style: inherit;padding-left: 18px;}
 		.ad__txt_i a {
 			color:#fff;
 		}
@@ -1826,7 +1832,7 @@ body {
 				.nav__faq a:hover i {
 					background-image: url(../i/icon_faq_hm.png);
 				}
-				.nav__faq a i.navigation_i {
+				.nav__faq a i.navigation_i,  .products-ul li.navigation_i{
 					background-position: 0 0;
 				}
 				.nav__faq a i.reg_i {
@@ -1841,6 +1847,28 @@ body {
 				.nav__faq a i.plan_child {
 					background-position: 0 -272px;
 				}
+				.products-ul{margin: 89px 0 0 0 !important;}
+				.products-ul li a{color: #329ed0;}
+
+				.products-ul li{
+					padding:11px 0 11px 7%;
+					list-style: none !important;
+					display: inline-block;
+					position: relative;
+				}
+				.products-ul li:before{
+					background: url(../i/icon-set-partn.png) no-repeat 0 center;
+					position: absolute;
+					width: 58px;
+					height: 58px;
+					left: 0;
+					top:8px;
+					content: " "; 
+				}
+				.products-ul li.cam_i:before{background-position: -182px center}
+				.products-ul li.vreg_i:before{background-position: -60px center}
+				.products-ul li.pl_i:before{background-position: -121px center}
+				.products-ul li.childp_i:before{background-position: -241px center}
 
 /*=======faqBox
 =================*/
@@ -2676,3 +2704,4 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	opacity: 1;
 	cursor: pointer;
 }
+.cash-sign{background: url(../i/cash_icon.png) no-repeat left center !important;}
