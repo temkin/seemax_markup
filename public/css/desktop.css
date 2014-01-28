@@ -1717,8 +1717,8 @@ body {
 			width: 33%;
 		}
 		.section__i .section__option.many-items{
-			width: 54%;
-			padding-left: 5%;
+			width: 54.3%;
+			padding-left: 4.7%;
 		}
 
 
@@ -1752,6 +1752,9 @@ body {
 						width:16px;
 						height:14px;
 						background:url(../i/arrow_s.png) no-repeat 0 0;
+					}
+					.section__i .section__option a:hover i.arrow_s {
+						background:url(../i/arrow_pink.png) no-repeat 0 0;
 					}
 
 /*======miniBox__faq

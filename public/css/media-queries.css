@@ -14,11 +14,12 @@
 	.section__i .name__item {font-size: 19px;}
 	.section__i img {margin: 0 5% 0 0;}
 	.section__i .section__option {width: 63%}
-	.section__i .section__option.many-items {width: 59%;padding-left: 4%;}
+	.section__i .section__option.many-items {width: 59.8%;padding-left: 3%;}
 	.section__i .section__option li a {font: 17px/38px Arial, sans-serif;}
 
 }
 @media (max-width: 1100px) {
+	.section__i .section__option.many-items {width: 60.8%;}
 	.slides-wrapper {height: 500px;}
 	.mainMenu>ul>li>a {font-size: 12px;}
 	.tooltip-inner{font-size: 14px !important;}
