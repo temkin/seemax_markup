@@ -422,6 +422,7 @@ body {
 .region {
 	float:right;
 	font:18px/20px Arial, sans-serif;
+	font-weight: normal !important;
 	color:#000;
 	margin: 25px 7% 0 0;
 	
@@ -430,6 +431,7 @@ body {
 	.region a {
 		display:none;
 		font:18px/20px Arial, sans-serif;
+		font-weight: normal !important;
 		color:#000;
 		margin:0 0 0 40px;
 		text-decoration: none;
@@ -520,6 +522,7 @@ body {
 				background:#1183b8;
 				border-radius:0 0 15px 0;
 				font:18px/27px Arial, sans-serif;
+				font-weight: normal !important;
 				color:#fff;
 				padding: 15px 69px 29px 18%;
 			}
@@ -690,6 +693,7 @@ body {
 .optionDescr {
 	margin: 28px 0 0;
 	font: 18px/27px Arial, sans-serif;
+	font-weight: normal !important;
 	color:#000;
 }
 	.optionDescr a {
@@ -780,6 +784,7 @@ body {
 	}
 	.txtBan {
 		font:18px/27px Arial,sans-serif;
+		font-weight: normal !important;
 		color:#fff;
 		margin: 46px 0 0 5px;
 	}
@@ -1023,6 +1028,7 @@ body {
 
 .descr__i {
 	font:18px/27px Arial, sans-serif;
+	font-weight: normal !important;
 }
 
 /*pager*/
@@ -1084,6 +1090,7 @@ body {
 	}
 	.content p {
 		font:18px/27px Arial, sans-serif;
+		font-weight: normal !important;
 		margin: 54px 0 0;
 	}
 	.content p a {
@@ -1095,6 +1102,7 @@ body {
 	.content ol {
 		margin: 27px 0 0 25px;
 		font:18px/27px Arial, sans-serif;
+		font-weight: normal !important;
 	}
 	.content h2 {
 		font:30px/30px 'pf_beausans_prosemibold';
@@ -1106,6 +1114,7 @@ body {
 		.content ul li {
 			list-style-type: disc;
 			font:18px/27px Arial, sans-serif;
+			font-weight: normal !important;
 			margin: 0 0 27px;
 		}
 	.content blockquote {
@@ -1244,6 +1253,7 @@ body {
 	}
 	.ad__txt_i {
 		font:18px/27px Arial,sans-serif;
+		font-weight: normal !important;
 		color:#fff;
 		margin: 28px 0 8% 0;
 	}
@@ -1304,6 +1314,7 @@ body {
 
 .txt__model {
 	font: 18px/27px Arial, sans-serif;
+	font-weight: normal !important;
 	margin: 53px 0 0;
 }
 
@@ -1489,6 +1500,7 @@ body {
 	}
 		.characteristic__descr li {
 			font:18px/27px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#fff;
 			margin: 0 0 17px;
 			position:relative;
@@ -1548,6 +1560,7 @@ body {
 			display:block;
 			position:relative;
 			font:18px/28px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#fff;
 			text-decoration:none;
 			padding: 19px 70px 20px 84px;
@@ -1590,6 +1603,7 @@ body {
 		.features__data td {
 			padding:0 8px 0 0;
 			font:18px/18px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#000;
 			height: 45px;
 		}
@@ -1683,6 +1697,7 @@ body {
 		width: 20%;
 		vertical-align: middle;
 		display: inline-block;
+		text-align: left;
 	}
 	.section__i .section__option {
 		vertical-align: middle;
@@ -1711,6 +1726,7 @@ body {
 				display:block;
 				position:relative;
 				font: 18px/38px Arial, sans-serif;
+				font-weight: normal !important;
 				color:#000;
 				text-decoration: none;
 			}
@@ -1780,6 +1796,7 @@ body {
 			display:block;
 			position:relative;
 			font:18px/18px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#000;
 			text-decoration: none;
 			padding: 0 0 0 85px;
@@ -1951,6 +1968,7 @@ body {
 		}
 	.search__itemDescr {
 		font:18px/27px Arial, sans-serif;
+		font-weight: normal !important;
 		color:#000;
 		margin: 9px 0 0;
 	}
@@ -1986,6 +2004,7 @@ body {
 }
 .reg__commaent {
 	font:18px/27px Arial, sans-serif;
+	font-weight: normal !important;
 	color:#000;
 	margin: 78px 0 0;
 }
@@ -2085,6 +2104,7 @@ body {
 		}
 		.form__item .inputBox  span {
 			font:italic 18px/20px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#fff;
 			vertical-align: middle;
 		}
@@ -2153,6 +2173,7 @@ body {
 	.button__form span {
 		vertical-align: middle;
 		font:italic 18px/20px Arial, sans-serif;
+		font-weight: normal !important;
 		color:#fff;
 	}
 
@@ -2303,6 +2324,7 @@ body {
 			width: 350px;
 			padding:0 10px 0 0;
 			font:18px/27px Arial, sans-serif;
+			font-weight: normal !important;
 			color:#000;
 			margin: 11px 0 26px 0;
 		}
@@ -2533,6 +2555,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	font-size: 19px;
 	max-width: 100% !important;
 	font: italic 18px/20px Arial, sans-serif !important;
+	font-weight: normal !important;
 	text-align: left !important;
 }
 .tooltip{
@@ -2597,7 +2620,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	line-height: 29px;
 	width: 50%;
 	font-family: Arial;
-	font-weight: normal;
+	font-weight: normal !important;
 	background: url(../i/marker-icon.png) no-repeat left center;
 }
 .open-close-buts a{
