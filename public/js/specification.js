@@ -40,7 +40,6 @@ $(document).ready(function(){
             scroll: {
                 items:1,
                 onAfter: function () {
-
                     // Get item-id value of selected item
                     var itemId = $('.preview__item:eq(1)').attr('item-id');
                     
@@ -53,6 +52,31 @@ $(document).ready(function(){
             }
         });
 
+        $('.visual_characteristic').each(function(){
+        var _this = $(this);
+        
+        $('.visual__i', _this).carouFredSel({
+            responsive: false,
+            circular: true,
+            infinite: false,
+            width: 560,
+            height: 170,
+            auto: {
+                play: true
+            },
+            scroll: {
+                items:1,
+                duration:800
+            }, 
+            items: {
+                visible: 1
+            }, 
+            pagination: {
+                container: $('.visual__loader', _this)
+            }
+        })
+    });
+
 
         var _this = $(this);
         $('.bigFotot__model', _this).carouFredSel({
@@ -62,14 +86,15 @@ $(document).ready(function(){
             width: '660',
             align: 'center',
             auto: {
-                play: false
+                play: false,
             },
             scroll: {
                 items:1,
-                fx: 'crossfade',
+                fx: "fade",
                 onAfter: function () {
                     $('.bigFotot__model').css('visibility', 'visible');
-                }
+                },
+                duration:500
             }, 
             items: {
                 visible: 1

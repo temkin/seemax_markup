@@ -12,6 +12,7 @@ $.bt_validate = {
 }
 
 $.fn.show_tooltip = function(text, color) {
+    $(this).next().remove();
     $(this).tooltip('destroy');
     var rid = 'tlt_' + parseInt(new Date().getTime());
     var marker = '<div id="'+rid+'"</div>';

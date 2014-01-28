@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8" />
+	<title>see:max</title>
+	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
+	<link rel="stylesheet" type="text/css" href="public/css/media-queries.css">
+
+        <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="public/js/main.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("<style type='text/css' id='arrowFadeCss' />").appendTo("head");
+			$(window).on('resize', function (){
+				var heightImg = $('.news.content .news-item .news-body img').height();
+				$("#arrowFadeCss").text('.news.content .news-item .news-body a:after{height:'+ heightImg+'px !important;}');
+			});
+		});
+	</script>
+	<div class="header">
+			<div class="header__search">
+				<div class="header__searchI">
+					<div class="logo">
+						<a href="#"><img src="public/i/logo.png" alt=""></a>
+					</div><!--logo-->
+					<div class="search__slog">
+						<i></i>
+						<input type="text">
+					</div><!--search__slog-->
+					<i class="close_ar"></i>
+					<i class="close_cross"></i>
+				</div><!--header__searchI-->
+				<div class="search__menu">
+					<div class="search__bord bord_p"></div><!--footer__bord bord_p-->
+					<div class="search__bord bord_b"></div><!--footer__bord bord_b-->
+					<div class="serch__menuI">
+						<ul>
+							<li><a href="#"><span>Акция! Выиграйте наигатор SeeMax E500</span><i></i></a></li>
+							<li><a href="#"><span>Обзор наигатора SeeMax E500</span><i></i></a></li>
+							<li><a href="#"><span>Купить наигатор SeeMax E500</span><i></i></a></li>
+						</ul>
+					</div><!--serch__menuI-->
+				</div><!--search__menu-->
+			</div><!--header__search-->
+			<div class="header__i">
+				<div class="header__norm">
+					<div class="logo">
+						<a href="#"><img src="public/i/logo.png" alt=""></a>
+					</div><!--logo-->
+					<div class="mainMenu">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li class="with-sub"><a href="#">Продукция</a>
+							<div class="mainMenu__add">
+								<div class="search__bord bord_p"></div>
+								<div class="search__bord bord_b"></div>
+								<div class="mainMenu__add_i">
+									<ul>
+										<li><a href="#">GPS-навигаторы</a></li>
+										<li><a href="#">Видеорегистраторы</a></li>
+										<li><a href="#">Планшеты</a></li>
+										<li><a href="#">Экшн-камеры</a></li>
+										<li><a href="#">Детские планшеты</a></li>
+									</ul>
+								</div>
+							</div><!--mainMenu__add-->
+							</li>
+							<li><a href="#">Поддержка</a></li>
+							<li class="cur"><a href="#">Партнёрам</a></li>
+							<li><a href="#">Где купить?</a></li>
+						</ul>
+					</div><!--mainMenu-->
+					<div class="search">
+						<i></i>
+					</div><!--search-->
+				</div><!--header__norm-->
+			</div><!--header__i-->
+	</div><!--header-->
+	<div class="navigation__prod">
+			<div class="navigation__prod_ii">
+				<ul class="nav__prod__i">
+					<li><a href="#">Фото и рекламные материалы</a></li>
+					<li><a href="#">Прайс-листы</a></li>
+					<li class="cur"><a href="#">Новости для диллеров</a></li>
+					<li><a href="#">Акции</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="page">
+		<div class="content news">
+			
+				<h1>Новости для диллеров</h1>
+				<div class="news-wrapper">
+					<div class="news-item">
+						<div class="news-header">
+							<span class="news-date">20.11.2013</span>
+							<h2><a href="#">Розыгрыш навигаторов SeeMax</a></h2>
+						</div>
+						<div class="news-body">
+							<a href="#">
+								<img src="public/i/news-image.png"/>
+							</a>
+						</div>
+						<div class="news-descr">
+							<p>
+								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-header">
+							<span class="news-date">20.11.2013</span>
+							<h2><a href="#">Подведены итоги конкурса</a></h2>
+						</div>
+						<div class="news-body">
+							<a href="#">
+								<img src="public/i/news-image2.png"/>
+							</a>
+						</div>
+						<div class="news-descr">
+							<p>
+								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-header">
+							<span class="news-date">20.11.2013</span>
+							<h2><a href="#">Подведены итоги конкурса</a></h2>
+						</div>
+						<div class="news-body">
+							<a href="#">
+								<img src="public/i/news-image3.png"/>
+							</a>
+						</div>
+						<div class="news-descr">
+							<p>
+								Компания SeeMax совместно с новостным порталом Tut.by запустила рекламную игру, в ходе которой будет разыграно некоторое количесвто
+GPS-навигаторов SeeMax Navi E610 на 8Gb. Побробности участия и продолжительность акции — в статье: <a href="http://auto.tut.by/news/offtop/380995.html">http://auto.tut.by/news/offtop/380995.html</a></p>	
+						</div>
+					</div>
+				</div>
+		</div><!--content-->
+		<div class="bannerBox">
+					<div class="bannerBox__i">
+						<div class="bannerDescr">
+							<i class="iconDiller"></i>
+							<h3 class="titleBan"><a href="#">дилерский отдел</a></h3>
+							<div class="txtBan">
+								Телефоны: +375 17 271-86-20, +375 29 368-36-83
+Skype: servis.seemax<br/>
+E-mail: support@seemax.by
+							</div><!--txtBan-->
+						</div><!--bannerDescr-->
+					</div><!--bannerBox__i-->
+			</div><!--bannerBox-->
+		<div class="addMenu">
+			<ul class="cols">
+				<li class="titleLink"><a href="#">О компании</a></li>
+				<li><a href="#">Информация о Seemax</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Продукция</a></li>
+				<li><a href="#">GPS-навигаторы</a></li>
+				<li><a href="#">Видеорегистраторы</a></li>
+				<li><a href="#">Планшеты</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Детские планшеты</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Поддержка</a></li>
+				<li><a href="#">Скачать</a></li>
+				<li><a href="#">Сервисные центры</a></li>
+				<li><a href="#">Регистрация продукта</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Партнёрам</a></li>
+				<li><a href="#">Как стать партнёром?</a></li>
+				<li><a href="#">Зарегистрироваться в системе</a></li>
+				<li><a href="#">Вход для партнёров</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Где купить?</a></li>
+				<li><a href="#">Интернет-магазин</a></li>
+				<li><a href="#">Дилерская сеть</a></li>
+			</ul>
+		</div><!--addMenu-->
+		<div class="footer">
+			<div class="footerBord">
+				<div class="footer__bord bord_p"></div><!--footer__bord bord_p-->
+				<div class="footer__bord bord_b"></div><!--footer__bord bord_b-->
+				<div class="footer__bord bord_g"></div><!--footer__bord bord_g-->
+			</div><!--footerBord-->
+			<div class="footer__i">
+				<div class="social_f">
+					<a href="#" class="vk"></a>
+					<a href="#" class="fb"></a>
+				</div><!--social_f-->
+				<div class="region">
+					Ваш регион: <span>Беларусь <i></i></span>
+					<a href="#" class="rus">Россия <i></i></a>
+					<a href="#" class="uk">Украина <i></i></a>
+				</div><!--region-->
+			</div><!--footer__i-->
+		</div><!--footer-->
+	</div><!--page-->
+</body>
+</html>

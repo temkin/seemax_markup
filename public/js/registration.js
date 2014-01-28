@@ -5,10 +5,6 @@ $(document).ready(function () {
     var countrydd = new DropDown( $('#country-dd') );
     var  knowdd = new DropDown( $('#know-dd') );
 
-    $(document).click(function() {
-    	$('.wrapper-dropdown-1').removeClass('active');
-    });
-
     $('.item__i.quest').hover(
     	function (e){
     		$(this).css('opacity',1);
@@ -20,43 +16,15 @@ $(document).ready(function () {
         }
     );
     //datepicker
-    $('#choose-date').datepicker({format:"dd/mm/yyyy"});
+    $('#choose-date').datepicker({format:"dd/mm/yyyy"})
+        .on('changeDate', function(ev){
+            $(this).datepicker('hide');
+        });;
 
     //validation
     $('#reg-form').bt_validate();
 
-    $.bt_validate.method(
-        'phone', 
-        function(value) {
-            return value.length == 11 && value.match(/^\d+$/);
-        },
-        "Номер телефона должен состоять из 11 цифр и включать код города и страны"
-    );  
-    $.bt_validate.method(
-        'name', 
-        function(value) {
-            return (!(/[\d]/.test(value)));
-        },
-        "Данное поле не может содержать цифры"
-    ); 
-    $.bt_validate.method(
-        'serial', 
-        function(value) {
-            ;
-            return (value.replace(/\s/g, "").replace(/\-/g,"").length == 12);
-        },
-        "Данное поле заполнено неверно."
-    ); 
-    $.bt_validate.after_validate = function(method, value, params, result) {
-        if (!result){
-            $(this).addClass("input-error");
-        }else{
-            $(this).removeClass("input-error");
-        }
-    }
-    $.bt_validate.text["required"] = "Это поле должно быть заполнено.";
-    $.bt_validate.text["email"] = "Введен неверный e-mail.";
-    $.bt_validate.text["datetime"] = "Введена неверная дата";
-
-
+    $('.cloudBtn').on('click', function (){
+        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
+    });
 });
