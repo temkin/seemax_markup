@@ -275,6 +275,14 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
+    $('.show-pass').on('click', function (){
+        if ($(this).prev().attr('type') == "password") {
+            $(this).prev()[0].type = "text";
+        }else{
+            $(this).prev()[0].type = "password";
+        }
+    });
+
 
 
 }); /* END $(document).ready() */

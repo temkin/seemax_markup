@@ -2070,7 +2070,7 @@ body {
 			vertical-align: middle;
 		}
 
-		.form__item .inputBox input[type="text"],.form__item .message textarea  {
+		.form__item .inputBox input[type="text"], .form__item .inputBox input[type="password"],.form__item .message textarea  {
 			width: 20%;
 			padding:0 15px;
 			height:42px;
@@ -2658,4 +2658,21 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	margin: 0 auto !important;
 	width: auto !important;
 	max-width: 1480px;
+}
+.show-pass{
+	display: inline-block;
+	background: url(../i/eye.png) no-repeat center;
+	width: 30px;
+	height: 16px;
+	vertical-align: middle;
+	opacity: 0.5;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+.show-pass:hover{
+	opacity: 1;
+	cursor: pointer;
 }

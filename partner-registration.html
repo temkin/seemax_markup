@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>see:max</title>
+	<link rel="stylesheet" type="text/css" href="public/css/desktop.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/default.css">
+	<link rel="stylesheet" type="text/css" href="public/css/media-queries.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/bootstrap-combined.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/lib/datepicker.css">
+
+        <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/js/main.js"></script>
+        <script src="public/js/lib/bootstrap.validate.js"></script>
+		<script src="public/js/lib/bootstrap.validate.en.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#reg-form').bt_validate();
+
+			    $('.cloudBtn').on('click', function (){
+			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
+			    });
+			});
+		</script>
+        <script src="public/js/users-validation.js"></script>
+</head>
+<body>
+
+	<div class="page second">
+		<div class="header">
+			<div class="header__search">
+				<div class="header__searchI">
+					<div class="logo">
+						<a href="#"><img src="public/i/logo.png" alt=""></a>
+					</div><!--logo-->
+					<div class="search__slog">
+						<i></i>
+						<input type="text">
+					</div><!--search__slog-->
+					<i class="close_ar"></i>
+					<i class="close_cross"></i>
+				</div><!--header__searchI-->
+				<div class="search__menu">
+					<div class="search__bord bord_p"></div><!--footer__bord bord_p-->
+					<div class="search__bord bord_b"></div><!--footer__bord bord_b-->
+					<div class="serch__menuI">
+						<ul>
+							<li><a href="#"><span>Акция! Выиграйте наигатор SeeMax E500</span><i></i></a></li>
+							<li><a href="#"><span>Обзор наигатора SeeMax E500</span><i></i></a></li>
+							<li><a href="#"><span>Купить наигатор SeeMax E500</span><i></i></a></li>
+						</ul>
+					</div><!--serch__menuI-->
+				</div><!--search__menu-->
+			</div><!--header__search-->
+			<div class="header__i">
+				<div class="header__norm">
+					<div class="logo">
+						<a href="#"><img src="public/i/logo.png" alt=""></a>
+					</div><!--logo-->
+					<div class="mainMenu">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Магазин</a></li>
+							<li class="with-sub"><a href="#">Продукция</a>
+								<div class="mainMenu__add">
+									<div class="search__bord bord_p"></div>
+									<div class="search__bord bord_b"></div>
+									<div class="mainMenu__add_i">
+										<ul>
+											<li><a href="#">GPS-навигаторы</a></li>
+											<li><a href="#">Видеорегистраторы</a></li>
+											<li><a href="#">Планшеты</a></li>
+											<li><a href="#">Экшн-камеры</a></li>
+											<li><a href="#">Детские планшеты</a></li>
+										</ul>
+									</div>
+								</div><!--mainMenu__add-->
+							</li>
+							<li class="cur"><a href="#">Поддержка</a></li>
+							<li><a href="#">Партнёрам</a></li>
+							<li><a href="#">Где купить?</a></li>
+						</ul>
+					</div><!--mainMenu-->
+					<div class="search">
+						<i></i>
+					</div><!--search-->
+				</div><!--header__norm-->
+			</div><!--header__i-->
+		</div><!--header-->	
+		<div class="navigation__prod">
+			<div class="navigation__prod_ii">
+				<ul class="nav__prod__i">
+					<li><a href="#">Скачать</a></li>
+					<li><a href="#">Сервисные центры</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li class="cur"><a href="#">Регистрация продукта</a></li>
+				</ul>
+			</div>
+		</div><!--navigation-->
+			<div class="contentBox">
+				<div class="registrationPage">
+					<div class="header-title">
+						<h1 class="title__search">Партнерам</h1>
+						<div class="reg__commaent">
+							<a href="#">Зарегестрируйтесь,</a> чтобы получить доступ к маркетинговым метериалам SeeMax на разных языках. Наш ресурс постоянно пополняется 
+и совершенствуется. Отдел по работе с дилерами: телефон: +37529 678-45-21, skype: service.seemax, support@seemax.com 
+ 
+
+						</div><!--reg__commaent-->
+					</div>
+					<div class="pageForm">
+						<form id="reg-form">
+							<div class="formBox">
+								<h2 class="title__form">Данные необходимые для регистрации на сайте SeeMax в качестве партнёра</h2>
+								<div class="form__cont">
+									<div class="form__item">
+										<label>Компания:</label>
+										<div class="inputBox bigInput" >
+											<input type="text" name="company" validate="required|name" tabindex="1">
+											<i class="item__i er_i"></i>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Имя и фамилия:</label>
+										<div class="inputBox bigInput">
+											<input type="text"  validate="required|name" name="lastName" tabindex="2">
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Телефон:</label>
+										<div class="inputBox">
+											<input type="text" validate="required|phone" name="phone" tabindex="3">
+											<!--<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>-->
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>E-mail:</label>
+										<div class="inputBox bigInput">
+											<input type="text" name="email" validate="required|email" tabindex="4">
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Пароль:</label>
+										<div class="inputBox">
+											<input type="password" name="pass" validate="required" tabindex="5"><i class="show-pass"></i>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+								</div><!--form__cont-->
+								<div class="button__form">
+									<input type="submit" class="cloudBtn" value="Зарегистрироваться как партнер" tabindex="13">
+								</div><!--button__form-->
+							</div><!--formBox-->
+						</div><!--pageForm-->
+					</form>
+				</div><!--registrationPage-->
+			</div><!--contentBox-->
+		<div class="addMenu">
+			<ul class="cols">
+				<li class="titleLink"><a href="#">О компании</a></li>
+				<li><a href="#">Информация о Seemax</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Продукция</a></li>
+				<li><a href="#">GPS-навигаторы</a></li>
+				<li><a href="#">Видеорегистраторы</a></li>
+				<li><a href="#">Планшеты</a></li>
+				<li><a href="#">Экшн-камеры</a></li>
+				<li><a href="#">Детские планшеты</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Поддержка</a></li>
+				<li><a href="#">Скачать</a></li>
+				<li><a href="#">Сервисные центры</a></li>
+				<li><a href="#">Регистрация продукта</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Партнёрам</a></li>
+				<li><a href="#">Как стать партнёром?</a></li>
+				<li><a href="#">Зарегистрироваться в системе</a></li>
+				<li><a href="#">Вход для партнёров</a></li>
+			</ul>
+			<ul class="cols">
+				<li class="titleLink"><a href="#">Где купить?</a></li>
+				<li><a href="#">Интернет-магазин</a></li>
+				<li><a href="#">Дилерская сеть</a></li>
+			</ul>
+		</div><!--addMenu-->
+		<div class="footer">
+			<div class="footerBord">
+				<div class="footer__bord bord_p"></div><!--footer__bord bord_p-->
+				<div class="footer__bord bord_b"></div><!--footer__bord bord_b-->
+				<div class="footer__bord bord_g"></div><!--footer__bord bord_g-->
+			</div><!--footerBord-->
+			<div class="footer__i">
+				<div class="social_f">
+					<a href="#" class="vk"></a>
+					<a href="#" class="fb"></a>
+				</div><!--social_f-->
+				<div class="region">
+					Ваш регион: <span>Беларусь <i></i></span>
+					<a href="#" class="rus">Россия <i></i></a>
+					<a href="#" class="uk">Украина <i></i></a>
+				</div><!--region-->
+			</div><!--footer__i-->
+		</div><!--footer-->
+	</div><!--page-->
+</body>
+</html>
