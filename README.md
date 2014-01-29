@@ -2,12 +2,17 @@
 
 *Available pages for preview:* 
 
-* http://temkin.github.io/seemax_markup/faq.html
-* http://temkin.github.io/seemax_markup/index.html
-* http://temkin.github.io/seemax_markup/information.html
-* http://temkin.github.io/seemax_markup/maps.html
-* http://temkin.github.io/seemax_markup/product.html
-* http://temkin.github.io/seemax_markup/registration.html
-* http://temkin.github.io/seemax_markup/search.html
+* http://temkin.github.io/seemax_markup/404.html                  
+* http://temkin.github.io/seemax_markup/index.html                
+* http://temkin.github.io/seemax_markup/maps.html                 
+* http://temkin.github.io/seemax_markup/news.html                 
+* http://temkin.github.io/seemax_markup/partner.html              
+* http://temkin.github.io/seemax_markup/registration.html         
 * http://temkin.github.io/seemax_markup/specification.html
+* http://temkin.github.io/seemax_markup/faq.html                  
+* http://temkin.github.io/seemax_markup/information.html          
+* http://temkin.github.io/seemax_markup/markets.html              
+* http://temkin.github.io/seemax_markup/partner-registration.html 
+* http://temkin.github.io/seemax_markup/product.html              
+* http://temkin.github.io/seemax_markup/search.html               
 * http://temkin.github.io/seemax_markup/support.html
