@@ -2742,4 +2742,13 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 .cash-sign{background: url(../i/cash_icon.png) no-repeat left center !important;}
 .dillers-ban{background: url(../i/ban2.png) no-repeat;}
-.dillers-ban .bannerDescr{left: 7%}
+.dillers-ban .bannerDescr{left: 7%;}
+.reg-as-partner{text-align: left; padding-left: 323px}
+.reg-as-partner p {
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+	font: italic 18px/20px Arial, sans-serif;
+	margin-left: 4%;
+	width: 60%;
+}
