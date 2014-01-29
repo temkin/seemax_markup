@@ -196,6 +196,9 @@ body {
 		width:33px;
 		height:33px;
 		background: url(../i/search.png) no-repeat 0 0;
+		position: absolute;
+		right: 113px;
+		top: 28px;
 	}
 	.search i:hover {
 		background-image: url(../i/search_h.png);
@@ -1275,6 +1278,8 @@ body {
 
 	.ad__txt .ad__icon.arrow-i{background: url(../i/arrow-i.png) no-repeat 0 0;}
 	.ad__txt .ad__icon.dash-i{background: url(../i/dash-i.png) no-repeat 0 0;}
+
+
 	.ad__txt_title {
 		color:#fff;
 		margin: 62px 0 0 0;
@@ -1854,26 +1859,27 @@ body {
 					color:#d02947;
 					text-decoration:underline;
 				}
-				.nav__faq a:hover i {
+				.nav__faq a:hover i, .products-ul li a:hover:before {
 					background-image: url(../i/icon_faq_hm.png);
 				}
 				.nav__faq a i.navigation_i,  .products-ul li.navigation_i{
 					background-position: 0 0;
 				}
-				.nav__faq a i.reg_i, .products-ul li.reg_i:before {
+				.nav__faq a i.reg_i, .products-ul li.reg_i a:before {
 					background-position: 0 -68px;
 				}
-				.nav__faq a i.plan_i, .products-ul li.plan_i:before {
+				.nav__faq a i.plan_i, .products-ul li.plan_i a:before {
 					background-position: 0 -136px;
 				}
-				.nav__faq a i.action_cam, .products-ul li.action_cam:before {
+				.nav__faq a i.action_cam, .products-ul li.action_cam a:before {
 					background-position: 0 -204px;
 				}
-				.nav__faq a i.plan_child, .products-ul li.plan_child:before {
+				.nav__faq a i.plan_child, .products-ul li.plan_child a:before {
 					background-position: 0 -272px;
 				}
 				.products-ul{margin: 89px 0 0 0 !important;}
 				.products-ul li a{color: #329ed0;}
+				.products-ul li a:hover{color: #d02947;background: none;}
 
 				.products-ul li{
 					padding:11px 0 11px 7%;
@@ -1881,7 +1887,7 @@ body {
 					display: inline-block;
 					position: relative;
 				}
-				.products-ul li:before{
+				.products-ul li a:before{
 					background: url(../i/icon_faq.png) 0 0;
 					position: absolute;
 					width: 58px;
@@ -1890,7 +1896,8 @@ body {
 					top:8px;
 					content: " "; 
 				}
-				
+				.products-ul p{margin: 0; display: inline;}
+				.products-ul p.italic-p{font:italic 18px/20px Arial, sans-serif;}
 				
 				
 				
@@ -2665,9 +2672,9 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .where-buy-head{
 	font-family:'pf_beausans_proregular';
 	padding: 153px 7%;
-	color: white;
 	background: url(../i/404-bg.png);
 }
+.where-buy-head a, .ad__txt_title a{color: white; text-decoration: none;}
 .where-buy-head h1{font-size: 48px;}
 .where-buy-head h2{
 	font-size: 18px;
