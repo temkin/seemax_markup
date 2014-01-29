@@ -21,6 +21,11 @@
 			    $('.cloudBtn').on('click', function (){
 			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
 			    });
+			    $('.forgot-pass').on('click', function (e){
+			    	$(this).parent().next().slideDown();
+			    	$('#reg-dealler').val("Выслать пароль");
+			    	e.preventDefault();
+			    });
 			});
 		</script>
         <script src="public/js/users-validation.js"></script>
@@ -151,7 +156,7 @@
 									
 								</div><!--form__cont-->
 								<div class="button__form">
-									<input type="submit" class="cloudBtn" value="Войти как партнер" tabindex="13">
+									<input type="submit" id="reg-dealler" class="cloudBtn" value="Войти как партнер" tabindex="13">
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->
