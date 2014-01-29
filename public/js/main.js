@@ -276,6 +276,7 @@ $(document).ready(function(){
     });
 
     $('.show-pass').on('click', function (){
+        $(this).toggleClass("active");
         if ($(this).prev().attr('type') == "password") {
             $(this).prev()[0].type = "text";
         }else{
