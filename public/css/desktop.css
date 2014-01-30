@@ -679,12 +679,12 @@ body {
 	.forgot-pass{margin-left: 20%;}
 	.forgot-pass:hover{text-decoration: underline!important;}
 	.forgot-pass-form{display: none;}
-	.optionBox.partners-form .form__item label {width: 11%;}
+	.optionBox.partners-form .form__item label {width: 15%; margin-right: 3% !important;}
 	.optionBox.partners-form .form__item .inputBox{width: 80%}
 	.optionBox.partners-form .form__item .inputBox input{width: 34%%}
 	.optionBox.partners-form .optionItem.right{padding-right: 0;width: 43%;}
 	.optionBox.partners-form .form__item{margin: 0 0 10px;}
-	.optionBox.partners-form .button__form{margin: 10px 0 0 16.7%; text-align: left;}
+	.optionBox.partners-form .button__form{margin: 10px 0 0 18.7%; text-align: left;}
 	.optionItem.left {
 		padding: 69px 13% 144px 7%;
 	}
