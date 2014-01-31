@@ -22,8 +22,16 @@
 			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
 			    });
 			    $('.forgot-pass').on('click', function (e){
-			    	$(this).parent().next().slideDown();
-			    	$('#reg-dealler').val("Выслать пароль");
+			    	if ($(this).hasClass('active')) {
+			    		$(this).parent().next().slideUp();
+			    		$('#reg-dealler').val("Войти как партнёр");
+			    		$(this).removeClass('active');
+			    	}else{
+			    		$(this).addClass('active');
+			    		$(this).parent().next().slideDown();
+			    		$('#reg-dealler').val("Выслать пароль");
+			    	}
+			    	
 			    	e.preventDefault();
 			    });
 			});
