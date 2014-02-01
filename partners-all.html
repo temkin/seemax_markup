@@ -14,19 +14,28 @@
         <script type="text/javascript" src="public/js/main.js"></script>
         <script src="public/js/lib/bootstrap.validate.js"></script>
 		<script src="public/js/lib/bootstrap.validate.en.js"></script>
+
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('#reg-form').bt_validate();
+				$('#sign-in-form').bt_validate();
 
 			    $('.cloudBtn').on('click', function (){
-			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
+			        $('html, body').animate({scrollTop: $('#reg-dealler').offset().top}, 800); 
 			    });
 			    $('.forgot-pass').on('click', function (e){
 			    	if ($(this).hasClass('active')) {
+			    		$('input[name="login"]').attr('validate','required|email');
+			    		$('input[name="pass"]').attr('validate', 'required');
 			    		$(this).parent().next().slideUp();
 			    		$('#reg-dealler').val("Войти как партнёр");
 			    		$(this).removeClass('active');
 			    	}else{
+			    		$('input[name="login"]')
+			    			.removeAttr('validate')
+			    			.removeClass('input-error');
+			    		$('input[name="pass"]')
+			    			.removeAttr('validate')
+			    			.removeClass('input-error');
 			    		$(this).addClass('active');
 			    		$(this).parent().next().slideDown();
 			    		$('#reg-dealler').val("Выслать пароль");
@@ -37,6 +46,7 @@
 			});
 		</script>
         <script src="public/js/users-validation.js"></script>
+
 </head>
 <body>
 
@@ -131,7 +141,7 @@
 		</div><!--content-->
 		<div class="optionBox partners-form">
 			<div class="optionItem left">
-				<i class="optionIcon icon_part"></i>
+				<i class="optionIcon icon_reg"></i>
 				<h3 class="optionTitle"><a href="#">Регистрация</a></h3>
 				<div class="optionDescr">
 					Хотите получать качественную поддержку по всем продуктам компании SeeMax?
@@ -139,7 +149,7 @@
 				<a href="#" class="cloudBtn">Зарегистрируйтесь</a>
 			</div><!--optionItem-->
 			<div class="optionItem right">
-				<i class="optionIcon icon_soc"></i>
+				<i class="optionIcon icon_part"></i>
 				<h3 class="optionTitle">Вход для партнеров</h3>
 				<div class="optionDescr">
 					<form id="sign-in-form">
@@ -148,7 +158,7 @@
 									<div class="form__item">
 										<label>Логин:</label>
 										<div class="inputBox" >
-											<input type="text" name="company" validate="required" tabindex="1">
+											<input type="text" name="login" validate="required|email" tabindex="1">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
@@ -163,7 +173,7 @@
 									<div class="form__item forgot-pass-form">
 										<label>E-mail:</label>
 										<div class="inputBox">
-											<input type="text" name="email" validate="required|email" tabindex="4">
+											<input type="text" name="email" validate="email" tabindex="4">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									

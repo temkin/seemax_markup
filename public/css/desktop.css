@@ -676,12 +676,12 @@ body {
 		color:#26a9e6;
 		text-decoration: none;
 	}
-	.forgot-pass{margin-left: 20%;}
+	.forgot-pass{margin-left: 22.5%;margin-top: -11px;display: block;}
 	.forgot-pass:hover{text-decoration: underline!important;}
 	.forgot-pass-form{display: none;}
 	.optionBox.partners-form .form__item label {width: 15%; margin-right: 3% !important;}
 	.optionBox.partners-form .form__item .inputBox{width: 80%}
-	.optionBox.partners-form .form__item .inputBox input{width: 34%%}
+	.optionBox.partners-form .form__item .inputBox input{width: 34%;}
 	.optionBox.partners-form .optionItem.right{padding-right: 0;width: 43%;}
 	.optionBox.partners-form .form__item{margin: 0 0 10px;}
 	.optionBox.partners-form .button__form{margin: 10px 0 0 18.7%; text-align: left;}
@@ -2753,3 +2753,4 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	margin-left: 4%;
 	width: 49%;
 }
+#sign-in-form .tooltip{display: none !important;}
