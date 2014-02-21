@@ -18,27 +18,22 @@
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$('#sign-in-form').bt_validate();
-
+				$('#forgot-pass').bt_validate();
 			    $('.cloudBtn').on('click', function (){
-			        $('html, body').animate({scrollTop: $('#reg-dealler').offset().top}, 800); 
+			        $('html, body').animate({scrollTop: $('#sign-in-form').offset().top}, 800); 
 			    });
 			    $('.forgot-pass').on('click', function (e){
 			    	if ($(this).hasClass('active')) {
-			    		$('input[name="login"]').attr('validate','required|email');
-			    		$('input[name="pass"]').attr('validate', 'required');
-			    		$(this).parent().next().slideUp();
-			    		$('#reg-dealler').val("Войти как партнёр");
 			    		$(this).removeClass('active');
+			    		$('.forgot-pass-form').slideUp(function (){
+			    			$('#forgot-pass .button__form').hide();
+			    			$('#sign-in-form .button__form').show();
+			    		});
 			    	}else{
-			    		$('input[name="login"]')
-			    			.removeAttr('validate')
-			    			.removeClass('input-error');
-			    		$('input[name="pass"]')
-			    			.removeAttr('validate')
-			    			.removeClass('input-error');
 			    		$(this).addClass('active');
-			    		$(this).parent().next().slideDown();
-			    		$('#reg-dealler').val("Выслать пароль");
+			    		$('#sign-in-form .button__form').hide();
+			    		$('#forgot-pass .button__form').show();
+			    		$('.forgot-pass-form').slideDown();
 			    	}
 			    	
 			    	e.preventDefault();
@@ -167,22 +162,26 @@
 											<input type="password" name="pass" validate="required" tabindex="5"><i class="show-pass"></i>
 										</div><!--inputBox-->
 									</div><!--form__item-->
-									<div class="form__item">
+									<div class="form__item forgot-link">
 										<a class="forgot-pass" href="#">Забыли пароль?</a>
 									</div><!--form__item-->
-									<div class="form__item forgot-pass-form">
-										<label>E-mail:</label>
-										<div class="inputBox">
-											<input type="text" name="email" validate="email" tabindex="4">
-										</div><!--inputBox-->
-									</div><!--form__item-->
-									
-								</div><!--form__cont-->
-								<div class="button__form">
-									<input type="submit" id="reg-dealler" class="cloudBtn" value="Войти как партнер" tabindex="13">
-								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->
+						<div class="button__form">
+							<input type="submit" id="reg-dealler" class="cloudBtn" value="Войти как партнер" tabindex="13">
+						</div><!--button__form-->
+					</form>
+					<form id="forgot-pass">
+						<div class="form__item forgot-pass-form">
+							<label>E-mail:</label>
+							<div class="inputBox">
+								<input type="text" name="email" validate="email" tabindex="4">
+							</div><!--inputBox-->
+						</div><!--form__item-->
+						
+						<div class="button__form">
+							<input type="submit" id="send-pass" class="cloudBtn" value="Выслать пароль" tabindex="13">
+						</div><!--button__form-->
 					</form>
 				</div><!--optionDescr-->
 			</div><!--optionItem-->

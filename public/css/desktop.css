@@ -187,18 +187,16 @@ body {
 
 .search {
 	cursor:pointer;
-	display: inline-block;
-	vertical-align: middle;
-	width: 1%;
+	position: absolute;
+	right: 7%;
+	bottom: 29px;
+	width: 33px;
 }
 	.search i {
 		display:block;
 		width:33px;
 		height:33px;
 		background: url(../i/search.png) no-repeat 0 0;
-		position: absolute;
-		right: 113px;
-		top: 28px;
 	}
 	.search i:hover {
 		background-image: url(../i/search_h.png);
@@ -215,7 +213,6 @@ body {
 }
 .header__searchI {
 	max-width:1480px;
-	position:relative;
 	height:91px;
 	margin:0 auto;
 }
@@ -266,8 +263,8 @@ body {
 .close_cross {
 	display:block;
 	position:absolute;
-	top: 28px;
-	right: 113px;
+	bottom: 29px;
+	right: 7%;
 	width:33px;
 	height:33px;
 	background: url(../i/cross.png) no-repeat 0 -43px;
@@ -678,7 +675,7 @@ body {
 	}
 	.forgot-pass{margin-left: 22.5%;margin-top: -11px;display: block;}
 	.forgot-pass:hover{text-decoration: underline!important;}
-	.forgot-pass-form{display: none;}
+	.forgot-pass-form, #forgot-pass .button__form{display: none;}
 	.optionBox.partners-form .form__item label {width: 15%; margin-right: 3% !important;}
 	.optionBox.partners-form .form__item .inputBox{width: 80%}
 	.optionBox.partners-form .form__item .inputBox input{width: 34%;}
@@ -688,6 +685,7 @@ body {
 	.optionItem.left {
 		padding: 69px 13% 144px 7%;
 	}
+	#sign-in-form .formBox, #sign-in-form {margin-bottom: 0;}
 	.optionItem.right {
 		padding: 69px 13% 144px 7%;
 	}
@@ -888,6 +886,51 @@ body {
 		top:0;
 		display:block;
 	}
+	.navigation__prod.with-user .nav__prod__i{
+		padding-left: 0;
+	}
+	.navigation__prod.with-user{position: relative;}
+	.navigation__prod.with-user .navigation__prod_ii{min-width: 1000px; position: relative;}
+	.navigation__prod.with-user .user-logged a{
+		display: inline-block;
+		padding: 28px 0;
+		color: #a3e2ff;
+	}
+
+	.navigation__prod.with-user .user-logged .logout{color: white}
+	.navigation__prod.with-user .user-logged .logout:hover{text-decoration: underline;}
+
+	.navigation__prod.with-user .user-logged{
+		background: #1183b8;
+		padding: 0 10% 0 7%;
+	}
+	.navigation__prod.with-user .user-logged .icon{
+		width: 33px;
+		height: 33px;
+		display: inline-block;
+		vertical-align: middle;
+		background: url(../i/user.png) no-repeat center;
+		margin-right: 15px
+	}
+	.navigation__prod.with-user .user-logged small{color: #a3e2ff;padding: 0 9px}
+	.navigation__prod.with-user .close-but{
+		position: absolute;
+		right: 7%;
+		top: 19px;
+	}
+	.navigation__prod.with-user .close-but .icon{
+		display: block;
+		width: 33px;
+		height: 33px;
+		background: url(../i/close-arrows.png) no-repeat 0 0;
+	}
+	.navigation__prod.with-user .close-but .icon:hover{
+		background-position: 0 -33px;
+		cursor: pointer;
+	}	
+
+
+
 /*.navigation__prod.nav_product .title__nav {
 	float:left;
 	margin:0 0 0 -100px;
@@ -2753,4 +2796,5 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	margin-left: 4%;
 	width: 49%;
 }
-#sign-in-form .tooltip{display: none !important;}
+#sign-in-form .tooltip, #forgot-pass .tooltip{display: none !important;}
+.forgot-link{margin: 0 !important}
