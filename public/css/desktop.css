@@ -2438,7 +2438,7 @@ body {
 	position:absolute;
 	width:100%;
 	z-index:800;
-	height:72px;
+	height:70px;
 	top: 91px;
 	left:0;
 	overflow: hidden;
@@ -2472,7 +2472,7 @@ body {
 				font:14px/16px 'pf_beausans_proregular';
 				color:#fff;
 				text-decoration: none;
-				padding: 29px 21px 27px;
+				padding: 27px 25px 27px 19px;
 			}
 		.mainMenu__add_i ul li.cur,
 			.mainMenu__add_i li a:hover  {

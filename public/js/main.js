@@ -308,6 +308,7 @@ $(document).ready(function(){
                 marker = places[$(this).attr('loc')];
             bounds.extend(new google.maps.LatLng(marker.getPosition().lat(), marker.getPosition().lng()));
             map.fitBounds(bounds);
+            $('html, body').animate({scrollTop:$('.mapsBox').offset().top}, 800);
             e.stopPropagation();
             e.preventDefault();
         });
