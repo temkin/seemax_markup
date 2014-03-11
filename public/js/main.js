@@ -242,7 +242,7 @@ $(document).ready(function(){
         if (offset < 150 && scrollTop >= 300){
             $('.linkSlide img').css('margin-top', -offset );
         }
-        var bannerTop = scrollTop - $('.bannerBox__i').offset().top;
+        var bannerTop = $('.bannerBox__i').offset()? scrollTop - $('.bannerBox__i').offset().top : 0;
         if (bannerTop >= -50 && bannerTop <= 50){
             $('.bannerBox__i').css('background-position-y', bannerTop/3);
         }
@@ -321,7 +321,7 @@ $(document).ready(function(){
         });
 
       }
-      google && google.maps.event.addDomListener(window, 'load', initializeMap);
+      
 
 
 
