@@ -1,5 +1,6 @@
 $(document).ready(function(){
       //speciffication
+       $('.boxFiles').css('top',$('.featuresBox').offset().top);
      $('.image-zoom').jqzoom({zoomType: 'innerzoom'});
      $('.visualModel__box').each(function(){
 
