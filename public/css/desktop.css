@@ -625,8 +625,9 @@ body {
 
 .optionItem {
 	float:left;
-	width:30%;
-	height:325px;
+	width:50%;
+	height:100%;
+	box-sizing:border-box;
 	position:relative;
 	-webkit-transition: background-color .3s ease-in,color .3s ease-in;
 	-moz-transition: background-color .3s ease-in,color .3s ease-in;
