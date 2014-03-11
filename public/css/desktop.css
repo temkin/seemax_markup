@@ -2351,29 +2351,16 @@ body {
 		}
 
 /*mapsBox*/
-.mapsBox.mapsVis {
-	display:none;
-}
 .mapsBox {
-	position:relative;
 	z-index:11;
-	text-align: center;
 	overflow: hidden;
 	margin: 0 0 35px;
-	display:none;
+	display:block;
+	height: 0;
 }
-	.mapsBox i {
-		display:block;
-		position:absolute;
-		top:0;
-		left:0;
-		width:64px;
-		height:79px;
-		background: url(../i/marker.png) no-repeat 0 0;
-	}
-	.mapsBox img {
-
-	}
+#map-canvas{
+	height: 828px;
+}
 
 /*info__maps*/
 

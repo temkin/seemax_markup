@@ -262,18 +262,58 @@ $(document).ready(function(){
     });
 
     //Maps
-    $('.openMaps').on("click", function (e){
-        $('.mapsBox').slideDown();
-        $('.mapsVis').show();
+    $('#open-map').on("click", function (e){
+        $('.mapsBox').animate({height:"828px"}).addClass('active');
+        $('#close-map').show();
         $(this).hide();
+        e.stopPropagation();
         e.preventDefault();
     });
-    $('.mapsVis').on("click", function (e){
-        $('.mapsBox').slideUp();
-        $('.openMaps').show();
+    $('#close-map').on("click", function (e){
+        $('.mapsBox').animate({height:0}).removeClass('active');
+        $('#open-map').show();
         $(this).hide();
+        e.stopPropagation();
         e.preventDefault();
     });
+    function initializeMap() {
+        var mapOptions = {
+          center: new google.maps.LatLng(53.709807, 27.953389),
+          zoom: 7
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+        var places = {
+            minsk: new google.maps.Marker({
+                position: new google.maps.LatLng(53.855724, 27.447270),
+                map: map,
+                title: 'Minsk'
+            }),
+            brest: new google.maps.Marker({
+                position: new google.maps.LatLng(52.100768, 23.700771),
+                map: map,
+                title: 'Brest'
+            }),
+            vitebsk: new google.maps.Marker({
+                position: new google.maps.LatLng(55.192597, 30.229915),
+                map: map,
+                title: 'Vitebsk'
+            })
+        };
+        $('.pin-link').on('click', function (e){
+            if (!$('.mapsBox').hasClass('active')) {
+                $('#open-map').trigger('click');
+            };
+            var bounds = new google.maps.LatLngBounds(),
+                marker = places[$(this).attr('loc')];
+            bounds.extend(new google.maps.LatLng(marker.getPosition().lat(), marker.getPosition().lng()));
+            map.fitBounds(bounds);
+            e.stopPropagation();
+            e.preventDefault();
+        });
+
+      }
+      google.maps.event.addDomListener(window, 'load', initializeMap);
 
     $('.show-pass').on('click', function (){
         $(this).toggleClass("active");
