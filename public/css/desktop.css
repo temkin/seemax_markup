@@ -1585,6 +1585,7 @@ body {
 			position:relative;
 			padding: 16px 0 16px 81px;
 		}
+		.characteristic__descr li img{margin-right:20px;}
 				.characteristic__descr li.ram {
 					background: url(../i/icon_1.png) no-repeat left center;
 				}
