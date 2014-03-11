@@ -241,11 +241,10 @@ $(document).ready(function(){
         var offset = (scrollTop-300)/5;
         if (offset < 150 && scrollTop >= 300){
             $('.linkSlide img').css('margin-top', -offset );
-            $('.nav__i .boxImg').css('top', -offset);
-            $('.nav__i.cur .boxImg').css('top', -offset - 96);
         }
-        if (scrollTop >= 370 && -(scrollTop-370)/5>=-150){
-            $('.bannerBox__i').css('background-position-y', -(scrollTop-370)/5);
+        var bannerTop = scrollTop - $('.bannerBox__i').offset().top;
+        if (bannerTop >= -50 && bannerTop <= 50){
+            $('.bannerBox__i').css('background-position-y', bannerTop/3);
         }
     });
 
@@ -260,7 +259,15 @@ $(document).ready(function(){
     $('.close__search').on("click", function (){
         $(this).prev().val('');
     });
-
+    //Form pass
+    $('.show-pass').on('click', function (){
+        $(this).toggleClass("active");
+        if ($(this).prev().attr('type') == "password") {
+            $(this).prev()[0].type = "text";
+        }else{
+            $(this).prev()[0].type = "password";
+        }
+    });
     //Maps
     $('#open-map').on("click", function (e){
         $('.mapsBox').animate({height:"828px"}).addClass('active');
@@ -314,16 +321,9 @@ $(document).ready(function(){
         });
 
       }
-      google.maps.event.addDomListener(window, 'load', initializeMap);
+      google && google.maps.event.addDomListener(window, 'load', initializeMap);
 
-    $('.show-pass').on('click', function (){
-        $(this).toggleClass("active");
-        if ($(this).prev().attr('type') == "password") {
-            $(this).prev()[0].type = "text";
-        }else{
-            $(this).prev()[0].type = "password";
-        }
-    });
+
 
 
 
