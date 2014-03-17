@@ -283,6 +283,7 @@ $(document).ready(function(){
         e.stopPropagation();
         e.preventDefault();
     });
+    google.maps.event.addDomListener(window, 'load', initializeMap);
     function initializeMap() {
         var mapOptions = {
           center: new google.maps.LatLng(53.709807, 27.953389),
