@@ -571,12 +571,6 @@ body {
 				width:124px;
 				height:124px;
 			}
-
-				.nav__i.mouse_over .nav__title,
-				.nav__i.cur .nav__title {
-					font:24px/35px 'pf_beausans_prosemibold';
-					letter-spacing: 0.03px;
-				}
 				.nav__i.cur .boxImg img {
 					/*width:124px;*/
 					/*height:124px;*/
