@@ -139,6 +139,7 @@ body {
 	.mainMenu>ul {
 		height:40px;
 		width: 100%;
+		white-space: nowrap;
 	}
 		.mainMenu>ul>li {
 			display: -moz-inline-stack;
@@ -146,8 +147,7 @@ body {
 			vertical-align: middle;	        
 			zoom: 1;
 			*display: inline;
-			margin: 0 2% 0 0;
-			width: 13%;		
+			margin: 0 54px 0 0;
 		}
 			.mainMenu>ul>li>a {
 				font:16px/18px 'pf_beausans_proregular';
