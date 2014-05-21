@@ -816,9 +816,9 @@ body {
 		background:none;
 
 	}
-		.txtBan .cloudBtn:hover {
-			background:#fff;
-			color:#26a9e6;
+		.txtBan .cloudBtn:hover, .optionBox .cloudBtn:hover{
+			background:#fff !important;
+			color:#26a9e6 !important;
 		}
 		.txtBan a {
 			color:#fff;
