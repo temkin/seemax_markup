@@ -647,7 +647,7 @@ body {
 		background-image: url(../i/icon_h.png);
 
 	}
-	.optionBox.partners-form{background: url(../i/catalog-f.png)}
+	.optionBox.partners-form{background: url(../i/catalog-f.jpg)}
 	.optionItem:hover .optionTitle a,
 	.optionItem:hover .optionDescr,
 	.optionItem:hover .optionDescr a,
@@ -1027,7 +1027,7 @@ body {
 .catalogPage {
 	max-width: 1480px;
 	padding: 0 0 114px;
-	background: url(../i/catalog-f.png) repeat-y;
+	background: url(../i/catalog-f.jpg) repeat-y;
 }
 
 .catalogBox {
@@ -1484,7 +1484,7 @@ body {
 .characteristicsBox {
 	height:377px;
 	padding: 110px 0 0;
-	background:url(../i/catalog-f.png) no-repeat 50% 0;
+	background:url(../i/catalog-f.jpg) no-repeat 50% 0;
 }
 
 /*cabinet*/
@@ -2117,7 +2117,7 @@ body {
 .pageForm {
 	margin: 92px 0 0;
 	padding: 120px 0 60px 44px;
-	background:url(../i/catalog-f.png) repeat-y 0 0;
+	background:url(../i/catalog-f.jpg) repeat-y 0 0;
 
 }
 .formBox {
@@ -2699,7 +2699,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .where-buy-head{
 	font-family:'pf_beausans_proregular';
 	padding: 153px 7%;
-	background: url(../i/404-bg.png);
+	background: url(../i/404-bg.jpg);
 }
 .where-buy-head a, .ad__txt_title a{color: white; text-decoration: none;}
 .where-buy-head h1{font-size: 48px;}
@@ -2768,7 +2768,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	cursor: pointer;
 }
 .cash-sign{background: url(../i/cash_icon.png) no-repeat left center !important;}
-.dillers-ban{background: url(../i/ban2.png) no-repeat;}
+.dillers-ban{background: url(../i/ban2.jpg) no-repeat;}
 .dillers-ban .bannerDescr{left: 7%;}
 .reg-as-partner{text-align: left; padding: 30px 0 25px 22%;}
 .reg-as-partner p {
