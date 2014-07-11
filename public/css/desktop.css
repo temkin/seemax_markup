@@ -1027,6 +1027,7 @@ body {
 
 .catalogPage {
 	max-width: 1480px;
+	margin: 0 auto;
 	padding: 0 0 114px;
 	background: url(../i/catalog-f.jpg) repeat-y;
 }
@@ -1484,7 +1485,7 @@ body {
 
 .characteristicsBox {
 	height:377px;
-	padding: 110px 0 0;
+	padding: 50px 0 200px 0;
 	background:url(../i/catalog-f.jpg) no-repeat 50% 0;
 }
 
@@ -1569,7 +1570,7 @@ body {
 ==========================*/
 
 .characteristic__descr {
-	padding: 6px 0 0;
+	padding: 25px 0 0 0;
 }
 	.characteristic__descr ul {
 		padding: 0 78px 0 0;
@@ -2117,7 +2118,7 @@ body {
 
 .pageForm {
 	margin: 92px 0 0;
-	padding: 120px 0 60px 44px;
+	padding: 120px 0 60px 7%;
 	background:url(../i/catalog-f.jpg) repeat-y 0 0;
 
 }
@@ -2127,7 +2128,7 @@ body {
 .title__form {
 	font:30px/32px 'pf_beausans_prosemibold';
 	color:#fff;
-	margin: 0 0 0 30px;
+	margin: 0;
 }
 .form__cont {
 	margin: 69px 0 0 0;
@@ -2659,7 +2660,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .bigInput .tooltip {max-width: 60%;}
 
 /*-----------news--------------------------*/
-.content{margin: 0 7%}
+.content{margin: 0 11%}
 .news.content{font-family: 'pf_beausans_proregular';}
 .news.content .news-item .news-header {padding-bottom: 36px;}
 .news.content .news-item .news-body img{max-width: 100%;}
@@ -2703,7 +2704,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	background: url(../i/404-bg.jpg);
 }
 .where-buy-head a, .ad__txt_title a{color: white; text-decoration: none;}
-.where-buy-head h1{font-size: 48px;line-height: 48;}
+.where-buy-head h1{font-size: 48px;line-height: 48px;}
 .where-buy-head h2{
 	font-size: 18px;
 	margin: 60px 0;	
@@ -2783,3 +2784,43 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 #sign-in-form .tooltip, #forgot-pass .tooltip{display: none !important;}
 .forgot-link{margin: 0 !important}
+
+/*width--2560px*/
+
+.page, .header__i, .optionBox, .bannerBox, .addMenu, .footer__i,
+.contentBox {max-width: 2560px;}
+
+
+.sliderBox {background-size: contain;}
+
+.bannerBox__i, .section__title, .where-buy-head {background-size: cover;}
+
+.slider__i, .slides-wrapper, .sliderBox, 
+.slider_bg_1, .slider_bg_2, .slider_bg_3,
+.sliderBox, .slider__nav{
+width: 100%;
+}
+
+.slider__nav {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+height: 150px;
+}
+
+/*Temp*/
+.news.content .news-item .news-body img{width: 100%;}
+
+.news.content .news-item .news-body a:after, .news.content .news-item .news-body a:before {
+content: " ";
+display: block;
+position: absolute;
+width: 100%;
+height:100%;
+top: 0;
+}
+
+body {
+	min-width: 1200px;
+	padding: 0;
+}
