@@ -2439,7 +2439,7 @@ body {
 	height:70px;
 	top: 91px;
 	left:0;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .mainMenu__add .search__bord {
 	top:0;
@@ -2476,6 +2476,52 @@ body {
 			.mainMenu__add_i li a:hover  {
 				background: #1183b8;
 			}
+
+/* ----- level2 -----*/
+
+.mainMenu__add.level2 {  
+	top: 70px;  
+}
+	.mainMenu__add_i.level2  { 
+		background: transparent;
+		height: inherit;
+	} 
+		.mainMenu__add_i.level2 ul {
+			width: auto;
+			float: left;
+			padding: 23px 0;
+		} 
+		.mainMenu__add_i.level2 ul li:first-child {
+			margin-left: 24px;
+		} 
+			.mainMenu__add_i.level2 li a{
+				padding: 4px 16px 2px;
+				font-size: 12px;
+			}
+			.mainMenu__add_i.level2 li.active a,
+			.mainMenu__add_i.level2 li.active a:hover,
+			.mainMenu__add_i.level2 li a:hover{
+				color: #145d92;
+				background: #ffffff;
+				padding: 4px 15px 2px;
+				margin: 0 1px;
+				-webkit-border-radius: 25px;
+				-moz-border-radius: 25px;
+				border-radius: 25px;
+			}
+		.mainMenu__add_i.level2 ul.blue {
+			margin: 0 0 0 13.9%; 
+		}
+			.mainMenu__add_i.level2 .blue li a{
+				color: #2aa4ed;
+			}
+			.mainMenu__add_i.level2 .blue li.active a,
+			.mainMenu__add_i.level2 .blue li.active a:hover,
+			.mainMenu__add_i.level2 .blue li a:hover{
+				color: #145d92;
+				background: #2aa4ed; 
+			}
+
 .loader, .search__loader{display: none;}
 .fotoBox__model .caroufredsel_wrapper{height: 450px !important;width: 662px !important;}
 .loader a.pre-cur {background-position: 0 -21px;}
