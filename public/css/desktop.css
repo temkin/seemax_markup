@@ -1034,6 +1034,12 @@ body {
 .catalogBox {
 	margin: 0 7%;
 	padding: 70px 0 0;
+	-moz-transition: all 0.2s ease-out; 
+	-webkit-transition: all 0.2s ease-out; 
+	transition: all 0.2s ease-out
+}
+.catalogBox.menu_on { 
+	padding: 140px 0 0;
 }
 .catalog__i {
 	overflow:hidden;
@@ -2443,7 +2449,7 @@ body {
 }
 .mainMenu__add .search__bord {
 	top:0;
-	height:72px;
+	height:70px;
 }
 .mainMenu__add_i {
 	position: absolute;
@@ -2452,7 +2458,7 @@ body {
 	width: 100%;
 	z-index: 5;
 	background: url(../i/grad.png) repeat-y 50% 0;
-	height: 72px;
+	height: 70px;
 }
 	.mainMenu__add_i ul {
 		margin: 0 0 0 23.9%;
@@ -2472,13 +2478,13 @@ body {
 				text-decoration: none;
 				padding: 27px 25px 27px 19px;
 			}
-		.mainMenu__add_i ul li.cur,
-			.mainMenu__add_i li a:hover  {
+			.mainMenu__add_i.level1 > ul > li.cur,
+			.mainMenu__add_i.level1 > ul > li > a:hover  {
 				background: #1183b8;
 			}
 
 /* ----- level2 -----*/
-
+ 
 .mainMenu__add.level2 {  
 	top: 70px;  
 }
@@ -2498,9 +2504,9 @@ body {
 				padding: 4px 16px 2px;
 				font-size: 12px;
 			}
-			.mainMenu__add_i.level2 li.active a,
-			.mainMenu__add_i.level2 li.active a:hover,
-			.mainMenu__add_i.level2 li a:hover{
+			.mainMenu__add_i.level2 li.cur a,
+			.mainMenu__add_i.level2 li.cur a:hover,
+			.mainMenu__add_i.level2 li a:hover {
 				color: #145d92;
 				background: #ffffff;
 				padding: 4px 15px 2px;
@@ -2508,19 +2514,19 @@ body {
 				-webkit-border-radius: 25px;
 				-moz-border-radius: 25px;
 				border-radius: 25px;
-			}
+			}   
 		.mainMenu__add_i.level2 ul.blue {
 			margin: 0 0 0 13.9%; 
 		}
 			.mainMenu__add_i.level2 .blue li a{
 				color: #2aa4ed;
 			}
-			.mainMenu__add_i.level2 .blue li.active a,
-			.mainMenu__add_i.level2 .blue li.active a:hover,
+			.mainMenu__add_i.level2 .blue li.cur a,
+			.mainMenu__add_i.level2 .blue li.cur a:hover,
 			.mainMenu__add_i.level2 .blue li a:hover{
 				color: #145d92;
 				background: #2aa4ed; 
-			}
+			}   
 
 .loader, .search__loader{display: none;}
 .fotoBox__model .caroufredsel_wrapper{height: 450px !important;width: 662px !important;}

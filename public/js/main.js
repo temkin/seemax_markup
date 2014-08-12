@@ -251,9 +251,27 @@ $(document).ready(function(){
     //Main menu add events
 
     $('.with-sub').hover(
-        function (){$('.mainMenu__add').fadeIn("fast");},
-        function (){$('.mainMenu__add').fadeOut("fast");}
+        function (){$(this).children('.mainMenu__add').fadeIn("fast");},
+        function (){$(this).children('.mainMenu__add').fadeOut("fast");}
     );
+
+    $('.mainMenu__add_i.level1 > ul > li > a').on('click', function(){ 
+        $(this).parents('.mainMenu__add_i').find('li').removeClass('cur');
+        $(this).parents('.level1').find('.level2').hide();
+        $(this).parent('li').addClass('cur').find('.level2').show();
+        //двигаем товары вниз
+        if($(this).parent('li').find('.level2').length){
+            $(this).parents('.header').next('.catalogPage').find('.catalogBox').addClass('menu_on'); 
+        }
+        else{
+            $(this).parents('.header').next('.catalogPage').find('.catalogBox').removeClass('menu_on'); 
+        }  
+    }); 
+
+    $('.mainMenu__add_i.level2 > ul > li > a').on('click', function(){ 
+        $(this).parents('.mainMenu__add_i.level2').find('li').removeClass('cur'); 
+        $(this).parent('li').addClass('cur'); 
+    }); 
 
     //Search
     $('.close__search').on("click", function (){
