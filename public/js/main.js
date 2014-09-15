@@ -134,13 +134,13 @@ $(document).ready(function(){
     $('.galleryBox').each(function(){
         var _this = $(this);
         $('.gallery__i', _this).carouFredSel({
-            width: 1480,
+            width: '100%',
+            responsive: true,
             height: 648,
             prev: $('.gal__a.prev', _this),
             next: $('.gal__a.next', _this),
             items: {
-                visible:1,
-                height:648
+                visible:1
             },
             auto: {
                 play: false
