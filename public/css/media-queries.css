@@ -1,4 +1,4 @@
-@media (max-width: 940px) {
+/*@media (max-width: 940px) {
 	.nav__i.cur .nav__title{font-weight: bold;}
 	.slider__ii {height: 440px;}
 	.slider__txt{font-size: 12px;}
@@ -7,8 +7,9 @@
 @media (max-width: 700px) {
 	.addMenu li a {font: 12px/18px 'pf_beausans_proregular';}
 }
-
+*/
 @media (max-width: 1280px) {
+	.slides-wrapper {height: 540px;}
 	.nav__title, .nav__i.cur .nav__title {font: 19px/26px 'pf_beausans_prolight';}
 	.section__i .section__option li {margin-left: 5%;}
 	.section__i .name__item {font-size: 19px;}
@@ -19,29 +20,50 @@
 	.reg-as-partner {padding-left: 23%;}
 
 }
-@media (max-width: 1100px) {
-	.section__i .section__option.many-items {width: 60.8%;}
-	.slides-wrapper {height: 500px;}
+@media (max-width: 1230px) {
 	.mainMenu>ul>li>a {font-size: 12px;}
+}
+/*@media (max-width: 1100px) {
+	.section__i .section__option.many-items {width: 60.8%;}
 	.tooltip-inner{font-size: 14px !important;}
 	.section__i img {margin: 0 4% 0 0;}
 	.section__i .section__option {width: 64%;}
 	.section__i .section__option li a {font: 12px/18px Arial, sans-serif;}
+}*/
+@media (max-width: 1350px) {
+	.slides-wrapper {height: 540px;}
+}
+@media (max-width: 1200px) {
+	.slides-wrapper {height: 520px;}
+}
+/*@media (max-width: 1140px){
+	.slides-wrapper {height: 490px;}
+}
+@media (max-width: 1080px){
+	.slides-wrapper {height: 470px;}
+	.search {right: 3%;
+}
+@media (max-width: 1000px){
+	.slides-wrapper {height: 450px;}
 }
 @media (max-width: 970px){
-	.slides-wrapper {height: 435px;}
+	.slides-wrapper {height: 445px;}
 }
 @media (max-width: 870px){
-	.slides-wrapper {height: 400px;}
+	.slides-wrapper {height: 435px;}
 	.bigInput .tooltip {max-width: 54%;}
-}
+}*/
 @media (max-width: 1350px){
 	.navigation__prod.with-user .user-logged {padding-right: 2%;}
 	.navigation__prod.with-user .nav__prod__i li a{padding: 28px 12px 28px 12px; }
-}
+	.nav__title {font: 19px/24px 'pf_beausans_prolight';}
 
+}
+/*
 @media (max-width: 1140px){
 	.form__item .inputBox.bigInput input {width: 200px;}
 	.navigation__prod.with-user .nav__prod__i li a{padding: 28px 7px 28px 7px; }
 
 }
+
+*/

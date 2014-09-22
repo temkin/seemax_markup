@@ -1035,8 +1035,9 @@ body {
 /*=========catalogPage
 =======================*/
 
-.catalogPage {
-	max-width: 2560px;
+.catalogPage { 
+	max-width: 2560px; 
+	margin: 0 auto; 
 	padding: 0 0 114px;
 	background: url(../i/catalog-f.jpg) repeat-y;
 }
@@ -1500,7 +1501,7 @@ body {
 
 .characteristicsBox {
 	height:377px;
-	padding: 110px 0 0;
+	padding: 50px 0 200px 0;
 	background:url(../i/catalog-f.jpg) no-repeat 50% 0;
 }
 
@@ -1585,7 +1586,7 @@ body {
 ==========================*/
 
 .characteristic__descr {
-	padding: 6px 0 0;
+	padding: 25px 0 0 0;
 }
 	.characteristic__descr ul {
 		padding: 0 78px 0 0;
@@ -2134,7 +2135,7 @@ body {
 
 .pageForm {
 	margin: 92px 0 0;
-	padding: 120px 0 60px 44px;
+	padding: 120px 0 60px 7%;
 	background:url(../i/catalog-f.jpg) repeat-y 0 0;
 
 }
@@ -2144,7 +2145,7 @@ body {
 .title__form {
 	font:30px/32px 'pf_beausans_prosemibold';
 	color:#fff;
-	margin: 0 0 0 30px;
+	margin: 0;
 }
 .form__cont {
 	margin: 69px 0 0 0;
@@ -2722,7 +2723,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .bigInput .tooltip {max-width: 60%;}
 
 /*-----------news--------------------------*/
-.content{margin: 0 7%}
+.content{margin: 0 11%}
 .news.content{font-family: 'pf_beausans_proregular';}
 .news.content .news-item .news-header {padding-bottom: 36px;}
 .news.content .news-item .news-body img{max-width: 100%;}
@@ -2846,7 +2847,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 #sign-in-form .tooltip, #forgot-pass .tooltip{display: none !important;}
 .forgot-link{margin: 0 !important}
-
+ 
 
 @media (min-width: 1061px) and (max-width: 1200px) { 
 	.search {right: 10px;} 
@@ -2858,4 +2859,4 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	.mainMenu>ul>li {margin: 0 0 0 24px;}
 	.search {right: 4%;} 
 	.slider__nav {padding: 25px 4% 30px 4%;}
-} 
+}  
