@@ -134,13 +134,13 @@ $(document).ready(function(){
     $('.galleryBox').each(function(){
         var _this = $(this);
         $('.gallery__i', _this).carouFredSel({
-            width: 1480,
+            width: '100%',
+            responsive: true,
             height: 648,
             prev: $('.gal__a.prev', _this),
             next: $('.gal__a.next', _this),
             items: {
-                visible:1,
-                height:648
+                visible:1
             },
             auto: {
                 play: false
@@ -255,7 +255,7 @@ $(document).ready(function(){
         function (){$(this).children('.mainMenu__add').fadeOut("fast");}
     );
 
-    $('.mainMenu__add_i.level1 > ul > li > a').on('click', function(){ 
+   /* $('.mainMenu__add_i.level1 > ul > li > a').on('click', function(){ 
         $(this).parents('.mainMenu__add_i').find('li').removeClass('cur');
         $(this).parents('.level1').find('.level2').hide();
         $(this).parent('li').addClass('cur').find('.level2').show();
@@ -271,7 +271,7 @@ $(document).ready(function(){
     $('.mainMenu__add_i.level2 > ul > li > a').on('click', function(){ 
         $(this).parents('.mainMenu__add_i.level2').find('li').removeClass('cur'); 
         $(this).parent('li').addClass('cur'); 
-    }); 
+    }); */
 
     //Search
     $('.close__search').on("click", function (){

@@ -53,12 +53,15 @@
 
 body {
 	background:#fff;
+	min-width: 1000px;
+	max-width: 2560px;
+	margin: 0 auto !important;
 }
 .page {
-	max-width: 1480px;
+	max-width: 2560px;
 	min-width: 1000px;
 	margin: 0 auto;
-}
+} 
 
 /*=========page==========*/
 
@@ -70,7 +73,7 @@ body {
 }
 .header__i {
 	min-width: 1000px;
-	max-width:1480px;
+	max-width:2560px;
 	height:91px;
 	margin:0 auto;
 }
@@ -111,6 +114,8 @@ body {
 ==================*/
 
 .header__norm {
+	position: relative; 
+	margin: 0 auto;
 	height:91px;
 	padding: 0 7%;
 }
@@ -147,7 +152,10 @@ body {
 			vertical-align: middle;	        
 			zoom: 1;
 			*display: inline;
-			margin: 0 54px 0 0;
+			margin: 0 0 0 50px;
+		}
+		.mainMenu>ul>li:first-child { 
+			margin: 0;
 		}
 			.mainMenu>ul>li>a {
 				font:16px/18px 'pf_beausans_proregular';
@@ -212,7 +220,7 @@ body {
 	z-index:850;
 }
 .header__searchI {
-	max-width:1480px;
+	max-width:2560px;
 	height:91px;
 	margin:0 auto;
 }
@@ -290,7 +298,7 @@ body {
 
 .search__bord {
 	position:absolute;
-	width:100%;
+	width:50%;
 	bottom:0;
 	height:100%;
 	z-index:1;
@@ -311,7 +319,7 @@ body {
 
 .serch__menuI {
 	position:relative;
-	width:1480px;
+	width:2560px;
 	margin:0 auto;
 	z-index:5;
 	background:url(../i/grad.png) repeat-y 50% 0;
@@ -390,7 +398,7 @@ body {
 
 .footer__i {
 	height:90px;
-	max-width: 1480px;
+	max-width: 2560px;
 	margin: 0 auto;
 	}
 .social_f {
@@ -461,6 +469,7 @@ body {
 }
 .sliderBox {
 	background: url(../i/grad.png) repeat-y 0 0;
+	background-size: 100%;
 }
 
 /*slider__i*/
@@ -469,6 +478,7 @@ body {
 	display: none;	
 	text-decoration: none;
 	position:absolute;
+	width: 100%;
 }
 .linkSlide {
 	display:block;
@@ -611,7 +621,7 @@ body {
 
 .optionBox {
 	height:538px;
-	max-width: 1480px;
+	max-width: 2560px;
 	margin: 0 auto;
 }
 
@@ -746,7 +756,7 @@ body {
 ======================*/
 
 .bannerBox {
-	max-width:1480px;
+	max-width:2560px;
 	margin:0 auto;
 }
 	.bannerBox__i {
@@ -834,7 +844,7 @@ body {
 .addMenu {
 	overflow:hidden;
 	zoom:1;
-	max-width: 1480px;
+	max-width: 2560px;
 	margin: 72px auto 0;
 	padding: 0 7%;
 }
@@ -993,7 +1003,7 @@ body {
 }
 .navigation__prod_ii {
 	height:70px;
-	max-width:1480px;
+	max-width:2560px;
 	margin:0 auto;
 }
 /*===nav__i
@@ -1025,14 +1035,15 @@ body {
 /*=========catalogPage
 =======================*/
 
-.catalogPage {
-	max-width: 1480px;
-	margin: 0 auto;
+.catalogPage { 
+	max-width: 2560px; 
+	margin: 0 auto; 
 	padding: 0 0 114px;
 	background: url(../i/catalog-f.jpg) repeat-y;
 }
 
 .catalogBox {
+	max-width: 2560px;
 	margin: 0 7%;
 	padding: 70px 0 0;
 	-moz-transition: all 0.2s ease-out; 
@@ -1153,7 +1164,7 @@ body {
 ============================*/
 
 .contentBox {
-	max-width:1480px;
+	max-width:2560px;
 	margin:0 auto;
 }
 
@@ -1210,8 +1221,7 @@ body {
 		height:648px;
 		margin: 86px 0 0;
 	}
-		.galleryBox img {
-			width:1480px;
+		.galleryBox img { 
 		}
 		.galleryBox .gal__a {
 			display:block;
@@ -1734,6 +1744,7 @@ body {
 .section__title {
 	cursor: pointer;
 	background: url(../i/title_f.jpg) no-repeat 50% 0;
+	background-size: cover;
 	font:36px/36px 'pf_beausans_prosemibold';
 	color:#fff;
 	position:relative;
@@ -2487,19 +2498,20 @@ body {
 /* ----- level2 -----*/
  
 .mainMenu__add.level2 {  
+	display: block;
 	top: 70px;  
 }
 	.mainMenu__add_i.level2  { 
 		background: transparent;
-		height: inherit;
+		height: inherit; 
+		text-align:center;
 	} 
 		.mainMenu__add_i.level2 ul {
 			width: auto;
-			float: left;
+			display: inline-block;
 			padding: 23px 0;
 		} 
-		.mainMenu__add_i.level2 ul li:first-child {
-			margin-left: 24px;
+		.mainMenu__add_i.level2 ul li:first-child { 
 		} 
 			.mainMenu__add_i.level2 li a{
 				padding: 4px 16px 2px;
@@ -2516,8 +2528,11 @@ body {
 				-moz-border-radius: 25px;
 				border-radius: 25px;
 			}   
+		.mainMenu__add_i.level2 ul {
+			margin: 0; 
+		}
 		.mainMenu__add_i.level2 ul.blue {
-			margin: 0 0 0 13.9%; 
+			margin-left: 20px;
 		}
 			.mainMenu__add_i.level2 .blue li a{
 				color: #2aa4ed;
@@ -2798,7 +2813,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 .galleryBox.info-gallery .caroufredsel_wrapper{
 	margin: 0 auto !important;
 	width: auto !important;
-	max-width: 1480px;
+	max-width: 2560px;
 }
 .show-pass.active{
 	background: url(../i/closed-eye.png) no-repeat center;
@@ -2836,43 +2851,16 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 #sign-in-form .tooltip, #forgot-pass .tooltip{display: none !important;}
 .forgot-link{margin: 0 !important}
+ 
 
-/*width--2560px*/
-
-.page, .header__i, .optionBox, .bannerBox, .addMenu, .footer__i,
-.contentBox {max-width: 2560px;}
-
-
-.sliderBox {background-size: contain;}
-
-.bannerBox__i, .section__title, .where-buy-head {background-size: cover;}
-
-.slider__i, .slides-wrapper, .sliderBox, 
-.slider_bg_1, .slider_bg_2, .slider_bg_3,
-.sliderBox, .slider__nav{
-width: 100%;
+@media (min-width: 1061px) and (max-width: 1200px) { 
+	.search {right: 10px;} 
 }
-
-.slider__nav {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-height: 150px;
+@media (max-width: 1160px){ 
+	.mainMenu__add_i.level2 ul.blue {margin: 0;}
 }
-
-/*Temp*/
-.news.content .news-item .news-body img{width: 100%;}
-
-.news.content .news-item .news-body a:after, .news.content .news-item .news-body a:before {
-content: " ";
-display: block;
-position: absolute;
-width: 100%;
-height:100%;
-top: 0;
-}
-
-body {
-	min-width: 1200px;
-	padding: 0;
-}
+@media (max-width: 1100px){
+	.mainMenu>ul>li {margin: 0 0 0 24px;}
+	.search {right: 4%;} 
+	.slider__nav {padding: 25px 4% 30px 4%;}
+}  
