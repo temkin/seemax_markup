@@ -99,7 +99,7 @@
 					<div class="header-title">
 						<h1 class="title__search">Регистрация продукта</h1>
 						<div class="reg__commaent">
-							Пожалуйста введите серийный номер продукта, дату покупки, а также личный данные. Эта информация позволит повысить качество обслуживания клиентов . После регистрации устройства вы получите 3 месяца дополнительной гарантии.
+							Благодарим Вас за покупку продукта SeeMax и за то, что вы нашли время, чтобы зарегистрировать его. Зарегистрировав продукт, вы получите 3 месяца дополнительной гарантии, а также возможность быть в курсе обновлений и специальных предложений от SeeMax. Просто введите серийный номер продукта и дату покупки, а также личные контактные данные. <br>Эта информация позволит повысить уровень обслуживания клиентов.
 						</div><!--reg__commaent-->
 					</div>
 					<div class="pageForm">
@@ -109,7 +109,7 @@
 								<div class="form__cont">
 									<div class="form__item">
 										<label>Продукт:</label>
-										<div id="product-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="1">
+										<div id="product-dd" name="product" class="wrapper-dropdown-1 transparent-dd" tabindex="1">
 										    <span>Видеорегистратор</span>
 										    <ul class="dropdown">
 										        
@@ -133,12 +133,10 @@
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Место покупки:</label>
-										<div id="place-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="3">
-										    <span>Онлайн-магазин</span>
+										<div id="place-dd" name="place" class="wrapper-dropdown-1 transparent-dd" tabindex="3">
+										    <span>Интернет-магазин</span>
 										    <ul class="dropdown">
-										        <li><a href="#">Магазин техники</a></li>
-										        <li><a href="#">Точка на рынке</a></li>
-										        <li><a href="#">По объявлению</a></li>
+										        <li><a href="#">Торговая точка</a></li>
 										    </ul>
 										</div>
 									</div><!--form__item-->
@@ -168,7 +166,7 @@
 									</div><!--form__item-->
 									<div class="form__item">
 										<label>Страна проживания:</label>
-										<div id="country-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="7">
+										<div id="country-dd" name="country" class="wrapper-dropdown-1 transparent-dd" tabindex="7">
 										    <span>Беларусь</span>
 										    <ul class="dropdown">
 										        <li><a href="#">Украина</a></li>
@@ -192,7 +190,7 @@
 									<div class="form__item">
 										<label>Я узнал о SeeMax:</label>
 										<div class="inputBox ">
-										<div id="know-dd" class="wrapper-dropdown-1 transparent-dd" tabindex="10">
+										<div id="know-dd" name="howknow" class="wrapper-dropdown-1 transparent-dd" tabindex="10">
 										    <span>От знакомых</span>
 										    <ul class="dropdown">
 										        <li><a href="#">Из рекламы на радио</a></li>
@@ -217,7 +215,7 @@
 									</div><!--form__item-->
 								</div><!--form__cont-->
 								<div class="button__form">
-									<input type="submit" class="cloudBtn" value="Зарегистрировать устройство" tabindex="13">
+									<input type="submit" class="cloudBtn active" value="Зарегистрировать устройство" tabindex="13">
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->

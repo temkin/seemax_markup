@@ -9,6 +9,8 @@
     <script type="text/javascript" src="public/js/main.js"></script>
     <script type="text/javascript" src="public/js/lib/jquery/jquery.carouFredSel-6.1.0-packed.js"></script>
     <script type="text/javascript" src="public/js/dropdown.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX1rt49QrjX-FYCPQFQic4TMbwvnF7cEE&sensor=false">
 </head>
 <body>
 	<script type="text/javascript">
@@ -20,6 +22,7 @@
 	        // all dropdowns
 	        $('.wrapper-dropdown-1').removeClass('active');
 	    });
+
 	});
 	</script>
 	<div class="page second">
@@ -97,29 +100,23 @@
 				<div class="mapsPage">
 					<h1 class="titlePage">Сервисные центры</h1>
 					<div class="filter-bar">
-						<div id="city" class="wrapper-dropdown-1">
+						<div id="city" name="city" class="wrapper-dropdown-1">
 						    <span>Минск</span>
 						    <ul class="dropdown">
 						        <li><a href="#">Гродно</a></li>
 						    </ul>
 						</div>
 						<div class="selectOption__maps">
-							<a href="#" class="openMaps mapsVis" style="display:none"><span>Закрыть карту</span><i></i></a>
-							<a href="#" class="openMaps" ><span>Показать карту</span><i></i></a>
+							<a href="#" id="close-map" class="openMaps mapsVis" style="display:none"><span>Закрыть карту</span><i></i></a>
+							<a href="#" id="open-map" class="openMaps" ><span>Показать карту</span><i></i></a>
 						</div><!--selectOption__maps-->
 					</div>
-					<div class="mapsBox mapsVis">
-						<i style="top: 140px; left: 809px;"></i>
-						<i style="left: 825px; top: 343px;"></i>
-						<i style="left: 571px; top: 344px;"></i>
-						<i style="left: 233px; top: 377px;"></i>
-						<i style="top: 610px; left: 215px;"></i>
-						<i style="top: 565px; left: 882px;"></i>
-						<img src="public/i/maps.jpg" alt="">
+					<div class="mapsBox">
+						<div id="map-canvas"></div>
 					</div><!--mapsBox-->
 					<div class="info__maps">
 						<div class="infoMaps__item">
-							<h3 class="title">Минск<a href="#"></a></h3>
+							<h3 class="title">Минск<a class="pin-link" loc="minsk" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>Сервисный центр «Гайка»</strong>
@@ -133,7 +130,7 @@
 							</div><!--infoContact-->
 						</div><!--infoMaps__item-->
 						<div class="infoMaps__item">
-							<h3 class="title">Брест<a href="#"></a></h3>
+							<h3 class="title">Брест<a class="pin-link" loc="brest" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>Сервисный центр «Ключ»</strong> 
@@ -146,7 +143,7 @@
 							</div><!--infoContact-->
 						</div><!--infoMaps__item-->
 						<div class="infoMaps__item">
-							<h3 class="title">Витебск<a href="#"></a></h3>
+							<h3 class="title">Витебск<a class="pin-link" loc="vitebsk" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>Торговый дом «Услада»</strong> 
@@ -163,7 +160,7 @@
 							</div><!--infoContact-->
 						</div><!--infoMaps__item-->
 						<div class="infoMaps__item">
-							<h3 class="title">Гомель<a href="#"></a></h3>
+							<h3 class="title">Гомель<a class="pin-link" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>ИП Путевой</strong>
@@ -176,7 +173,7 @@
 							</div><!--infoContact-->
 						</div><!--infoMaps__item-->
 						<div class="infoMaps__item">
-							<h3 class="title">Могилёв<a href="#"></a></h3>
+							<h3 class="title">Могилёв<a class="pin-link" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>Торговый центр «Магнит»</strong> 
@@ -188,7 +185,7 @@
 							</div><!--infoContact-->
 						</div><!--infoMaps__item-->
 						<div class="infoMaps__item">
-							<h3 class="title">Гродно<a href="#"></a></h3>
+							<h3 class="title">Гродно<a class="pin-link" href="#"></a></h3>
 							<div class="infoContact">
 								<div class="infoContact__i">
 									<strong>Сервисный центр «Шило»</strong> 

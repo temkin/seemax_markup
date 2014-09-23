@@ -16,6 +16,7 @@
 	.section__i .section__option {width: 63%}
 	.section__i .section__option.many-items {width: 59.8%;padding-left: 3%;}
 	.section__i .section__option li a {font: 17px/38px Arial, sans-serif;}
+	.reg-as-partner {padding-left: 23%;}
 
 }
 @media (max-width: 1100px) {
@@ -34,6 +35,13 @@
 	.slides-wrapper {height: 400px;}
 	.bigInput .tooltip {max-width: 54%;}
 }
+@media (max-width: 1350px){
+	.navigation__prod.with-user .user-logged {padding-right: 2%;}
+	.navigation__prod.with-user .nav__prod__i li a{padding: 28px 12px 28px 12px; }
+}
+
 @media (max-width: 1140px){
 	.form__item .inputBox.bigInput input {width: 200px;}
+	.navigation__prod.with-user .nav__prod__i li a{padding: 28px 7px 28px 7px; }
+
 }

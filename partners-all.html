@@ -14,21 +14,44 @@
         <script type="text/javascript" src="public/js/main.js"></script>
         <script src="public/js/lib/bootstrap.validate.js"></script>
 		<script src="public/js/lib/bootstrap.validate.en.js"></script>
+
 		<script type="text/javascript">
 			$(document).ready(function () {
-				$('#reg-form').bt_validate();
-
+				$('#sign-in-form').bt_validate();
+				$('#forgot-pass').bt_validate();
 			    $('.cloudBtn').on('click', function (){
-			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
+			        $('html, body').animate({scrollTop: $('#sign-in-form').offset().top}, 800); 
+			    });
+			    $('.forgot-pass').on('click', function (e){
+			    	if ($(this).hasClass('active')) {
+			    		$(this).removeClass('active');
+			    		$('.forgot-pass-form').slideUp(function (){
+			    			$('#forgot-pass .button__form').hide();
+			    			$('#sign-in-form .button__form').show();
+			    		});
+			    	}else{
+			    		$(this).addClass('active');
+			    		$('#sign-in-form .button__form').hide();
+			    		$('#forgot-pass .button__form').show();
+			    		$('.forgot-pass-form').slideDown();
+			    	}
+			    	
+			    	e.preventDefault();
 			    });
 			});
 		</script>
         <script src="public/js/users-validation.js"></script>
+
 </head>
 <body>
 
 	<div class="page second">
 		<div class="header">
+			<div class="headerBord">
+				<div class="header__bord bord_p"></div><!--footer__bord bord_p-->
+				<div class="header__bord bord_b"></div><!--footer__bord bord_b-->
+				<div class="header__bord bord_g"></div><!--footer__bord bord_g-->
+			</div>
 			<div class="header__search">
 				<div class="header__searchI">
 					<div class="logo">
@@ -113,15 +136,15 @@
 		</div><!--content-->
 		<div class="optionBox partners-form">
 			<div class="optionItem left">
-				<i class="optionIcon icon_part"></i>
+				<i class="optionIcon icon_reg"></i>
 				<h3 class="optionTitle"><a href="#">Регистрация</a></h3>
 				<div class="optionDescr">
 					Хотите получать качественную поддержку по всем продуктам компании SeeMax?
 				</div><!--optionDescr-->
-				<a href="#" class="cloudBtn">Зарегестрируйтесь</a>
+				<a href="#" class="cloudBtn">Зарегистрируйтесь</a>
 			</div><!--optionItem-->
 			<div class="optionItem right">
-				<i class="optionIcon icon_soc"></i>
+				<i class="optionIcon icon_part"></i>
 				<h3 class="optionTitle">Вход для партнеров</h3>
 				<div class="optionDescr">
 					<form id="sign-in-form">
@@ -130,7 +153,7 @@
 									<div class="form__item">
 										<label>Логин:</label>
 										<div class="inputBox" >
-											<input type="text" name="company" validate="required" tabindex="1">
+											<input type="text" name="login" validate="required|email" tabindex="1">
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
@@ -139,22 +162,26 @@
 											<input type="password" name="pass" validate="required" tabindex="5"><i class="show-pass"></i>
 										</div><!--inputBox-->
 									</div><!--form__item-->
-									<div class="form__item">
+									<div class="form__item forgot-link">
 										<a class="forgot-pass" href="#">Забыли пароль?</a>
 									</div><!--form__item-->
-									<div class="form__item forgot-pass-form">
-										<label>E-mail:</label>
-										<div class="inputBox">
-											<input type="text" name="email" validate="required|email" tabindex="4">
-										</div><!--inputBox-->
-									</div><!--form__item-->
-									
-								</div><!--form__cont-->
-								<div class="button__form">
-									<input type="submit" class="cloudBtn" value="Войти как партнер" tabindex="13">
-								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->
+						<div class="button__form">
+							<input type="submit" id="reg-dealler" class="cloudBtn" value="Войти как партнер" tabindex="13">
+						</div><!--button__form-->
+					</form>
+					<form id="forgot-pass">
+						<div class="form__item forgot-pass-form">
+							<label>E-mail:</label>
+							<div class="inputBox">
+								<input type="text" name="email" validate="email" tabindex="4">
+							</div><!--inputBox-->
+						</div><!--form__item-->
+						
+						<div class="button__form">
+							<input type="submit" id="send-pass" class="cloudBtn" value="Выслать пароль" tabindex="13">
+						</div><!--button__form-->
 					</form>
 				</div><!--optionDescr-->
 			</div><!--optionItem-->

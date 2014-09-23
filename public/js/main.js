@@ -134,13 +134,13 @@ $(document).ready(function(){
     $('.galleryBox').each(function(){
         var _this = $(this);
         $('.gallery__i', _this).carouFredSel({
-            width: 1480,
+            width: '100%',
+            responsive: true,
             height: 648,
             prev: $('.gal__a.prev', _this),
             next: $('.gal__a.next', _this),
             items: {
-                visible:1,
-                height:648
+                visible:1
             },
             auto: {
                 play: false
@@ -241,40 +241,43 @@ $(document).ready(function(){
         var offset = (scrollTop-300)/5;
         if (offset < 150 && scrollTop >= 300){
             $('.linkSlide img').css('margin-top', -offset );
-            $('.nav__i .boxImg').css('top', -offset);
-            $('.nav__i.cur .boxImg').css('top', -offset - 96);
         }
-        if (scrollTop >= 370 && -(scrollTop-370)/5>=-150){
-            $('.bannerBox__i').css('background-position-y', -(scrollTop-370)/5);
+        var bannerTop = $('.bannerBox__i').offset()? scrollTop - $('.bannerBox__i').offset().top : 0;
+        if (bannerTop >= -50 && bannerTop <= 50){
+            $('.bannerBox__i').css('background-position-y', bannerTop/3);
         }
     });
 
     //Main menu add events
 
     $('.with-sub').hover(
-        function (){$('.mainMenu__add').fadeIn("fast");},
-        function (){$('.mainMenu__add').fadeOut("fast");}
+        function (){$(this).children('.mainMenu__add').fadeIn("fast");},
+        function (){$(this).children('.mainMenu__add').fadeOut("fast");}
     );
+
+   /* $('.mainMenu__add_i.level1 > ul > li > a').on('click', function(){ 
+        $(this).parents('.mainMenu__add_i').find('li').removeClass('cur');
+        $(this).parents('.level1').find('.level2').hide();
+        $(this).parent('li').addClass('cur').find('.level2').show();
+        //двигаем товары вниз
+        if($(this).parent('li').find('.level2').length){
+            $(this).parents('.header').next('.catalogPage').find('.catalogBox').addClass('menu_on'); 
+        }
+        else{
+            $(this).parents('.header').next('.catalogPage').find('.catalogBox').removeClass('menu_on'); 
+        }  
+    }); 
+
+    $('.mainMenu__add_i.level2 > ul > li > a').on('click', function(){ 
+        $(this).parents('.mainMenu__add_i.level2').find('li').removeClass('cur'); 
+        $(this).parent('li').addClass('cur'); 
+    }); */
 
     //Search
     $('.close__search').on("click", function (){
         $(this).prev().val('');
     });
-
-    //Maps
-    $('.openMaps').on("click", function (e){
-        $('.mapsBox').slideDown();
-        $('.mapsVis').show();
-        $(this).hide();
-        e.preventDefault();
-    });
-    $('.mapsVis').on("click", function (e){
-        $('.mapsBox').slideUp();
-        $('.openMaps').show();
-        $(this).hide();
-        e.preventDefault();
-    });
-
+    //Form pass
     $('.show-pass').on('click', function (){
         $(this).toggleClass("active");
         if ($(this).prev().attr('type') == "password") {
@@ -283,6 +286,63 @@ $(document).ready(function(){
             $(this).prev()[0].type = "password";
         }
     });
+    //Maps
+    $('#open-map').on("click", function (e){
+        $('.mapsBox').animate({height:"828px"}).addClass('active');
+        $('#close-map').show();
+        $(this).hide();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+    $('#close-map').on("click", function (e){
+        $('.mapsBox').animate({height:0}).removeClass('active');
+        $('#open-map').show();
+        $(this).hide();
+        e.stopPropagation();
+        e.preventDefault();
+    });
+    google.maps.event.addDomListener(window, 'load', initializeMap);
+    function initializeMap() {
+        var mapOptions = {
+          center: new google.maps.LatLng(53.709807, 27.953389),
+          zoom: 7
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+        var places = {
+            minsk: new google.maps.Marker({
+                position: new google.maps.LatLng(53.855724, 27.447270),
+                map: map,
+                title: 'Minsk'
+            }),
+            brest: new google.maps.Marker({
+                position: new google.maps.LatLng(52.100768, 23.700771),
+                map: map,
+                title: 'Brest'
+            }),
+            vitebsk: new google.maps.Marker({
+                position: new google.maps.LatLng(55.192597, 30.229915),
+                map: map,
+                title: 'Vitebsk'
+            })
+        };
+        $('.pin-link').on('click', function (e){
+            if (!$('.mapsBox').hasClass('active')) {
+                $('#open-map').trigger('click');
+            };
+            var bounds = new google.maps.LatLngBounds(),
+                marker = places[$(this).attr('loc')];
+            bounds.extend(new google.maps.LatLng(marker.getPosition().lat(), marker.getPosition().lng()));
+            map.fitBounds(bounds);
+            $('html, body').animate({scrollTop:$('.mapsBox').offset().top}, 800);
+            e.stopPropagation();
+            e.preventDefault();
+        });
+
+      }
+      
+
+
 
 
 

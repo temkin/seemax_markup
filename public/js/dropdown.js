@@ -1,17 +1,18 @@
 function DropDown(el) {
     this.dd = el;
+    this.name = this.dd.attr('name');
     this.placeholder = this.dd.children('span');
     this.opts = this.dd.find('ul.dropdown > li');
     this.val = '';
     this.index = -1;
-    this.initEvents();
+    this.init();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    init: function() {
         var obj = this;
  
         obj.dd.on('click', function(event){
-            $(this).toggleClass('active');
+            $(this).addClass('active');
             return false;
         });
 
@@ -19,21 +20,33 @@ DropDown.prototype = {
             $(this).removeClass('active');
             return false;
         });
- 
- 
-        obj.opts.on('click',function(){
+        
+        $.each(obj.opts, function (num, opt){
+            $(opt).attr('value', num+2);
+        });
+
+        obj.placeholder.attr('value',1);
+        $('<input type="hidden" name="'+ this.name +'" value="1">').insertAfter(obj.dd);
+        obj.input = obj.dd.next();
+
+        obj.opts.on('click', function(e){
             var opt = $(this);
             obj.val = opt.text();
 
             $.each(obj.opts, function (num, opt){
-                console.log($(opt).text()+" --- " + obj.val);
                 if ($(opt).text() ==  obj.val){
                     $(opt).find('a').text(obj.placeholder.text());
+                    var optVal = $(opt).attr('value');
+                    $(opt).attr('value', obj.placeholder.attr('value'));
+                    obj.placeholder.attr('value', optVal);
                 }
             });
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
-
+            obj.input.attr('value', obj.placeholder.attr('value'));
+            obj.dd.removeClass('active');
+            e.stopPropagation();
+            e.preventDefault();
         });
     },
     getValue : function() {
