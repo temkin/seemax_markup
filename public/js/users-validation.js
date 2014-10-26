@@ -26,11 +26,26 @@ $.bt_validate.text["datetime"] = "Введите корректную дату."
 
 
 $(document).ready(function (){
+    //phone mask init
+    Typecast.Init();
+
     var fieldsState = {};
     $.each($.bt_validate.form.find('input[validate],select[validate],textarea[validate]'), function (key, value){
         fieldsState[value.name] = false;
+        console.log(fieldsState[value.name]+' ' +value.name); 
+        if(value.name == 'phone'){ 
+        }
     });
-    $.bt_validate.after_validate = function(method, value, params, result) {
+    $.bt_validate.after_validate = function(method, value, params, result) { 
+        // phone validation with mask begin
+        if((value.indexOf('+X') === 0) && result){
+            $(this).addClass("input-error");
+            $('.form__item .inputBox .item__i.quest').hide();
+            result = false;
+        } 
+        // phone validation with mask end
+ 
+            console.log(result);
         if (!result){
             $(this).addClass("input-error");
             $('.form__item .inputBox .item__i.quest').hide();

@@ -11,6 +11,8 @@
 
         <script type="text/javascript" src="public/js/lib/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="public/js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/js/lib/typecast_1.4.js"></script>
+        <script type="text/javascript" src="public/js/dropdown.js"></script>
         <script type="text/javascript" src="public/js/main.js"></script>
         <script src="public/js/lib/bootstrap.validate.js"></script>
 		<script src="public/js/lib/bootstrap.validate.en.js"></script>
@@ -21,6 +23,7 @@
 			    $('.cloudBtn').on('click', function (){
 			        $('html, body').animate({scrollTop: $('#reg-form').offset().top}, 800); 
 			    });
+    			var  activity = new DropDown( $('#activity-type') );
 			});
 		</script>
         <script src="public/js/users-validation.js"></script>
@@ -128,9 +131,16 @@
 										</div><!--inputBox-->
 									</div><!--form__item-->
 									<div class="form__item">
+										<label>Адрес:</label>
+										<div class="inputBox bigInput" >
+											<input type="text" name="address" validate="required" tabindex="5">
+											<i class="item__i er_i"></i>
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
 										<label>Телефон:</label>
 										<div class="inputBox">
-											<input type="text" validate="required|phone" name="phone" tabindex="3">
+											<input type="text" validate="required" name="phone" tabindex="3" class="TCMask[+### (##) ###-##-##,+XXX (XX) XXX-XX-XX]">
 											<!--<span>Номер телефона должен состоять из 11 цифр и включать код города и страны</span>-->
 										</div><!--inputBox-->
 									</div><!--form__item-->
@@ -140,9 +150,41 @@
 											<input type="text" name="email" validate="required|email" tabindex="4">
 										</div><!--inputBox-->
 									</div><!--form__item-->
+									<div class="form__item">
+										<label>Вид деятельности:</label>
+										<div class="inputBox">
+
+											<div id="activity-type" name="activity" class="wrapper-dropdown-1 transparent-dd" tabindex="6">
+											    <span>Вид деятельности</span>
+											    <ul class="dropdown">
+											        <li><a href="#">Интернет-магазин</a></li>
+											        <li><a href="#">Розничная точка продаж</a></li>
+											        <li><a href="#">Оптовая компания</a></li> 
+											        <li><a href="#">Автосалон</a></li>
+											        <li><a href="#">Другое</a></li>
+											    </ul>
+											</div>
+
+											<!--<select validate="required" tabindex="6">
+												<option value="0">Вид деятельности</option>
+												<option value="1">Интернет-магазин</option>
+												<option value="2">Розничная точка продаж</option>
+												<option value="3">Оптовая компания</option>
+												<option value="4">Автосалон</option>
+												<option value="5">Другое</option>
+											</select>-->
+
+										</div><!--inputBox-->
+									</div><!--form__item-->
+									<div class="form__item">
+										<label>Комментарий:</label>
+										<div class="message">
+											<textarea col="1" row="1" name="comment" tabindex="7"></textarea>
+										</div><!--inputBox-->
+									</div><!--form__item-->
 								</div><!--form__cont-->
 								<div class="button__form reg-as-partner">
-									<input type="submit" class="cloudBtn active" value="Зарегистрироваться как партнер" tabindex="13"><p>После проверки Ваших данных мы отправим пароль доступа на e-mail, указанный при регистрации.</p>
+									<input type="submit" class="cloudBtn active" value="Отправить заявку" tabindex="13"><p>После проверки Ваших данных мы отправим пароль доступа на e-mail, указанный при регистрации.</p>
 								</div><!--button__form-->
 							</div><!--formBox-->
 						</div><!--pageForm-->

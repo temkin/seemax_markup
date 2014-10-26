@@ -525,7 +525,8 @@ body {
 				background:#26a9e6;
 				font:36px/42px 'pf_beausans_prosemibold';
 				color:#fff;
-				padding: 38px 0 39px 18%;
+				padding: 38px 15px 39px 18%;
+				border-radius: 0 15px 0 0;
 
 			}
 			.slider__txt {
@@ -2168,7 +2169,8 @@ body {
 	.form__item .inputBox .input-error {
 		border-color: #d02947 !important;
 	}
-	.form__item .inputBox {
+	.form__item .inputBox,
+	.form__cont .form__item .message {
 		width: 75%;
 		display: -moz-inline-stack;
 		display: inline-block;
@@ -2189,7 +2191,9 @@ body {
 			vertical-align: middle;
 		}
 
-		.form__item .inputBox input[type="text"], .form__item .inputBox input[type="password"],.form__item .message textarea  {
+		.form__item .inputBox input[type="text"], 
+		.form__item .inputBox input[type="password"],
+		.form__item .message textarea  {
 			width: 20%;
 			padding:0 15px;
 			height:42px;
@@ -2220,6 +2224,9 @@ body {
 			font:18px/18px 'pf_beausans_proregular';
 			color:#fff;
 			vertical-align: middle;
+		}
+		.form__cont .form__item .inputBox select {
+			margin-top: 12px;
 		}
 		.form__item .inputBox select option {
 			color:#000;
