@@ -1296,9 +1296,10 @@ body {
 			}
 .ad__img {
 	position:relative;
+	line-height: 574px;
 }
 	.ad__img img {
-		height: 574px;
+		height: auto;
 		width:100%;
 	}
 	.ad__img_h {
