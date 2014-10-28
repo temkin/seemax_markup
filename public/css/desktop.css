@@ -1270,6 +1270,7 @@ body {
 	}
 		.ad__i.top .ad__img { 
 			line-height: 574px;
+			height: 574px;
 		}
 		.ad__i.top .ad__txt {
 			background:#26a9e6;
@@ -1292,6 +1293,7 @@ body {
 	}
 		.ad__i.bot .ad__img {
 			line-height: 540px;
+			height: 540px;
 		}
 		.ad__i.bot .ad__txt {
 			height:468px;
@@ -1302,10 +1304,15 @@ body {
 			}
 .ad__img {
 	position:relative; 
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
 }
 	.ad__img img {
-		/*height: auto;*/
-		width:100%;
+		display: inline-block;
+		vertical-align: middle; 
+		max-height: 574px;
+		max-width: 100%;
 	}
 	.ad__img_h {
 		position:absolute;
